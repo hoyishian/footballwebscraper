@@ -1,0 +1,3 @@
+[submodule "data/data"]
+	path = data/data
+	url = https://github.com/vaastav/Fantasy-Premier-League
