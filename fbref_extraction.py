@@ -1,9 +1,20 @@
-# import pandas as pd
+import pandas as pd
 import requests
 from bs4 import BeautifulSoup
+import re
 
+def extract_goalkeeper_stats(player_link):
+    new_player_link = player_link.replace("summary", "keeper")
+    df = pd.read_html(new_player_link)[0]
+    print(df)
 
+def extract_player_stats(player_link):
+    new_player_link = player_link.replace("summary", "passing")
+    df = pd.read_html(new_player_link)[0]
+    print(df)
+    
 
+# Get List of Premier League Teams
 url = 'https://fbref.com/en/comps/9/stats/Premier-League-Stats'
 res = requests.get(url)
 html_page = res.content
@@ -23,6 +34,7 @@ for a in text:
 for i in teams_array:
     final_team_array.append("https://fbref.com"+i)
 
+# Get List of all Premier League Players and their respective links
 player_array = []
 player_final_array = []
 final_link = []
@@ -52,4 +64,24 @@ for i in player_array:
 for link in player_final_array:
     final_link.append(link.replace("2020-2021", "s10728"))
 
-print(final_link)
+final_link.sort()
+
+# Check if Player is GK. 
+# If GK, call extract_goalkeeper_stats
+# If not GK, call extract_player_stats
+for player in final_link:
+
+    res_player = requests.get(player)
+    html_page_player = res_player.content
+
+    new_soup = BeautifulSoup(html_page_player, 'html.parser')
+
+    searched_word = "GK"
+
+    new_result = new_soup.find_all(string= re.compile('.*{0}.*'.format(searched_word)))
+
+    if(len(new_result) == 0):
+        extract_player_stats(player)
+    else:
+        extract_goalkeeper_stats(player)
+    break
