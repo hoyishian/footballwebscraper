@@ -85,7 +85,7 @@ Outfield players have 4 set of statistics. Screenshots are taken from the websit
 ![GCA Screenshot from FBRef Website](/screenshots/GCA.png)
 
 #### Defensive Actions
-![Defensive Actions Screenshot from FBRef Website](/screenshots/Defensive Action.png)
+![Defensive Actions Screenshot from FBRef Website](/screenshots/DefensiveAction.png)
 
 #### Possession
 ![Possession Screenshot from FBRef Website](/screenshots/Possession.png)
