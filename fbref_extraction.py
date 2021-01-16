@@ -203,7 +203,7 @@ for link in player_final_array:
     final_link.append(link.replace("2020-2021", "s10728"))
 
 final_link.sort()
-# print(final_link)
+print(final_link)
 
 # Check if Player is GK. 
 # If GK, call extract_goalkeeper_stats
