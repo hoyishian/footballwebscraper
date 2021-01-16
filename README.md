@@ -54,9 +54,7 @@ Att -- Passes Attempted (Not including goal kicks)
 
 Thr -- Throws Attempted
 
-Launch% -- Percentage of Passes that were Launched (Not including goal kicks)
-
-Passes longer than 40 yards
+Launch% -- Percentage of Passes that were Launched (Not including goal kicks) (Passes longer than 40 yards)
 
 AvgLen -- Average length of passes, in yards (Not including goal kicks)
 
@@ -83,6 +81,7 @@ Stp% -- Percentage of crosses into penalty area which were successfully stopped 
 AvgDist -- Average distance from goal to perform defensive actions
 
 ### Outfield Players
+
 Outfield players have 4 set of statistics:
 
 #### Passing
