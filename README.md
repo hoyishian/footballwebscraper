@@ -81,6 +81,54 @@ Outfield players have 4 set of statistics. Screenshots are taken from the websit
 #### Passing
 ![Passing Screenshot from FBRef Website](/screenshots/Passing.png)
 
+##### Total
+
+Cmp -- Passes Completed
+
+Att -- Passes Attempted
+
+Cmp% -- Pass Completion Percentage (Minimum 30 minutes played per squad game to qualify as a leader)
+
+TotDist -- Total distance, in yards, that completed passes have traveled in any direction
+
+PrgDist -- Progressive Distance (Total distance, in yards, that completed passes have traveled towards the opponent's goal. Note: Passes away from opponent's goal are counted as zero progressive yards.)
+
+##### Short (Passes between 5 and 15 yards)
+Cmp -- Passes Completed
+
+Att -- Passes Attempted
+
+Cmp% -- Pass Completion Percentage
+
+##### Medium (Passes between 15 and 30 yards)
+Cmp -- Passes Completed
+
+Att -- Passes Attempted
+
+Cmp% -- Pass Completion Percentage
+
+##### Long (Passes longer than 30 yards)
+
+Cmp -- Passes Completed
+
+Att -- Passes Attempted
+
+Cmp% -- Pass Completion Percentage
+
+##### Performance
+Ast -- Assists
+xA -- xG Assisted (xG which follows a pass that assists a shot)
+
+KP -- Key Passes (Passes that directly lead to a shot (assisted shots))
+
+1/3 -- Passes into Final Third (Completed passes that enter the 1/3 of the pitch closest to the goal, Not including set pieces)
+
+PPA -- Passes into Penalty Area (Completed passes into the 18-yard box, Not including set pieces)
+
+CrsPA -- Crosses into Penalty Area (Completed crosses into the 18-yard box, Not including set pieces)
+
+Prog -- Progressive Passes (Completed passes that move the ball towards the opponent's goal at least 10 yards from its furthest point in the last six passes, or any completed pass into the penalty area. Excludes passes from the defending 40% of the pitch)
+
 #### Goal and Shot Creation
 ![GCA Screenshot from FBRef Website](/screenshots/GCA.png)
 
