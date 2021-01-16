@@ -1,18 +1,156 @@
 import pandas as pd
 import requests
+from typing_extensions import final
 from bs4 import BeautifulSoup
 import re
 
 def extract_goalkeeper_stats(player_link):
+    name = extractName(player_link)
     new_player_link = player_link.replace("summary", "keeper")
-    df = pd.read_html(new_player_link)[0]
-    print(df)
+    df = pd.read_html(new_player_link, header= 1)[0]
+    df = df.drop(columns = ['Match Report'])
+    df = df.rename(columns={"Day":"Name"})
+    df.dropna(subset=["Date"], inplace =True)
+    df['Name'] = df['Name'].replace(['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
+    try:
+        f = open("goalkeeperstats.csv")
+        df.to_csv('goalkeeperstats.csv', index=False, header=False, mode = 'a')
+        f.close()
+    except:
+        df.to_csv('goalkeeperstats.csv', index=False)
 
 def extract_player_stats(player_link):
+    name = extractName(player_link)
     new_player_link = player_link.replace("summary", "passing")
-    df = pd.read_html(new_player_link)[0]
-    print(df)
+    df = pd.read_html(new_player_link, header= 1)[0]
+    df = df.drop(columns = ['Match Report'])
+    df = df.rename(columns={"Day":"Name"})
+    df.dropna(subset=["Date"], inplace =True)
+    df['Name'] = df['Name'].replace(['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
+    df = df.rename(columns={"Cmp":"Total Passes Completed"})
+    df = df.rename(columns={"Att":"Total Passes Attempted"})
+    df = df.rename(columns={"Cmp%":"Total Pass Completion Percentage"})
+    df = df.rename(columns={"TotDist":"Total Distance travelled by Passes"})
+    df = df.rename(columns={"PrgDist":"Progressive Distance"})
+    df = df.rename(columns={"Cmp.1":"Short Passes Completed"})
+    df = df.rename(columns={"Att.1":"Short Passes Attempted"})
+    df = df.rename(columns={"Cmp%.1":"Short Passes Completion Percentage"})
+    df = df.rename(columns={"Cmp.2":"Medium Passes Completed"})
+    df = df.rename(columns={"Att.2":"Medium Passes Attempted"})
+    df = df.rename(columns={"Cmp%.2":"Medium Passes Completion Percentage"})
+    df = df.rename(columns={"Cmp.3":"Long Passes Completed"})
+    df = df.rename(columns={"Att.3":"Long Passes Attempted"})
+    df = df.rename(columns={"Cmp%.3":"Long Passes Completion Percentage"})
+    df = df.rename(columns={"Ast":"Assists"})
+    df = df.rename(columns={"xA":"Expected Assist"})
+    df = df.rename(columns={"KP":"Key Passes"})
+    df = df.rename(columns={"1/3":"Passes into Final Third"})
+    df = df.rename(columns={"PPA":"Passes into Penalty Area"})
+    df = df.rename(columns={"CrsPA":"Crosses into Penalty Area"})
+    df = df.rename(columns={"Prog":"Progressive Passes"})
+
+    new_player_link = player_link.replace("summary", "gca")
+    df_2 = pd.read_html(new_player_link, header= 1)[0]
+    df_2 = df_2.drop(columns = ['Match Report'])
+    df_2 = df_2.rename(columns={"Day":"Name"})
+    df_2.dropna(subset=["Date"], inplace =True)
+    df_2['Name'] = df_2['Name'].replace(['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
+    df_2 = df_2.drop(['Date', 'Name', 'Round', 'Venue','Result','Squad','Opponent','Start','Pos','Min'], axis = 1)
+    df_2 = df_2.rename(columns={"SCA":"Shot-Creating Action"})
+    df_2 = df_2.rename(columns={"PassLive":"Completed Live-Passes that lead to shot attempt"})
+    df_2 = df_2.rename(columns={"PassDead":"Completed Dead-Passes that lead to shot attempt"})
+    df_2 = df_2.rename(columns={"Drib":"Successful Dribbles that lead to shot attempt"})
+    df_2 = df_2.rename(columns={"Sh":"Shot that lead to another shot attempt"})
+    df_2 = df_2.rename(columns={"Fld":"Fouls drawn that lead to shot attempt"})
+    df_2 = df_2.rename(columns={"Def":"Defensive Actions that lead to shot attempt"})
+    df_2 = df_2.rename(columns={"GCA":"Goal-Creating Action"})
+    df_2 = df_2.rename(columns={"PassLive.1":"Completed Live-Passes that lead to Goal"})
+    df_2 = df_2.rename(columns={"PassDead.1":"Completed Dead-Passes that lead to Goal"})
+    df_2 = df_2.rename(columns={"Drib.1":"Successful Dribbles that lead to Goal"})
+    df_2 = df_2.rename(columns={"Sh.1":"Shot that lead to another Goal"})
+    df_2 = df_2.rename(columns={"Fld.1":"Fouls drawn that lead to Goal"})
+    df_2 = df_2.rename(columns={"Def.1":"Defensive Actions that lead to Goal"})
+    df_2 = df_2.rename(columns={"OG":"Actions that lead to opponent scoring own goal"})
+
     
+    new_player_link = player_link.replace("summary", "defense")
+    df_3 = pd.read_html(new_player_link, header= 1)[0]
+    df_3 = df_3.drop(columns = ['Match Report'])
+    df_3 = df_3.rename(columns={"Day":"Name"})
+    df_3.dropna(subset=["Date"], inplace =True)
+    df_3['Name'] = df_3['Name'].replace(['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
+    df_3 = df_3.drop(['Date', 'Name', 'Round', 'Venue','Result','Squad','Opponent','Start','Pos','Min'], axis = 1)
+    df_3 = df_3.rename(columns={"Tkl":"Number of players tackled"})
+    df_3 = df_3.rename(columns={"TklW":"Tackles Won"})
+    df_3 = df_3.rename(columns={"Def 3rd":"Tackles won in Defensive Third"})
+    df_3 = df_3.rename(columns={"Mid 3rd":"Tackles won in Midfield Third"})
+    df_3 = df_3.rename(columns={"Att 3rd":"Tackles won in Attack Third"})
+    df_3 = df_3.rename(columns={"Tkl.1":"Number of Dribblers tackled"})
+    df_3 = df_3.rename(columns={"Att":"Dribbles contested"})
+    df_3 = df_3.rename(columns={"Tkl%":"Percentage of dribblers tackled"})
+    df_3 = df_3.rename(columns={"Past":"Number of times dribbled past"})
+    df_3 = df_3.rename(columns={"Press":"Pressures"})
+    df_3 = df_3.rename(columns={"Succ":"Successful Pressures"})
+    df_3 = df_3.rename(columns={"%":"Successful Pressure Percentage"})
+    df_3 = df_3.rename(columns={"Def 3rd.1":"Number of times applying pressures in Defensive third"})
+    df_3 = df_3.rename(columns={"Mid 3rd.1":"Number of times applying pressures in Midfield third"})
+    df_3 = df_3.rename(columns={"Att 3rd.1":"Number of times applying pressures in Attacking third"})
+    df_3 = df_3.rename(columns={"Blocks":"Number of times blocking the ball by standing in its path"})
+    df_3 = df_3.rename(columns={"Sh":"Number of times blocking a shot by standing in its path"})
+    df_3 = df_3.rename(columns={"ShSv":"Number of times blocking a shot that was on target, by standing in its path"})
+    df_3 = df_3.rename(columns={"Pass":"Number of times blocking a pass by standing in its path"})
+    df_3 = df_3.rename(columns={"Int":"Interceptions"})
+    df_3 = df_3.rename(columns={"Tkl+Int":"Number of players tackled plus number of interceptions"})
+    df_3 = df_3.rename(columns={"Clr":"Clearances"})
+    df_3 = df_3.rename(columns={"Err":"Errors leading to an opponent's shot"})
+
+    new_player_link = player_link.replace("summary", "possession")
+    df_4 = pd.read_html(new_player_link, header= 1)[0]
+    df_4 = df_4.drop(columns = ['Match Report'])
+    df_4 = df_4.rename(columns={"Day":"Name"})
+    df_4.dropna(subset=["Date"], inplace =True)
+    df_4['Name'] = df_4['Name'].replace(['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
+    df_4 = df_4.drop(['Date', 'Name', 'Round', 'Venue','Result','Squad','Opponent','Start','Pos','Min'], axis = 1)
+    df_4 = df_4.rename(columns={"Def Pen":"Touches in Defensive Penalty Area"})
+    df_4 = df_4.rename(columns={"Def 3rd":"Touches in Defensive Third"})
+    df_4 = df_4.rename(columns={"Mid 3rd":"Touches in Midfield Third"})
+    df_4 = df_4.rename(columns={"Att 3rd":"Touches in Attacking Third"})
+    df_4 = df_4.rename(columns={"Att Pen":"Touches in Attacking Penalty Area"})
+    df_4 = df_4.rename(columns={"Live":"Live-Ball Touches"})
+    df_4 = df_4.rename(columns={"Succ":"Dribbles completed successfully"})
+    df_4 = df_4.rename(columns={"Att":"Dribbles attempted"})
+    df_4 = df_4.rename(columns={"Succ%":"Percentage of Dribbles completed successfully"})
+    df_4 = df_4.rename(columns={"#Pl":"Number of players dribbled past"})
+    df_4 = df_4.rename(columns={"Megs":"Nutmegs"})
+    df_4 = df_4.rename(columns={"TotDist":"Total Distance Carried"})
+    df_4 = df_4.rename(columns={"PrgDist":"Progressive Distance"})
+    df_4 = df_4.rename(columns={"Prog":"Progressive Carries"})
+    df_4 = df_4.rename(columns={"1/3":"Carries into Final Third"})
+    df_4 = df_4.rename(columns={"CPA":"Carries into Penalty Area"})
+    df_4 = df_4.rename(columns={"Mis":"Miscontrols"})
+    df_4 = df_4.rename(columns={"Dis":"Dispossessed"})
+    df_4 = df_4.rename(columns={"Targ":"Pass Targets"})
+    df_4 = df_4.rename(columns={"Rec":"Passes Received"})
+    df_4 = df_4.rename(columns={"Rec%":"Passes Received Percentage"})
+
+    concatenated = pd.concat([df, df_2, df_3, df_4], axis=1)
+
+    try:
+        f = open("playerstats.csv")
+        concatenated.to_csv('playerstats.csv', index=False, header=False, mode = 'a')
+        f.close()
+    except:
+        concatenated.to_csv('playerstats.csv', index=False)
+
+def extractName(player_link):
+    res = requests.get(player_link)
+    html_page = res.content
+
+    soup = BeautifulSoup(html_page, 'html.parser')
+    name = soup.find("h1", {"itemprop": "name"})
+    print(name)
+    return name.find("span").text
+
 
 # Get List of Premier League Teams
 url = 'https://fbref.com/en/comps/9/stats/Premier-League-Stats'
@@ -65,6 +203,7 @@ for link in player_final_array:
     final_link.append(link.replace("2020-2021", "s10728"))
 
 final_link.sort()
+# print(final_link)
 
 # Check if Player is GK. 
 # If GK, call extract_goalkeeper_stats
@@ -84,4 +223,3 @@ for player in final_link:
         extract_player_stats(player)
     else:
         extract_goalkeeper_stats(player)
-    break
