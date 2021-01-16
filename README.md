@@ -20,9 +20,7 @@ GA -- Goals Against
 
 Save% -- Save Percentage (Shots on Target Against - Goals Against/Shots on Target Against)
 
-CS -- Clean Sheets
-
-Full matches by goalkeeper where no goals are allowed.
+CS -- Clean Sheets (Full matches by goalkeeper where no goals are allowed.)
 
 PSxG -- Post-Shot Expected Goals (PSxG is expected goals based on how likely the goalkeeper is to save the shot)
 
@@ -37,17 +35,11 @@ PKsv -- Penalty Kicks Saved
 PKm -- Penalty Kicks Missed
 
 #### Launched
-Cmp -- Passes Completed
+Cmp -- Passes Completed (Passes longer than 40 yards)
 
-Passes longer than 40 yards
+Att -- Passes Attempted (Passes longer than 40 yards)
 
-Att -- Passes Attempted
-
-Passes longer than 40 yards
-
-Cmp% -- Pass Completion Percentage
-
-Passes longer than 40 yards
+Cmp% -- Pass Completion Percentage (Passes longer than 40 yards)
 
 #### Passes
 Att -- Passes Attempted (Not including goal kicks)
@@ -82,14 +74,18 @@ AvgDist -- Average distance from goal to perform defensive actions
 
 ### Outfield Players
 
-Outfield players have 4 set of statistics:
+Outfield players have 4 set of statistics. Screenshots are taken from the website:
 
 #### Passing
+![Passing Screenshot from FBRef Website](/screenshots/Passing.png)
 
 #### Goal and Shot Creation
+![GCA Screenshot from FBRef Website](/screenshots/GCA.png)
 
 #### Defensive Actions
+![Defensive Actions Screenshot from FBRef Website](/screenshots/Defensive Action.png)
 
 #### Possession
+![Possession Screenshot from FBRef Website](/screenshots/Possession.png)
 
 ## Step 2:
