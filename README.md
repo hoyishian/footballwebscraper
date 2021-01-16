@@ -11,7 +11,9 @@ We extracted the data required for our analysis from the FBRef Website, which co
 There are 2 kind of players in the data we collected: Outfield players and Goalkeepers. 
 
 ### Goalkeeper Players
-Goalkeeper players only have 1 set of statistics that is made up of 7 groups of Goalkeeping statistics:
+Goalkeeper players only have 1 set of statistics that is made up of 7 groups of Goalkeeping statistics. The following screenshot is taken from the FBRef website:
+
+![Goalkeeping Screenshot from FBRef Website](/screenshots/Goalkeeping.png)
 
 #### Performance
 SoTA -- Shots on Target Against
