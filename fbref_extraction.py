@@ -1,5 +1,4 @@
 import pandas as pd
-from typing_extensions import final
 import numpy as np
 import requests
 from bs4 import BeautifulSoup
