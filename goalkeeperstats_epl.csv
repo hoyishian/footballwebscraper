@@ -129,6 +129,7 @@ Date,Name,Round,Venue,Result,Squad,Opponent,Start,Pos,Min,SoTA,Goals Against,Sav
 2021-01-01,Jordan Pickford,Matchweek 17,Home,L 0–1,Everton,West Ham,Y,GK,90,5,1,4,.800,0,1.1,0,0,0,0,5,13,38.5,31,7,32.3,34.9,6,50.0,39.3,10,1,10.0,2,17.2
 2021-01-12,Jordan Pickford,Matchweek 18,Away,W 2–1,Everton,Wolves,Y,GK,90,3,1,2,.667,0,0.4,0,0,0,0,7,9,77.8,21,5,23.8,27.6,8,50.0,39.5,12,1,8.3,0,15.0
 2020-11-28,Bailey Peacock-Farrell,Matchweek 10,Away,L 0–5,Burnley,Manchester City,Y,GK,90,7,5,2,.286,0,4.4,0,0,0,0,11,28,39.3,23,1,87.0,55.5,9,88.9,64.9,9,0,0.0,0,8.5
+2021-01-12,Nick Pope,Matchweek 1,Home,L 0–1,Burnley,Manchester Utd,Y,GK,90.0,7.0,1.0,6.0,0.857,0.0,1.9,0.0,0.0,0.0,0.0,10.0,23.0,43.5,25.0,5.0,80.0,53.1,5.0,60.0,52.2,6.0,0.0,0.0,1.0,11.7
 2020-09-20,Nick Pope,Matchweek 2,Away,L 2–4,Burnley,Leicester City,Y,GK,90.0,6.0,4.0,3.0,0.33299999999999996,0.0,2.5,0.0,0.0,0.0,0.0,8.0,18.0,44.4,15.0,1.0,93.3,65.1,4.0,100.0,76.0,10.0,1.0,10.0,1.0,17.3
 2020-09-26,Nick Pope,Matchweek 3,Home,L 0–1,Burnley,Southampton,Y,GK,90.0,1.0,1.0,0.0,0.0,0.0,0.3,0.0,0.0,0.0,0.0,10.0,30.0,33.3,34.0,4.0,79.4,52.7,4.0,75.0,54.3,2.0,0.0,0.0,1.0,18.0
 2020-10-03,Nick Pope,Matchweek 4,Away,L 1–3,Burnley,Newcastle Utd,Y,GK,90.0,4.0,3.0,2.0,0.5,0.0,3.0,1.0,1.0,0.0,0.0,7.0,19.0,36.8,24.0,6.0,62.5,46.8,6.0,66.7,50.5,8.0,0.0,0.0,0.0,9.0
@@ -143,8 +144,7 @@ Date,Name,Round,Venue,Result,Squad,Opponent,Start,Pos,Min,SoTA,Goals Against,Sav
 2020-12-21,Nick Pope,Matchweek 14,Home,W 2–1,Burnley,Wolves,Y,GK,90.0,2.0,1.0,2.0,1.0,0.0,0.9,1.0,1.0,0.0,0.0,10.0,20.0,50.0,19.0,3.0,63.2,47.2,10.0,80.0,56.2,13.0,2.0,15.4,2.0,23.8
 2020-12-27,Nick Pope,Matchweek 15,Away,L 0–1,Burnley,Leeds United,Y,GK,90.0,3.0,1.0,3.0,1.0,0.0,1.3,1.0,1.0,0.0,0.0,8.0,21.0,38.1,19.0,5.0,68.4,50.7,9.0,88.9,60.9,5.0,1.0,20.0,3.0,23.2
 2020-12-29,Nick Pope,Matchweek 16,Home,W 1–0,Burnley,Sheffield Utd,Y,GK,90.0,2.0,0.0,2.0,1.0,1.0,0.1,0.0,0.0,0.0,0.0,8.0,23.0,34.8,26.0,5.0,69.2,52.4,6.0,83.3,57.8,13.0,1.0,7.7,1.0,14.4
-2021-01-12,Nick Pope,Matchweek 1,Home,L 0–1,Burnley,Manchester Utd,Y,GK,90.0,7.0,1.0,6.0,0.857,0.0,1.9,0.0,0.0,0.0,0.0,10.0,23.0,43.5,25.0,5.0,80.0,53.1,5.0,60.0,52.2,6.0,0.0,0.0,1.0,11.7
-2021-01-16,Nick Pope,Matchweek 19,Away,L 0–1,Burnley,West Ham,Y,GK,90.0,3.0,1.0,2.0,0.667,0.0,,0.0,0.0,0.0,0.0,,,,,,,,,,,,,,,
+2021-01-16,Nick Pope,Matchweek 19,Away,L 0–1,Burnley,West Ham,Y,GK,90.0,3.0,1.0,2.0,0.667,0.0,0.5,0.0,0.0,0.0,0.0,12.0,21.0,57.1,23.0,5.0,69.6,46.0,6.0,83.3,59.5,15.0,1.0,6.7,1.0,19.3
 2020-09-13,Kasper Schmeichel,Matchweek 1,Away,W 3–0,Leicester City,West Brom,Y*,GK,90,1,0,1,1.0,1,0.1,0,0,0,0,2,8,25.0,22,3,18.2,30.5,6,66.7,52.7,4,0,0.0,1,14.7
 2020-09-20,Kasper Schmeichel,Matchweek 2,Home,W 4–2,Leicester City,Burnley,Y*,GK,90,5,2,3,0.6,0,1.8,0,0,0,0,5,19,26.3,38,3,39.5,41.1,9,44.4,36.8,6,2,33.3,0,15.0
 2020-09-27,Kasper Schmeichel,Matchweek 3,Away,W 5–2,Leicester City,Manchester City,Y*,GK,90,5,2,3,0.6,0,1.5,0,0,0,0,12,34,35.3,32,7,62.5,48.3,14,100.0,68.9,11,1,9.1,0,5.4
@@ -164,6 +164,7 @@ Date,Name,Round,Venue,Result,Squad,Opponent,Start,Pos,Min,SoTA,Goals Against,Sav
 2021-01-03,Kasper Schmeichel,Matchweek 17,Away,W 2–1,Leicester City,Newcastle Utd,Y*,GK,90,2,1,1,0.5,0,0.8,0,0,0,0,8,15,53.3,30,2,46.7,40.8,4,25.0,29.8,7,0,0.0,1,20.0
 2021-01-16,Kasper Schmeichel,Matchweek 19,Home,W 2–0,Leicester City,Southampton,Y*,GK,90,3,0,3,1.0,1,0.7,0,0,0,0,5,16,31.3,27,4,51.9,42.5,8,25.0,29.6,5,0,0.0,0,13.6
 2021-01-16,Kiko Casilla,Matchweek 19,Home,L 0–1,Leeds United,Brighton,Y,GK,90,2,1,1,.500,0,1.0,0,0,0,0,5,6,83.3,23,10,13.0,22.9,10,30.0,34.1,8,2,25.0,0,14.7
+2020-12-06,Caoimhin Kelleher,Matchweek 11,Home,W 4–0,Liverpool,Wolves,Y,GK,90,3,0,3,1.000,1,0.9,0,0,0,0,4,10,40.0,23,3,34.8,34.2,5,40.0,35.0,13,2,15.4,0,17.0
 2021-01-01,Darren Randolph,Matchweek 17,Away,W 1–0,West Ham,Everton,Y,GK,90,2,0,2,1.000,1,0.4,0,0,0,0,5,14,35.7,17,2,58.8,45.2,5,80.0,52.0,9,0,0.0,0,12.0
 2020-11-01,Robert Sánchez,Matchweek 7,Away,L 1–2,Brighton,Tottenham,Y,GK,90.0,2.0,2.0,1.0,0.5,0.0,1.6,1.0,1.0,0.0,0.0,5.0,16.0,31.3,23.0,2.0,60.9,46.4,5.0,40.0,35.8,3.0,0.0,0.0,0.0,17.0
 2020-12-16,Robert Sánchez,Matchweek 13,Away,D 0–0,Brighton,Fulham,Y,GK,90.0,4.0,0.0,4.0,1.0,1.0,0.5,0.0,0.0,0.0,0.0,8.0,24.0,33.3,35.0,4.0,54.3,45.9,6.0,83.3,65.7,1.0,0.0,0.0,0.0,16.8
@@ -224,6 +225,21 @@ Date,Name,Round,Venue,Result,Squad,Opponent,Start,Pos,Min,SoTA,Goals Against,Sav
 2021-01-02,Rui Patrício,Matchweek 17,Away,D 3–3,Wolves,Brighton,Y,GK,90,3,3,1,0.33299999999999996,0,3.0,1,1,0,0,5,10,50.0,11,2,63.6,44.5,10,30.0,31.5,8,1,12.5,0,2.0
 2021-01-12,Rui Patrício,Matchweek 18,Home,L 1–2,Wolves,Everton,Y,GK,90,3,2,1,0.33299999999999996,0,0.9,0,0,0,0,1,1,100.0,15,3,6.7,26.3,5,0.0,22.2,11,0,0.0,0,4.0
 2021-01-16,Rui Patrício,Matchweek 19,Home,L 2–3,Wolves,West Brom,Y,GK,90,3,3,2,0.667,0,2.2,2,2,0,0,4,5,80.0,15,3,20.0,22.9,5,40.0,35.4,4,0,0.0,0,6.0
+2020-09-12,Alisson,Matchweek 1,Home,W 4–3,Liverpool,Leeds United,Y,GK,90.0,3.0,3.0,0.0,0.0,0.0,2.1,0.0,0.0,0.0,0.0,2.0,12.0,16.7,26.0,5.0,34.6,34.7,3.0,100.0,76.3,6.0,0.0,0.0,0.0,15.3
+2020-09-20,Alisson,Matchweek 2,Away,W 2–0,Liverpool,Chelsea,Y,GK,90.0,2.0,0.0,2.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,2.0,2.0,100.0,22.0,5.0,9.1,24.4,2.0,0.0,26.5,2.0,0.0,0.0,0.0,15.5
+2020-09-28,Alisson,Matchweek 3,Home,W 3–1,Liverpool,Arsenal,Y,GK,90.0,3.0,1.0,2.0,0.667,0.0,1.7,0.0,0.0,0.0,0.0,6.0,10.0,60.0,38.0,1.0,23.7,31.2,3.0,33.3,32.3,4.0,0.0,0.0,2.0,23.5
+2020-10-24,Alisson,Matchweek 6,Home,W 2–1,Liverpool,Sheffield Utd,Y,GK,90.0,1.0,1.0,1.0,1.0,0.0,0.9,1.0,1.0,0.0,0.0,5.0,14.0,35.7,27.0,1.0,37.0,34.9,8.0,50.0,47.1,9.0,0.0,0.0,0.0,13.0
+2020-10-31,Alisson,Matchweek 7,Home,W 2–1,Liverpool,West Ham,Y,GK,90.0,3.0,1.0,2.0,0.667,0.0,0.9,0.0,0.0,0.0,0.0,2.0,6.0,33.3,17.0,5.0,29.4,34.6,3.0,33.3,38.7,9.0,0.0,0.0,1.0,14.7
+2020-11-08,Alisson,Matchweek 8,Away,D 1–1,Liverpool,Manchester City,Y,GK,90.0,2.0,1.0,1.0,0.5,0.0,0.7,1.0,0.0,0.0,1.0,7.0,17.0,41.2,40.0,3.0,40.0,34.7,7.0,14.3,19.6,5.0,0.0,0.0,2.0,17.7
+2020-11-22,Alisson,Matchweek 9,Home,W 3–0,Liverpool,Leicester City,Y,GK,90.0,4.0,0.0,4.0,1.0,1.0,0.8,0.0,0.0,0.0,0.0,5.0,9.0,55.6,21.0,6.0,23.8,33.3,8.0,50.0,40.4,9.0,0.0,0.0,0.0,14.6
+2020-11-28,Alisson,Matchweek 10,Away,D 1–1,Liverpool,Brighton,Y,GK,90.0,2.0,1.0,2.0,1.0,0.0,0.6,2.0,1.0,0.0,1.0,8.0,16.0,50.0,24.0,7.0,41.7,37.0,11.0,54.5,42.8,5.0,1.0,20.0,2.0,19.0
+2020-12-13,Alisson,Matchweek 12,Away,D 1–1,Liverpool,Fulham,Y,GK,90.0,5.0,1.0,4.0,0.8,0.0,2.1,0.0,0.0,0.0,0.0,4.0,5.0,80.0,20.0,2.0,20.0,29.3,7.0,14.3,22.3,9.0,0.0,0.0,2.0,22.0
+2020-12-16,Alisson,Matchweek 13,Home,W 2–1,Liverpool,Tottenham,Y,GK,90.0,3.0,1.0,2.0,0.667,0.0,0.9,0.0,0.0,0.0,0.0,0.0,5.0,0.0,20.0,5.0,20.0,30.3,7.0,14.3,27.3,3.0,0.0,0.0,2.0,18.7
+2020-12-19,Alisson,Matchweek 14,Away,W 7–0,Liverpool,Crystal Palace,Y,GK,90.0,3.0,0.0,3.0,1.0,1.0,0.6,0.0,0.0,0.0,0.0,4.0,7.0,57.1,27.0,5.0,22.2,29.8,3.0,33.3,34.7,3.0,0.0,0.0,1.0,15.2
+2020-12-27,Alisson,Matchweek 15,Home,D 1–1,Liverpool,West Brom,Y,GK,90.0,3.0,1.0,2.0,0.667,0.0,0.8,0.0,0.0,0.0,0.0,3.0,6.0,50.0,24.0,6.0,20.8,30.9,4.0,25.0,24.8,8.0,1.0,12.5,1.0,20.0
+2020-12-30,Alisson,Matchweek 16,Away,D 0–0,Liverpool,Newcastle Utd,Y,GK,90.0,2.0,0.0,2.0,1.0,1.0,0.1,0.0,0.0,0.0,0.0,2.0,4.0,50.0,21.0,5.0,14.3,27.5,5.0,20.0,35.4,10.0,3.0,30.0,0.0,18.5
+2021-01-04,Alisson,Matchweek 17,Away,L 0–1,Liverpool,Southampton,Y,GK,90.0,2.0,1.0,1.0,0.5,0.0,0.8,0.0,0.0,0.0,0.0,6.0,9.0,66.7,36.0,8.0,22.2,28.1,3.0,33.3,39.7,2.0,1.0,50.0,3.0,19.6
+2021-01-12,David de Gea,Matchweek 1,Away,W 1–0,Manchester Utd,Burnley,Y,GK,90,0,0,0,,1,0.0,0,0,0,0,3,12,25.0,14,5,42.9,37.9,7,85.7,52.4,9,1,11.1,0,7.3
 2020-09-19,David de Gea,Matchweek 2,Home,L 1–3,Manchester Utd,Crystal Palace,Y,GK,90,4,3,2,.500,0,2.3,1,1,0,0,3,5,60.0,20,1,20.0,28.2,4,25.0,29.0,3,0,0.0,2,31.5
 2020-09-26,David de Gea,Matchweek 3,Away,W 3–2,Manchester Utd,Brighton,Y,GK,90,3,2,2,.667,0,2.0,1,1,0,0,1,7,14.3,13,2,23.1,28.1,9,44.4,38.1,14,0,0.0,0,18.0
 2020-10-04,David de Gea,Matchweek 4,Home,L 1–6,Manchester Utd,Tottenham,Y,GK,90,7,6,2,.286,0,5.0,1,1,0,0,5,6,83.3,15,4,13.3,21.5,6,66.7,48.2,5,0,0.0,0,8.0
@@ -238,7 +254,6 @@ Date,Name,Round,Venue,Result,Squad,Opponent,Start,Pos,Min,SoTA,Goals Against,Sav
 2020-12-26,David de Gea,Matchweek 15,Away,D 2–2,Manchester Utd,Leicester City,Y,GK,90,1,2,0,-1.000,0,0.1,0,0,0,0,3,5,60.0,15,3,26.7,28.7,5,20.0,14.6,13,1,7.7,0,18.0
 2020-12-29,David de Gea,Matchweek 16,Home,W 1–0,Manchester Utd,Wolves,Y,GK,90,5,0,5,1.000,1,0.2,0,0,0,0,1,2,50.0,13,5,7.7,23.6,5,20.0,25.6,3,0,0.0,0,12.3
 2021-01-01,David de Gea,Matchweek 17,Home,W 2–1,Manchester Utd,Aston Villa,Y,GK,90,5,1,4,.800,0,1.4,0,0,0,0,3,8,37.5,8,1,25.0,31.3,8,75.0,44.3,12,0,0.0,0,19.0
-2021-01-12,David de Gea,Matchweek 1,Away,W 1–0,Manchester Utd,Burnley,Y,GK,90,0,0,0,,1,0.0,0,0,0,0,3,12,25.0,14,5,42.9,37.9,7,85.7,52.4,9,1,11.1,0,7.3
 2020-09-13,Hugo Lloris,Matchweek 1,Home,L 0–1,Tottenham,Everton,Y*,GK,90,5,1,4,0.8,0,0.5,0,0,0,0,4,7,57.1,22,7,22.7,27.7,8,25.0,32.1,8,0,0.0,2,21.5
 2020-09-20,Hugo Lloris,Matchweek 2,Away,W 5–2,Tottenham,Southampton,Y*,GK,90,5,2,4,0.8,0,1.8,1,1,0,0,2,7,28.6,17,4,29.4,30.9,9,22.2,27.0,5,0,0.0,1,23.0
 2020-09-27,Hugo Lloris,Matchweek 3,Home,D 1–1,Tottenham,Newcastle Utd,Y*,GK,90,0,1,0,,0,0.9,1,1,0,0,2,4,50.0,10,2,40.0,31.6,3,0.0,19.3,7,0,0.0,0,11.0
@@ -254,8 +269,8 @@ Date,Name,Round,Venue,Result,Squad,Opponent,Start,Pos,Min,SoTA,Goals Against,Sav
 2020-12-16,Hugo Lloris,Matchweek 13,Away,L 1–2,Tottenham,Liverpool,Y*,GK,90,11,2,9,0.818,0,4.2,0,0,0,0,10,20,50.0,23,8,73.9,50.7,5,60.0,44.0,16,1,6.3,0,9.0
 2020-12-20,Hugo Lloris,Matchweek 14,Home,L 0–2,Tottenham,Leicester City,Y*,GK,90,3,2,3,0.667,0,1.4,1,1,0,0,3,9,33.3,15,3,53.3,37.3,6,16.7,28.3,5,0,0.0,0,12.5
 2020-12-27,Hugo Lloris,Matchweek 15,Away,D 1–1,Tottenham,Wolves,Y*,GK,90,6,1,5,0.833,0,1.7,0,0,0,0,8,20,40.0,22,1,77.3,48.4,4,75.0,41.3,17,1,5.9,0,8.4
-2021-01-02,Hugo Lloris,Matchweek 17,Home,W 3–0,Tottenham,Leeds United,Y*,GK,90,5,0,5,1.0,1,0.8,0,0,0,0,6,13,46.2,11,1,72.7,49.2,10,50.0,40.2,10,1,10.0,0,18.5
 2021-01-13,Hugo Lloris,Matchweek 16,Home,D 1–1,Tottenham,Fulham,Y*,GK,90,4,1,3,0.75,0,1.4,0,0,0,0,4,13,30.8,17,0,64.7,44.9,7,28.6,33.4,10,0,0.0,0,4.3
+2021-01-02,Hugo Lloris,Matchweek 17,Home,W 3–0,Tottenham,Leeds United,Y*,GK,90,5,0,5,1.0,1,0.8,0,0,0,0,6,13,46.2,11,1,72.7,49.2,10,50.0,40.2,10,1,10.0,0,18.5
 2020-09-12,Łukasz Fabiański,Matchweek 1,Home,L 0–2,West Ham,Newcastle Utd,Y,GK,90.0,3.0,2.0,1.0,0.33299999999999996,0.0,2.1,0.0,0.0,0.0,0.0,4.0,10.0,40.0,22.0,4.0,18.2,29.0,7.0,85.7,58.4,9.0,0.0,0.0,0.0,10.7
 2020-09-19,Łukasz Fabiański,Matchweek 2,Away,L 1–2,West Ham,Arsenal,Y,GK,90.0,3.0,2.0,1.0,0.33299999999999996,0.0,1.1,0.0,0.0,0.0,0.0,9.0,19.0,47.4,28.0,3.0,57.1,42.4,5.0,60.0,46.6,8.0,1.0,12.5,1.0,17.6
 2020-09-27,Łukasz Fabiański,Matchweek 3,Home,W 4–0,West Ham,Wolves,Y,GK,90.0,2.0,0.0,2.0,1.0,1.0,0.8,0.0,0.0,0.0,0.0,6.0,20.0,30.0,22.0,4.0,72.7,51.7,7.0,57.1,46.7,15.0,1.0,6.7,0.0,15.0
@@ -272,7 +287,7 @@ Date,Name,Round,Venue,Result,Squad,Opponent,Start,Pos,Min,SoTA,Goals Against,Sav
 2020-12-21,Łukasz Fabiański,Matchweek 14,Away,L 0–3,West Ham,Chelsea,Y,GK,90.0,7.0,3.0,4.0,0.5710000000000001,0.0,2.9,0.0,0.0,0.0,0.0,6.0,16.0,37.5,25.0,6.0,56.0,41.2,7.0,28.6,33.4,10.0,0.0,0.0,1.0,11.6
 2020-12-27,Łukasz Fabiański,Matchweek 15,Home,D 2–2,West Ham,Brighton,Y,GK,90.0,4.0,2.0,2.0,0.5,0.0,1.8,0.0,0.0,0.0,0.0,8.0,20.0,40.0,19.0,8.0,47.4,41.5,11.0,100.0,59.6,6.0,0.0,0.0,1.0,15.0
 2020-12-29,Łukasz Fabiański,Matchweek 16,Away,D 0–0,West Ham,Southampton,Y,GK,90.0,3.0,0.0,3.0,1.0,1.0,0.2,0.0,0.0,0.0,0.0,15.0,21.0,71.4,17.0,2.0,88.2,55.9,6.0,100.0,61.0,9.0,1.0,11.1,0.0,14.0
-2021-01-16,Łukasz Fabiański,Matchweek 19,Home,W 1–0,West Ham,Burnley,Y,GK,90.0,2.0,0.0,2.0,1.0,1.0,,0.0,0.0,0.0,0.0,,,,,,,,,,,,,,,
+2021-01-16,Łukasz Fabiański,Matchweek 19,Home,W 1–0,West Ham,Burnley,Y,GK,90.0,2.0,0.0,2.0,1.0,1.0,0.2,0.0,0.0,0.0,0.0,8.0,21.0,38.1,17.0,0.0,82.4,54.6,7.0,100.0,64.9,15.0,2.0,13.3,1.0,12.0
 2020-09-13,Sam Johnstone,Matchweek 1,Home,L 0–3,West Brom,Leicester City,Y,GK,90,5,3,4,0.8,0,3.0,2,2,0,0,8,22,36.4,26,3,61.5,48.8,6,100.0,63.5,6,0,0.0,0,13.3
 2020-09-19,Sam Johnstone,Matchweek 2,Away,L 2–5,West Brom,Everton,Y,GK,90,7,5,2,0.28600000000000003,0,4.1,0,0,0,0,6,21,28.6,23,7,60.9,46.4,8,87.5,55.0,7,0,0.0,0,13.9
 2020-09-26,Sam Johnstone,Matchweek 3,Home,D 3–3,West Brom,Chelsea,Y,GK,90,11,3,8,0.727,0,3.8,0,0,0,0,9,26,34.6,21,1,100.0,59.7,7,71.4,50.0,15,1,6.7,0,12.3
@@ -330,6 +345,8 @@ Date,Name,Round,Venue,Result,Squad,Opponent,Start,Pos,Min,SoTA,Goals Against,Sav
 2020-11-29,Dean Henderson,Matchweek 10,Away,W 3–2,Manchester Utd,Southampton,N,GK,45,2,0,2,1.000,0,0.0,0,0,0,0,0,2,0.0,9,4,22.2,31.8,2,0.0,10.0,3,0,0.0,0,19.0
 2020-12-05,Dean Henderson,Matchweek 11,Away,W 3–1,Manchester Utd,West Ham,Y,GK,90,6,1,5,.833,0,1.7,0,0,0,0,7,12,58.3,17,8,58.8,35.4,8,25.0,34.4,15,0,0.0,1,12.6
 2020-12-17,Dean Henderson,Matchweek 13,Away,W 3–2,Manchester Utd,Sheffield Utd,Y,GK,90,6,2,4,.667,0,1.7,0,0,0,0,2,8,25.0,19,4,31.6,34.6,8,25.0,30.0,8,0,0.0,0,14.7
-2021-01-16,David Button,Matchweek 19,Away,W 3–2,West Brom,Wolves,Y,GK,90,6,2,4,.667,0,1.7,0,0,0,0,8,29,27.6,25,2,68.0,49.1,12,100.0,67.0,10,1,10.0,0,10.0
+2021-01-16,David Button,Matchweek 19,Away,W 3–2,West Brom,Wolves,Y,GK,90,7,2,5,.714,0,1.7,0,0,0,0,8,29,27.6,25,2,68.0,49.1,12,100.0,67.0,10,1,10.0,0,10.0
 2020-11-01,Robin Olsen,Matchweek 7,Away,L 1–2,Everton,Newcastle Utd,Y,GK,90,3,2,2,.667,0,2.4,1,1,0,0,6,7,85.7,17,3,41.2,35.0,3,0.0,19.3,3,0,0.0,0,
 2020-12-16,Robin Olsen,Matchweek 13,Away,W 2–0,Everton,Leicester City,Y,GK,90,2,0,2,1.000,1,0.5,0,0,0,0,9,23,39.1,26,2,69.2,52.5,6,83.3,60.8,7,0,0.0,0,12.0
+2020-10-04,Adrián,Matchweek 4,Away,L 2–7,Liverpool,Aston Villa,Y,GK,90,11,7,4,.364,0,5.6,0,0,0,0,4,8,50.0,29,9,17.2,27.7,5,60.0,43.2,6,0,0.0,0,13.9
+2020-10-17,Adrián,Matchweek 5,Away,D 2–2,Liverpool,Everton,Y,GK,90,5,2,3,.600,0,1.6,0,0,0,0,5,17,29.4,19,5,68.4,48.7,9,44.4,36.2,12,2,16.7,0,9.8
