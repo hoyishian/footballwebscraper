@@ -1,27 +1,60 @@
 import pandas as pd
-import requests
 from typing_extensions import final
+import numpy as np
+import requests
 from bs4 import BeautifulSoup
 import re
 
 def extract_goalkeeper_stats(player_link):
     name = extractName(player_link)
-    new_player_link = player_link.replace("summary", "keeper")
-    df = pd.read_html(new_player_link, header= 1)[0]
+    # new_player_link = player_link.replace("summary", "keeper")
+    print(player_link)
+    df = pd.read_html(player_link, header= 1)[0]
     df = df.drop(columns = ['Match Report'])
     df = df.rename(columns={"Day":"Name"})
     df.dropna(subset=["Date"], inplace =True)
     df['Name'] = df['Name'].replace(['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
+    df = df.rename(columns={"SOT":"Shots on Target Against"})
+    df = df.rename(columns={"GA":"Goals Against"})
+    df = df.rename(columns={"Save%":"Save Percentage"})
+    df = df.rename(columns={"CS":"Clean Sheets"})
+    if "PSxG" not in df.columns:
+        df["Post-Shot Expected Goals"] = np.nan
+    else:
+        df = df.rename(columns={"PSxG":"Post-Shot Expected Goals"})
+
+    df = df.rename(columns={"PKatt":"Penalty Kicks Attempted"})
+    df = df.rename(columns={"PKA":"Penalty Kicks Allowed"})
+    df = df.rename(columns={"PKsv":"Penalty Kicks Saved"})
+    df = df.rename(columns={"PKm":"Penalty Kicks Missed"})
+
     try:
-        f = open("goalkeeperstats.csv")
-        df.to_csv('goalkeeperstats.csv', index=False, header=False, mode = 'a')
+        df.drop(df[df["Pos"] == "On matchday squad, but did not play"].index, inplace=True)
+        f = open("goalkeeperstats_epl.csv")
+        df.to_csv('goalkeeperstats_epl.csv', index=False, header=False, mode = 'a')
         f.close()
     except:
-        df.to_csv('goalkeeperstats.csv', index=False)
-
+        df["Passes Completed (Passes longer than 40 yards)"] = np.nan
+        df["Passes Attempted (Passes longer than 40 yards)"] = np.nan
+        df["Pass Completion Percentage (Passes longer than 40 yards)"] = np.nan
+        df["Passes Attempted"] = np.nan
+        df["Throws Attempted"] = np.nan
+        df["Percentage of Passes that were Launched"] = np.nan
+        df["Average length of passes, in yards"] = np.nan
+        df["Goal Kick Passes Attempted"] = np.nan
+        df["Percentage of Goal Kicks that were Launched"] = np.nan
+        df["Average length of goal kicks"] = np.nan
+        df["Opponent's attempted crosses into penalty area"] = np.nan
+        df["Number of crosses into penalty area successfully stopped"] = np.nan
+        df["Percentage of crosses into penalty area successfully stopped"] = np.nan
+        df["Number of defensive actions outside of penalty area"] = np.nan
+        df["Average distance from goal to perform defensive actions"] = np.nan
+        df.drop(df[df["Pos"] == "On matchday squad, but did not play"].index, inplace=True)
+        df.to_csv('goalkeeperstats_epl.csv', index=False)
+    
 def extract_player_stats(player_link):
     name = extractName(player_link)
-    new_player_link = player_link.replace("summary", "passing")
+    new_player_link = player_link.replace("keeper", "passing")
     df = pd.read_html(new_player_link, header= 1)[0]
     df = df.drop(columns = ['Match Report'])
     df = df.rename(columns={"Day":"Name"})
@@ -49,7 +82,7 @@ def extract_player_stats(player_link):
     df = df.rename(columns={"CrsPA":"Crosses into Penalty Area"})
     df = df.rename(columns={"Prog":"Progressive Passes"})
 
-    new_player_link = player_link.replace("summary", "gca")
+    new_player_link = player_link.replace("keeper", "gca")
     df_2 = pd.read_html(new_player_link, header= 1)[0]
     df_2 = df_2.drop(columns = ['Match Report'])
     df_2 = df_2.rename(columns={"Day":"Name"})
@@ -73,7 +106,7 @@ def extract_player_stats(player_link):
     df_2 = df_2.rename(columns={"OG":"Actions that lead to opponent scoring own goal"})
 
     
-    new_player_link = player_link.replace("summary", "defense")
+    new_player_link = player_link.replace("keeper", "defense")
     df_3 = pd.read_html(new_player_link, header= 1)[0]
     df_3 = df_3.drop(columns = ['Match Report'])
     df_3 = df_3.rename(columns={"Day":"Name"})
@@ -104,7 +137,7 @@ def extract_player_stats(player_link):
     df_3 = df_3.rename(columns={"Clr":"Clearances"})
     df_3 = df_3.rename(columns={"Err":"Errors leading to an opponent's shot"})
 
-    new_player_link = player_link.replace("summary", "possession")
+    new_player_link = player_link.replace("keeper", "possession")
     df_4 = pd.read_html(new_player_link, header= 1)[0]
     df_4 = df_4.drop(columns = ['Match Report'])
     df_4 = df_4.rename(columns={"Day":"Name"})
@@ -134,13 +167,15 @@ def extract_player_stats(player_link):
     df_4 = df_4.rename(columns={"Rec%":"Passes Received Percentage"})
 
     concatenated = pd.concat([df, df_2, df_3, df_4], axis=1)
-
+    concatenated.drop(concatenated[concatenated["Date"] == "Date"].index, inplace=True)
     try:
-        f = open("playerstats.csv")
-        concatenated.to_csv('playerstats.csv', index=False, header=False, mode = 'a')
+        concatenated.drop(concatenated[concatenated["Pos"] == "On matchday squad, but did not play"].index, inplace=True)
+        f = open("playerstats_epl.csv")
+        concatenated.to_csv('playerstats_epl.csv', index=False, header=False, mode = 'a')
         f.close()
     except:
-        concatenated.to_csv('playerstats.csv', index=False)
+        concatenated.drop(concatenated[concatenated["Pos"] == "On matchday squad, but did not play"].index, inplace=True)
+        concatenated.to_csv('playerstats_epl.csv', index=False)
 
 def extractName(player_link):
     res = requests.get(player_link)
@@ -148,12 +183,12 @@ def extractName(player_link):
 
     soup = BeautifulSoup(html_page, 'html.parser')
     name = soup.find("h1", {"itemprop": "name"})
-    print(name)
+    # print(name)
     return name.find("span").text
 
 
 # Get List of Premier League Teams
-url = 'https://fbref.com/en/comps/9/stats/Premier-League-Stats'
+url = 'https://fbref.com/en/comps/9/Premier-League-Stats'
 res = requests.get(url)
 html_page = res.content
 
@@ -171,6 +206,8 @@ for a in text:
 
 for i in teams_array:
     final_team_array.append("https://fbref.com"+i)
+
+final_team_array = list(set(final_team_array))
 
 # Get List of all Premier League Players and their respective links
 player_array = []
@@ -200,10 +237,12 @@ for i in player_array:
         player_final_array.append("https://fbref.com"+i)
 
 for link in player_final_array:
-    final_link.append(link.replace("2020-2021", "s10728"))
+    temp_link = link.replace("summary", "keeper")
+    temp_link = temp_link.replace("2020-2021", "s10728")
+    final_link.append(temp_link)
 
+final_link = list(set(final_link))
 final_link.sort()
-print(final_link)
 
 # Check if Player is GK. 
 # If GK, call extract_goalkeeper_stats
@@ -222,4 +261,5 @@ for player in final_link:
     if(len(new_result) == 0):
         extract_player_stats(player)
     else:
+        # print(player)
         extract_goalkeeper_stats(player)
