@@ -580,5 +580,5 @@ def scrapeSimilarPlayers():
                 except:
                     final_data.to_csv(player_file_name, index=False)
 
-scrapeStats()
-# scrapeSimilarPlayers()
+# scrapeStats()
+scrapeSimilarPlayers()
