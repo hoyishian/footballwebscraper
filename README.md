@@ -1,6 +1,6 @@
-# Fantasy Premier League Data Science
+# Football Data Science
 
-This project aims to predict the best determinants of scoring the maximum number of points for Fantasy Premier League, a fantasy soccer game where participants get to pick a list of players and are awarded points for each player picked based on the player's real life performance in soccer games.
+This project aims to obtain the data available about a player's performance in their respective domestic leagues (e.g. English Premier League) and visualize their performance data in comparison to other players. We have broken up the analysis into 2 types of players in order to ensure a useful form of comparison.
 
 This project consists of xxx number of steps.
 
