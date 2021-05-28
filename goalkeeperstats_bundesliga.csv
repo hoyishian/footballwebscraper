@@ -1,0 +1,620 @@
+Date,Name,Round,Venue,Result,Squad,Opponent,Start,Pos,Min,Shots on Target Against,Goals Against,Saves,Save Percentage,Clean Sheets,Post-Shot Expected Goals,Penalty Kicks Attempted,Penalty Kicks Allowed,Penalty Kicks Saved,Penalty Kicks Missed,Passes Completed (Passes longer than 40 yards),Passes Attempted (Passes longer than 40 yards),Pass Completion Percentage (Passes longer than 40 yards),Passes Attempted,Throws Attempted,Percentage of Passes that were Launched,"Average length of passes, in yards",Goal Kick Passes Attempted,Percentage of Goal Kicks that were Launched,Average length of goal kicks,Opponent's attempted crosses into penalty area,Number of crosses into penalty area successfully stopped,Percentage of crosses into penalty area successfully stopped,Number of defensive actions outside of penalty area,Average distance from goal to perform defensive actions
+2020-09-19,Jiří Pavlenka,Matchweek 1,Home,L 1–4,Werder Bremen,Hertha BSC,Y,GK,90,6,4,2,33.3,0,2.1,0,0,0,0,6,10,60.0,16,7,31.3,33.4,8,62.5,47.8,6,0,0.0,0,11.2
+2020-09-26,Jiří Pavlenka,Matchweek 2,Away,W 3–1,Werder Bremen,Schalke 04,Y,GK,90,4,1,3,75.0,0,0.4,0,0,0,0,5,16,31.3,19,4,63.2,50.5,4,100.0,64.0,10,0,0.0,0,9.8
+2020-10-03,Jiří Pavlenka,Matchweek 3,Home,W 1–0,Werder Bremen,Arminia,Y,GK,90,4,0,4,100.0,1,1.0,0,0,0,0,12,25,48.0,29,5,65.5,50.1,6,100.0,70.3,7,0,0.0,1,13.2
+2020-10-17,Jiří Pavlenka,Matchweek 4,Away,D 1–1,Werder Bremen,Freiburg,Y,GK,90,4,1,3,75.0,0,0.7,0,0,0,0,10,20,50.0,23,4,60.9,45.0,11,54.5,47.0,16,1,6.3,1,14.1
+2020-10-25,Jiří Pavlenka,Matchweek 5,Home,D 1–1,Werder Bremen,Hoffenheim,Y,GK,90,4,1,3,75.0,0,0.9,0,0,0,0,5,13,38.5,26,6,23.1,31.0,9,77.8,53.1,15,1,6.7,1,13.8
+2020-10-31,Jiří Pavlenka,Matchweek 6,Away,D 1–1,Werder Bremen,Eint Frankfurt,Y,GK,90,5,1,4,80.0,0,1.8,0,0,0,0,12,27,44.4,27,6,66.7,52.0,10,90.0,67.6,18,2,11.1,0,7.7
+2020-11-06,Jiří Pavlenka,Matchweek 7,Home,D 1–1,Werder Bremen,Köln,Y,GK,90,1,1,1,0.0,0,0.1,0,0,0,0,1,2,50.0,19,2,10.5,22.8,1,0.0,22.0,9,0,0.0,0,15.0
+2020-11-21,Jiří Pavlenka,Matchweek 8,Away,D 1–1,Werder Bremen,Bayern Munich,Y,GK,90,2,1,1,50.0,0,0.9,0,0,0,0,11,23,47.8,21,9,52.4,38.0,17,70.6,47.0,14,2,14.3,0,5.3
+2020-11-27,Jiří Pavlenka,Matchweek 9,Away,L 3–5,Werder Bremen,Wolfsburg,Y,GK,90,6,5,1,16.7,0,2.1,0,0,0,0,5,13,38.5,27,9,40.7,37.2,6,33.3,31.3,10,0,0.0,1,12.7
+2020-12-06,Jiří Pavlenka,Matchweek 10,Home,L 1–2,Werder Bremen,Stuttgart,Y,GK,90,5,2,4,80.0,0,2.1,1,1,0,0,8,13,61.5,28,3,42.9,37.0,6,16.7,17.0,6,0,0.0,1,28.0
+2020-12-12,Jiří Pavlenka,Matchweek 11,Away,L 0–2,Werder Bremen,RB Leipzig,Y,GK,90,6,2,5,83.3,0,2.2,1,1,0,0,3,11,27.3,36,7,27.8,29.2,6,16.7,23.7,4,1,25.0,1,18.3
+2020-12-15,Jiří Pavlenka,Matchweek 12,Home,L 1–2,Werder Bremen,Dortmund,Y,GK,90,8,2,6,75.0,0,2.7,1,0,1,0,10,21,47.6,40,3,50.0,37.6,6,16.7,29.7,6,0,0.0,1,28.0
+2020-12-19,Jiří Pavlenka,Matchweek 13,Away,W 1–0,Werder Bremen,Mainz 05,Y,GK,90,1,0,1,100.0,1,0.0,0,0,0,0,5,9,55.6,29,3,24.1,28.4,9,22.2,30.9,12,1,8.3,0,15.0
+2021-01-02,Jiří Pavlenka,Matchweek 14,Home,L 0–2,Werder Bremen,Union Berlin,Y,GK,90,2,2,0,0.0,0,1.6,0,0,0,0,5,8,62.5,22,6,18.2,26.1,8,50.0,38.4,5,2,40.0,0,13.4
+2021-01-09,Jiří Pavlenka,Matchweek 15,Away,D 1–1,Werder Bremen,Leverkusen,Y,GK,90,3,1,2,66.7,0,1.2,0,0,0,0,14,25,56.0,20,2,80.0,52.9,12,75.0,47.4,18,0,0.0,2,17.4
+2021-01-16,Jiří Pavlenka,Matchweek 16,Home,W 2–0,Werder Bremen,Augsburg,Y,GK,90,1,0,1,100.0,1,0.4,0,0,0,0,4,16,25.0,31,4,29.0,29.8,10,70.0,51.6,7,0,0.0,0,14.8
+2021-01-19,Jiří Pavlenka,Matchweek 17,Away,L 0–1,Werder Bremen,M'Gladbach,Y,GK,90,6,1,5,83.3,0,0.6,0,0,0,0,3,13,23.1,30,5,36.7,34.4,4,50.0,48.0,9,0,0.0,2,23.3
+2021-01-23,Jiří Pavlenka,Matchweek 18,Away,W 4–1,Werder Bremen,Hertha BSC,Y,GK,90,9,1,8,88.9,0,1.9,1,0,1,0,12,23,52.2,25,7,60.0,50.3,8,100.0,63.8,23,2,8.7,0,14.7
+2021-01-30,Jiří Pavlenka,Matchweek 19,Home,D 1–1,Werder Bremen,Schalke 04,Y,GK,90,1,1,0,0.0,0,0.4,0,0,0,0,6,9,66.7,17,2,35.3,38.4,10,30.0,32.2,5,0,0.0,0,8.5
+2021-03-10,Jiří Pavlenka,Matchweek 20,Away,W 2–0,Werder Bremen,Arminia,Y,GK,90,6,0,6,100.0,1,1.4,0,0,0,0,7,18,38.9,16,4,62.5,44.4,16,50.0,42.9,10,0,0.0,1,15.3
+2021-02-13,Jiří Pavlenka,Matchweek 21,Home,D 0–0,Werder Bremen,Freiburg,Y,GK,90,2,0,2,100.0,1,0.9,0,0,0,0,7,12,58.3,38,7,26.3,29.9,7,28.6,33.4,12,1,8.3,1,18.9
+2021-02-21,Jiří Pavlenka,Matchweek 22,Away,L 0–4,Werder Bremen,Hoffenheim,Y,GK,90,6,4,2,33.3,0,2.0,0,0,0,0,4,9,44.4,25,8,28.0,33.2,7,28.6,28.7,9,0,0.0,3,19.5
+2021-02-26,Jiří Pavlenka,Matchweek 23,Home,W 2–1,Werder Bremen,Eint Frankfurt,Y,GK,90,4,1,3,75.0,0,1.0,0,0,0,0,9,19,47.4,24,2,58.3,42.4,10,50.0,40.5,18,0,0.0,1,9.0
+2021-03-07,Jiří Pavlenka,Matchweek 24,Away,D 1–1,Werder Bremen,Köln,Y,GK,90,4,1,3,75.0,0,1.5,0,0,0,0,9,22,40.9,16,3,81.3,53.1,14,64.3,49.0,24,0,0.0,0,9.5
+2021-03-13,Jiří Pavlenka,Matchweek 25,Home,L 1–3,Werder Bremen,Bayern Munich,Y,GK,90,5,3,2,40.0,0,1.8,0,0,0,0,11,21,52.4,33,7,51.5,39.3,12,33.3,34.1,17,0,0.0,0,9.6
+2021-03-20,Jiří Pavlenka,Matchweek 26,Home,L 1–2,Werder Bremen,Wolfsburg,Y,GK,90,3,2,2,33.3,0,0.4,0,0,0,0,12,19,63.2,27,0,55.6,40.5,9,44.4,39.3,12,3,25.0,0,21.0
+2021-04-04,Jiří Pavlenka,Matchweek 27,Away,L 0–1,Werder Bremen,Stuttgart,Y,GK,90,3,1,3,66.7,0,0.1,0,0,0,0,7,19,36.8,30,9,43.3,36.4,10,60.0,41.7,10,1,10.0,2,14.8
+2021-04-10,Jiří Pavlenka,Matchweek 28,Home,L 1–4,Werder Bremen,RB Leipzig,Y,GK,90,4,4,0,0.0,0,1.9,0,0,0,0,6,12,50.0,27,3,40.7,38.4,5,20.0,27.2,3,0,0.0,1,18.2
+2021-04-18,Jiří Pavlenka,Matchweek 29,Away,L 1–4,Werder Bremen,Dortmund,Y,GK,90,7,4,4,57.1,0,3.0,1,1,0,0,3,9,33.3,22,6,27.3,33.3,9,33.3,40.3,11,1,9.1,0,12.1
+2021-04-21,Jiří Pavlenka,Matchweek 30,Home,L 0–1,Werder Bremen,Mainz 05,Y,GK,90,5,1,4,80.0,0,1.1,0,0,0,0,8,15,53.3,23,4,52.2,39.9,7,42.9,38.9,5,0,0.0,0,12.8
+2021-04-24,Jiří Pavlenka,Matchweek 31,Away,L 1–3,Werder Bremen,Union Berlin,Y,GK,90,6,3,3,50.0,0,3.3,0,0,0,0,4,15,26.7,18,3,50.0,41.6,7,85.7,60.0,10,1,10.0,0,11.0
+2021-05-08,Jiří Pavlenka,Matchweek 32,Home,D 0–0,Werder Bremen,Leverkusen,Y,GK,90,4,0,4,100.0,1,0.4,0,0,0,0,8,18,44.4,28,4,42.9,41.3,8,75.0,59.6,7,0,0.0,0,13.0
+2021-05-15,Jiří Pavlenka,Matchweek 33,Away,L 0–2,Werder Bremen,Augsburg,Y,GK,90,5,2,4,80.0,0,2.3,1,1,0,0,4,7,57.1,26,6,19.2,28.6,8,25.0,31.4,8,1,12.5,1,20.4
+2021-05-22,Jiří Pavlenka,Matchweek 34,Home,L 2–4,Werder Bremen,M'Gladbach,Y,GK,90,8,4,4,50.0,0,3.4,0,0,0,0,6,9,66.7,27,5,25.9,31.6,3,66.7,40.3,4,1,25.0,1,20.3
+2020-09-19,Alexander Schwolow,Matchweek 1,Away,W 4–1,Hertha BSC,Werder Bremen,Y,GK,90,6,1,5,83.3,0,1.0,0,0,0,0,11,20,55.0,39,6,28.2,33.2,10,90.0,67.3,10,2,20.0,1,10.9
+2020-09-25,Alexander Schwolow,Matchweek 2,Home,L 1–3,Hertha BSC,Eint Frankfurt,Y,GK,90,2,3,0,0.0,0,1.6,1,1,0,0,10,12,83.3,23,2,30.4,31.1,10,50.0,36.1,6,0,0.0,1,25.3
+2020-10-04,Alexander Schwolow,Matchweek 3,Away,L 3–4,Hertha BSC,Bayern Munich,Y,GK,90,8,4,5,62.5,0,4.0,1,1,0,0,4,16,25.0,17,1,52.9,42.2,11,63.6,52.3,16,1,6.3,0,8.0
+2020-10-17,Alexander Schwolow,Matchweek 4,Home,L 0–2,Hertha BSC,Stuttgart,Y,GK,90,2,2,0,0.0,0,0.8,0,0,0,0,10,17,58.8,40,10,40.0,35.7,8,12.5,21.6,7,0,0.0,1,16.3
+2020-10-24,Alexander Schwolow,Matchweek 5,Away,L 1–2,Hertha BSC,RB Leipzig,Y,GK,90,7,2,6,85.7,0,2.9,1,1,0,0,8,28,28.6,29,5,48.3,38.9,19,73.7,57.2,14,2,14.3,0,18.3
+2020-11-01,Alexander Schwolow,Matchweek 6,Home,D 1–1,Hertha BSC,Wolfsburg,Y,GK,90,4,1,3,75.0,0,0.6,0,0,0,0,6,14,42.9,26,4,50.0,37.9,7,14.3,29.1,5,0,0.0,1,23.5
+2020-11-07,Alexander Schwolow,Matchweek 7,Away,W 3–0,Hertha BSC,Augsburg,Y,GK,90,1,0,1,100.0,1,0.2,0,0,0,0,2,6,33.3,23,5,13.0,30.8,6,50.0,45.8,7,2,28.6,1,14.2
+2020-11-21,Alexander Schwolow,Matchweek 8,Home,L 2–5,Hertha BSC,Dortmund,Y,GK,90,8,5,3,37.5,0,4.0,0,0,0,0,6,14,42.9,28,2,42.9,36.4,7,28.6,27.3,4,0,0.0,0,8.3
+2020-11-29,Alexander Schwolow,Matchweek 9,Away,D 0–0,Hertha BSC,Leverkusen,Y,GK,90,2,0,2,100.0,1,0.2,0,0,0,0,11,22,50.0,38,3,44.7,39.2,9,55.6,43.8,8,0,0.0,0,10.6
+2020-12-04,Alexander Schwolow,Matchweek 10,Home,W 3–1,Hertha BSC,Union Berlin,Y,GK,90,1,1,0,0.0,0,0.8,0,0,0,0,4,8,50.0,22,4,22.7,31.3,4,75.0,61.5,7,0,0.0,0,11.5
+2020-12-12,Alexander Schwolow,Matchweek 11,Away,D 1–1,Hertha BSC,M'Gladbach,Y,GK,90,3,1,2,66.7,0,1.2,0,0,0,0,12,21,57.1,31,4,41.9,38.2,9,88.9,62.2,10,0,0.0,1,14.0
+2020-12-15,Alexander Schwolow,Matchweek 12,Home,D 0–0,Hertha BSC,Mainz 05,Y,GK,90,0,0,0,0,1,0.0,0,0,0,0,5,8,62.5,24,2,29.2,31.3,5,20.0,24.6,7,0,0.0,2,18.8
+2020-12-20,Alexander Schwolow,Matchweek 13,Away,L 1–4,Hertha BSC,Freiburg,Y,GK,90,8,4,5,62.5,0,4.6,1,1,0,0,5,11,45.5,36,9,27.8,27.9,6,16.7,29.8,11,1,9.1,0,10.5
+2021-01-02,Alexander Schwolow,Matchweek 14,Home,W 3–0,Hertha BSC,Schalke 04,Y,GK,90,4,0,4,100.0,1,1.7,0,0,0,0,7,8,87.5,26,4,19.2,31.5,4,75.0,51.8,7,0,0.0,0,7.3
+2021-01-10,Alexander Schwolow,Matchweek 15,Away,L 0–1,Hertha BSC,Arminia,Y,GK,90,2,1,1,50.0,0,0.8,0,0,0,0,9,14,64.3,21,2,28.6,33.7,12,66.7,49.1,11,1,9.1,0,15.6
+2021-01-16,Alexander Schwolow,Matchweek 16,Away,D 0–0,Hertha BSC,Köln,Y,GK,90,1,0,1,100.0,1,0.0,0,0,0,0,7,13,53.8,27,3,25.9,29.9,10,60.0,44.9,7,0,0.0,0,9.5
+2021-01-19,Alexander Schwolow,Matchweek 17,Home,L 0–3,Hertha BSC,Hoffenheim,Y,GK,90,6,3,3,50.0,0,1.7,0,0,0,0,5,10,50.0,28,7,32.1,32.0,3,33.3,33.7,6,1,16.7,1,12.6
+2021-01-23,Alexander Schwolow,Matchweek 18,Home,L 1–4,Hertha BSC,Werder Bremen,Y,GK,90,4,4,1,25.0,0,1.8,1,1,0,0,2,2,100.0,8,2,0.0,21.3,3,66.7,51.3,2,0,0.0,0,7.0
+2021-04-04,Alexander Schwolow,Matchweek 27,Away,D 1–1,Hertha BSC,Union Berlin,Y,GK,90,3,1,2,66.7,0,0.6,0,0,0,0,8,18,44.4,31,9,35.5,35.6,8,87.5,63.9,13,0,0.0,0,12.3
+2021-04-10,Alexander Schwolow,Matchweek 28,Home,D 2–2,Hertha BSC,M'Gladbach,Y,GK,90,3,2,2,66.7,0,2.1,1,1,0,0,3,3,100.0,15,4,6.7,23.5,3,66.7,33.3,4,0,0.0,1,23.7
+2021-05-03,Alexander Schwolow,Matchweek 29,Away,D 1–1,Hertha BSC,Mainz 05,Y,GK,90,8,1,7,87.5,0,2.8,0,0,0,0,8,16,50.0,29,7,41.4,41.1,7,57.1,46.6,13,1,7.7,1,13.8
+2021-05-06,Alexander Schwolow,Matchweek 30,Home,W 3–0,Hertha BSC,Freiburg,Y,GK,90,5,0,5,100.0,1,0.3,0,0,0,0,11,29,37.9,33,3,60.6,43.8,15,60.0,52.1,14,0,0.0,0,10.3
+2021-05-12,Alexander Schwolow,Matchweek 31,Away,W 2–1,Hertha BSC,Schalke 04,Y,GK,90,1,1,0,0.0,0,0.8,0,0,0,0,5,10,50.0,20,3,30.0,37.4,11,36.4,35.6,6,1,16.7,0,15.2
+2021-05-09,Alexander Schwolow,Matchweek 32,Home,D 0–0,Hertha BSC,Arminia,Y,GK,90,6,0,6,100.0,1,0.2,0,0,0,0,3,7,42.9,25,12,8.0,22.7,7,71.4,50.1,5,0,0.0,0,13.8
+2021-05-15,Alexander Schwolow,Matchweek 33,Home,D 0–0,Hertha BSC,Köln,Y,GK,90,4,0,4,100.0,1,0.3,0,0,0,0,8,24,33.3,32,6,37.5,36.0,13,92.3,67.7,15,1,6.7,1,19.0
+2021-05-22,Alexander Schwolow,Matchweek 34,Away,L 1–2,Hertha BSC,Hoffenheim,Y,GK,90,4,2,2,50.0,0,1.8,0,0,0,0,4,8,50.0,28,4,25.0,32.9,12,8.3,21.1,12,1,8.3,0,10.5
+2020-12-12,Tobias Sippel,Matchweek 11,Home,D 1–1,M'Gladbach,Hertha BSC,Y,GK,90,2,1,1,50.0,0,1.2,0,0,0,0,5,9,55.6,20,2,40.0,35.5,5,20.0,20.2,6,1,16.7,2,24.0
+2021-04-10,Tobias Sippel,Matchweek 28,Away,D 2–2,M'Gladbach,Hertha BSC,N,GK,74,7,2,5,71.4,0,1.5,0,0,0,0,9,23,39.1,22,2,59.1,45.9,12,83.3,60.3,20,1,5.0,0,12.9
+2021-04-17,Tobias Sippel,Matchweek 29,Home,W 4–0,M'Gladbach,Eint Frankfurt,Y,GK,90,4,0,3,100.0,1,1.1,0,0,0,0,9,29,31.0,29,4,58.6,49.4,14,85.7,68.9,13,1,7.7,1,15.2
+2021-04-21,Tobias Sippel,Matchweek 30,Away,L 2–3,M'Gladbach,Hoffenheim,Y,GK,90,6,3,3,50.0,0,3.3,0,0,0,0,14,25,56.0,30,4,46.7,39.3,15,73.3,58.6,17,0,0.0,1,15.5
+2021-05-22,Josep Martinez,Matchweek 34,Away,L 1–2,RB Leipzig,Union Berlin,Y,GK,90,4,2,2,50.0,0,2.0,0,0,0,0,3,13,23.1,44,5,29.5,32.0,5,0.0,17.4,9,0,0.0,1,14.2
+2020-09-19,Rafał Gikiewicz,Matchweek 1,Away,W 3–1,Augsburg,Union Berlin,Y,GK,90,3,1,2,66.7,0,1.1,0,0,0,0,6,20,30.0,38,7,39.5,37.1,6,83.3,64.2,19,1,5.3,1,14.8
+2020-09-26,Rafał Gikiewicz,Matchweek 2,Home,W 2–0,Augsburg,Dortmund,Y,GK,90,6,0,6,100.0,1,1.2,0,0,0,0,6,18,33.3,18,6,55.6,45.3,11,72.7,62.5,18,0,0.0,0,13.2
+2020-10-04,Rafał Gikiewicz,Matchweek 3,Away,D 0–0,Augsburg,Wolfsburg,Y,GK,90,5,1,5,80.0,1,0.7,0,0,0,0,10,24,41.7,29,8,55.2,42.9,10,80.0,59.3,10,2,20.0,1,10.8
+2020-10-17,Rafał Gikiewicz,Matchweek 4,Home,L 0–2,Augsburg,RB Leipzig,Y,GK,90,6,2,3,66.7,0,2.9,0,0,0,0,6,20,30.0,38,7,44.7,37.7,8,37.5,34.1,8,1,12.5,0,13.4
+2020-10-26,Rafał Gikiewicz,Matchweek 5,Away,L 1–3,Augsburg,Leverkusen,Y,GK,90,6,3,4,66.7,0,2.6,1,1,0,0,5,13,38.5,35,6,31.4,32.7,6,33.3,34.0,9,1,11.1,3,19.9
+2020-10-31,Rafał Gikiewicz,Matchweek 6,Home,W 3–1,Augsburg,Mainz 05,Y,GK,90,4,1,3,75.0,0,0.4,0,0,0,0,8,18,44.4,47,7,31.9,30.5,10,30.0,35.5,8,1,12.5,1,18.6
+2020-11-07,Rafał Gikiewicz,Matchweek 7,Home,L 0–3,Augsburg,Hertha BSC,Y,GK,90,5,3,3,60.0,0,3.2,1,1,0,0,3,10,30.0,28,8,28.6,30.9,8,25.0,27.1,7,2,28.6,1,15.0
+2020-11-21,Rafał Gikiewicz,Matchweek 8,Away,D 1–1,Augsburg,M'Gladbach,Y,GK,90,6,1,4,83.3,0,1.5,0,0,0,0,7,17,41.2,39,4,25.6,26.9,14,50.0,51.3,12,0,0.0,1,18.3
+2020-11-28,Rafał Gikiewicz,Matchweek 9,Home,D 1–1,Augsburg,Freiburg,Y,GK,90,5,1,4,80.0,0,0.4,0,0,0,0,11,18,61.1,58,8,31.0,30.3,7,0.0,17.6,17,0,0.0,2,15.3
+2020-12-07,Rafał Gikiewicz,Matchweek 10,Away,L 1–3,Augsburg,Hoffenheim,Y,GK,90,7,3,4,57.1,0,2.8,0,0,0,0,7,11,63.6,34,7,32.4,32.9,3,0.0,19.7,6,1,16.7,0,14.6
+2020-12-13,Rafał Gikiewicz,Matchweek 11,Home,D 2–2,Augsburg,Schalke 04,Y,GK,90,4,2,2,50.0,0,0.3,0,0,0,0,7,20,35.0,29,4,58.6,46.9,10,30.0,33.2,7,0,0.0,0,14.5
+2020-12-16,Rafał Gikiewicz,Matchweek 12,Away,W 1–0,Augsburg,Arminia,Y,GK,90,2,0,2,100.0,1,0.1,0,0,0,0,8,20,40.0,28,7,46.4,35.4,9,77.8,57.6,14,0,0.0,0,11.1
+2020-12-19,Rafał Gikiewicz,Matchweek 13,Home,L 0–2,Augsburg,Eint Frankfurt,Y,GK,90,6,2,5,66.7,0,0.9,0,0,0,0,6,21,28.6,31,8,45.2,37.2,9,77.8,48.4,11,1,9.1,0,18.7
+2021-01-02,Rafał Gikiewicz,Matchweek 14,Away,W 1–0,Augsburg,Köln,Y,GK,90,2,0,2,100.0,1,0.2,0,0,0,0,6,14,42.9,19,4,36.8,40.5,7,100.0,51.4,6,0,0.0,0,15.0
+2021-01-10,Rafał Gikiewicz,Matchweek 15,Home,L 1–4,Augsburg,Stuttgart,Y,GK,90,9,4,6,66.7,0,2.5,1,1,0,0,4,14,28.6,33,9,36.4,35.4,7,28.6,30.7,10,0,0.0,0,9.2
+2021-01-16,Rafał Gikiewicz,Matchweek 16,Away,L 0–2,Augsburg,Werder Bremen,Y,GK,90,5,2,3,60.0,0,2.0,0,0,0,0,6,10,60.0,29,6,31.0,31.7,3,33.3,34.7,9,1,11.1,0,16.2
+2021-01-20,Rafał Gikiewicz,Matchweek 17,Home,L 0–1,Augsburg,Bayern Munich,Y,GK,90,3,1,3,100.0,0,1.1,1,1,0,0,20,28,71.4,33,6,54.5,37.5,16,62.5,42.4,10,0,0.0,0,9.6
+2021-01-23,Rafał Gikiewicz,Matchweek 18,Home,W 2–1,Augsburg,Union Berlin,Y,GK,90,4,1,3,75.0,0,1.9,1,0,1,0,4,23,17.4,30,4,60.0,43.5,8,62.5,46.6,20,2,10.0,0,14.7
+2021-01-30,Rafał Gikiewicz,Matchweek 19,Away,L 1–3,Augsburg,Dortmund,Y,GK,90,5,3,3,40.0,0,2.2,1,0,0,1,2,10,20.0,35,5,25.7,28.5,6,16.7,28.2,12,0,0.0,0,11.3
+2021-02-06,Rafał Gikiewicz,Matchweek 20,Home,L 0–2,Augsburg,Wolfsburg,Y,GK,90,6,2,4,66.7,0,1.7,0,0,0,0,5,15,33.3,42,9,33.3,32.4,5,20.0,39.4,11,0,0.0,1,14.8
+2021-02-12,Rafał Gikiewicz,Matchweek 21,Away,L 1–2,Augsburg,RB Leipzig,Y,GK,90,5,2,4,80.0,0,2.7,2,1,1,0,6,17,35.3,44,6,34.1,35.6,9,22.2,30.8,6,1,16.7,1,12.2
+2021-02-21,Rafał Gikiewicz,Matchweek 22,Home,D 1–1,Augsburg,Leverkusen,Y,GK,90,3,1,2,66.7,0,0.9,0,0,0,0,15,29,51.7,28,5,75.0,52.4,9,88.9,57.9,21,1,4.8,0,9.6
+2021-02-28,Rafał Gikiewicz,Matchweek 23,Away,W 1–0,Augsburg,Mainz 05,Y,GK,90,6,0,5,100.0,1,0.9,0,0,0,0,8,29,27.6,32,8,62.5,47.0,11,81.8,62.5,21,3,14.3,0,13.5
+2021-03-06,Rafał Gikiewicz,Matchweek 24,Away,L 1–2,Augsburg,Hertha BSC,Y,GK,90,6,2,5,83.3,0,2.2,1,1,0,0,11,24,45.8,22,9,63.6,43.2,10,100.0,61.1,13,0,0.0,0,17.6
+2021-03-12,Rafał Gikiewicz,Matchweek 25,Home,W 3–1,Augsburg,M'Gladbach,Y,GK,90,7,1,6,85.7,0,1.3,1,0,0,1,8,27,29.6,46,8,41.3,38.7,16,50.0,46.3,13,1,7.7,1,14.9
+2021-03-21,Rafał Gikiewicz,Matchweek 26,Away,L 0–2,Augsburg,Freiburg,Y,GK,90,5,2,3,60.0,0,1.8,0,0,0,0,8,17,47.1,24,3,54.2,44.3,8,50.0,39.1,13,1,7.7,2,21.4
+2021-04-03,Rafał Gikiewicz,Matchweek 27,Home,W 2–1,Augsburg,Hoffenheim,Y,GK,90,5,1,4,80.0,0,1.6,0,0,0,0,12,27,44.4,36,7,52.8,42.4,14,57.1,48.5,16,0,0.0,0,9.8
+2021-04-11,Rafał Gikiewicz,Matchweek 28,Away,L 0–1,Augsburg,Schalke 04,Y,GK,90,2,1,1,50.0,0,0.6,0,0,0,0,3,6,50.0,26,4,11.5,25.5,4,75.0,51.8,4,1,25.0,1,14.2
+2021-04-17,Rafał Gikiewicz,Matchweek 29,Home,D 0–0,Augsburg,Arminia,Y,GK,90,1,0,1,100.0,1,0.2,0,0,0,0,5,20,25.0,34,7,47.1,38.4,7,57.1,47.9,7,0,0.0,2,17.7
+2021-04-20,Rafał Gikiewicz,Matchweek 30,Away,L 0–2,Augsburg,Eint Frankfurt,Y,GK,90,4,2,2,50.0,0,2.1,0,0,0,0,8,20,40.0,29,8,51.7,40.2,10,50.0,36.1,15,2,13.3,0,13.9
+2021-04-23,Rafał Gikiewicz,Matchweek 31,Home,L 2–3,Augsburg,Köln,Y,GK,90,6,3,3,50.0,0,2.6,0,0,0,0,6,17,35.3,32,6,28.1,34.3,11,72.7,49.6,13,0,0.0,4,24.0
+2021-05-07,Rafał Gikiewicz,Matchweek 32,Away,L 1–2,Augsburg,Stuttgart,Y,GK,90,6,2,4,66.7,0,1.9,0,0,0,0,8,23,34.8,28,6,64.3,43.3,6,83.3,55.8,7,2,28.6,2,16.0
+2021-05-15,Rafał Gikiewicz,Matchweek 33,Home,W 2–0,Augsburg,Werder Bremen,Y,GK,90,4,0,4,100.0,1,0.3,0,0,0,0,9,31,29.0,29,3,79.3,57.7,8,100.0,71.1,15,1,6.7,0,12.6
+2021-05-22,Rafał Gikiewicz,Matchweek 34,Away,L 2–5,Augsburg,Bayern Munich,Y,GK,90,13,5,9,61.5,0,3.2,0,0,0,0,12,22,54.5,18,5,61.1,45.6,12,91.7,64.1,13,0,0.0,2,13.0
+2020-09-18,Ralf Fährmann,Matchweek 1,Away,L 0–8,Schalke 04,Bayern Munich,Y,GK,90,10,8,3,30.0,0,5.3,1,1,0,0,5,24,20.8,32,5,56.3,42.2,10,60.0,44.8,12,0,0.0,1,15.0
+2020-09-26,Ralf Fährmann,Matchweek 2,Home,L 1–3,Schalke 04,Werder Bremen,Y,GK,90,5,3,3,60.0,0,2.8,1,1,0,0,5,11,45.5,33,7,27.3,31.7,7,28.6,31.9,6,0,0.0,3,16.0
+2020-10-03,Ralf Fährmann,Matchweek 3,Away,L 0–4,Schalke 04,RB Leipzig,Y,GK,45,3,3,1,0.0,0,1.3,0,0,0,0,7,15,46.7,17,2,58.8,40.3,7,71.4,48.3,5,0,0.0,1,13.5
+2020-12-13,Ralf Fährmann,Matchweek 11,Away,D 2–2,Schalke 04,Augsburg,Y,GK,90,4,2,3,50.0,0,0.7,0,0,0,0,3,10,30.0,31,11,16.1,26.1,7,71.4,50.9,8,0,0.0,1,13.9
+2020-12-16,Ralf Fährmann,Matchweek 12,Home,L 0–2,Schalke 04,Freiburg,Y,GK,90,3,2,1,33.3,0,1.1,0,0,0,0,4,10,40.0,29,5,31.0,30.2,5,20.0,27.0,9,2,22.2,0,15.3
+2020-12-19,Ralf Fährmann,Matchweek 13,Home,L 0–1,Schalke 04,Arminia,Y,GK,90,3,1,2,66.7,0,0.5,0,0,0,0,5,18,27.8,20,4,50.0,43.3,10,80.0,58.5,4,0,0.0,1,17.7
+2021-01-02,Ralf Fährmann,Matchweek 14,Away,L 0–3,Schalke 04,Hertha BSC,Y,GK,90,10,3,7,70.0,0,2.2,0,0,0,0,6,20,30.0,23,4,69.6,47.7,6,66.7,42.8,14,0,0.0,0,17.0
+2021-01-09,Ralf Fährmann,Matchweek 15,Home,W 4–0,Schalke 04,Hoffenheim,Y,GK,90,5,0,5,100.0,1,0.7,0,0,0,0,3,21,14.3,25,2,48.0,38.4,9,100.0,66.8,13,1,7.7,1,14.5
+2021-01-17,Ralf Fährmann,Matchweek 16,Away,L 1–3,Schalke 04,Eint Frankfurt,Y,GK,90,10,3,7,70.0,0,3.5,0,0,0,0,12,31,38.7,29,3,69.0,45.9,11,100.0,60.4,11,1,9.1,1,13.0
+2021-01-20,Ralf Fährmann,Matchweek 17,Home,L 1–2,Schalke 04,Köln,Y,GK,90,3,2,1,33.3,0,1.5,0,0,0,0,6,14,42.9,40,2,25.0,32.2,6,66.7,50.2,6,1,16.7,2,24.8
+2021-01-24,Ralf Fährmann,Matchweek 18,Home,L 0–4,Schalke 04,Bayern Munich,Y,GK,90,12,4,8,66.7,0,3.1,0,0,0,0,4,18,22.2,24,3,41.7,38.8,18,44.4,37.2,14,1,7.1,0,13.0
+2021-01-30,Ralf Fährmann,Matchweek 19,Away,D 1–1,Schalke 04,Werder Bremen,Y,GK,90,5,1,4,80.0,0,0.2,0,0,0,0,7,21,33.3,43,8,32.6,35.3,10,70.0,59.4,13,2,15.4,0,16.8
+2021-02-06,Ralf Fährmann,Matchweek 20,Home,L 0–3,Schalke 04,RB Leipzig,Y,GK,90,10,3,7,70.0,0,3.0,0,0,0,0,6,13,46.2,31,4,35.5,34.4,10,20.0,28.6,8,0,0.0,1,14.8
+2021-02-13,Ralf Fährmann,Matchweek 21,Away,D 0–0,Schalke 04,Union Berlin,Y,GK,90,3,0,3,100.0,1,1.2,0,0,0,0,3,16,18.8,27,6,22.2,28.2,11,90.9,57.0,9,0,0.0,0,9.2
+2021-02-20,Ralf Fährmann,Matchweek 22,Home,L 0–4,Schalke 04,Dortmund,Y,GK,31,1,0,1,100.0,0,0.2,0,0,0,0,2,6,33.3,13,3,46.2,43.0,1,0.0,13.0,1,0,0.0,0,7.2
+2021-04-11,Ralf Fährmann,Matchweek 28,Home,W 1–0,Schalke 04,Augsburg,Y,GK,90,4,0,4,100.0,1,0.3,0,0,0,0,12,21,57.1,42,4,40.5,37.2,8,50.0,38.3,10,1,10.0,1,17.0
+2021-04-17,Ralf Fährmann,Matchweek 29,Away,L 0–4,Schalke 04,Freiburg,Y,GK,90,7,4,4,57.1,0,3.7,1,1,0,0,3,8,37.5,28,7,25.0,26.5,2,50.0,40.0,13,1,7.7,1,12.7
+2021-04-20,Ralf Fährmann,Matchweek 30,Away,L 0–1,Schalke 04,Arminia,Y,GK,90,4,1,3,75.0,0,1.7,1,0,1,0,10,20,50.0,33,7,45.5,37.6,7,71.4,48.0,5,0,0.0,1,16.2
+2021-05-12,Ralf Fährmann,Matchweek 31,Home,L 1–2,Schalke 04,Hertha BSC,Y,GK,90,6,2,4,66.7,0,1.3,0,0,0,0,3,8,37.5,22,9,22.7,29.6,6,50.0,35.2,9,1,11.1,1,12.9
+2021-05-08,Ralf Fährmann,Matchweek 32,Away,L 2–4,Schalke 04,Hoffenheim,Y,GK,90,12,4,8,66.7,0,2.4,0,0,0,0,1,24,4.2,32,10,56.3,41.5,9,66.7,47.7,15,0,0.0,0,11.4
+2021-05-15,Ralf Fährmann,Matchweek 33,Home,W 4–3,Schalke 04,Eint Frankfurt,Y,GK,90,8,3,5,62.5,0,2.6,0,0,0,0,9,31,29.0,36,5,55.6,47.9,12,91.7,62.1,24,2,8.3,0,11.4
+2021-05-22,Ralf Fährmann,Matchweek 34,Away,L 0–1,Schalke 04,Köln,Y*,GK,90,11,1,10,90.9,0,1.2,0,0,0,0,10,37,27.0,32,5,81.3,52.8,11,100.0,62.3,16,0,0.0,2,17.6
+2021-01-30,Rune Jarstein,Matchweek 19,Away,L 1–3,Hertha BSC,Eint Frankfurt,Y,GK,90,6,3,4,66.7,0,2.3,1,1,0,0,9,26,34.6,29,2,65.5,47.1,8,87.5,57.1,9,1,11.1,1,13.9
+2021-02-05,Rune Jarstein,Matchweek 20,Home,L 0–1,Hertha BSC,Bayern Munich,Y,GK,90,5,1,4,80.0,0,1.5,1,0,1,0,4,16,25.0,24,4,45.8,39.5,8,62.5,41.8,13,0,0.0,1,12.0
+2021-02-13,Rune Jarstein,Matchweek 21,Away,D 1–1,Hertha BSC,Stuttgart,Y,GK,90,3,1,2,66.7,0,1.2,0,0,0,0,4,11,36.4,30,2,23.3,31.1,6,66.7,50.3,8,1,12.5,1,18.3
+2021-02-21,Rune Jarstein,Matchweek 22,Home,L 0–3,Hertha BSC,RB Leipzig,Y,GK,90,6,3,3,50.0,0,2.0,0,0,0,0,8,32,25.0,44,3,54.5,42.1,9,88.9,63.1,2,0,0.0,1,13.6
+2021-02-27,Rune Jarstein,Matchweek 23,Away,L 0–2,Hertha BSC,Wolfsburg,Y,GK,90,2,2,1,0.0,0,0.6,0,0,0,0,5,17,29.4,24,4,54.2,42.5,12,33.3,35.8,12,2,16.7,0,6.8
+2021-03-06,Rune Jarstein,Matchweek 24,Home,W 2–1,Hertha BSC,Augsburg,Y,GK,90,4,1,3,75.0,0,0.7,0,0,0,0,7,9,77.8,22,5,40.9,38.2,6,0.0,25.0,11,1,9.1,0,12.8
+2021-03-13,Rune Jarstein,Matchweek 25,Away,L 0–2,Hertha BSC,Dortmund,Y,GK,90,4,2,2,50.0,0,1.2,0,0,0,0,6,13,46.2,21,5,38.1,35.9,11,45.5,39.1,6,1,16.7,0,12.1
+2021-03-21,Rune Jarstein,Matchweek 26,Home,W 3–0,Hertha BSC,Leverkusen,Y,GK,90,1,0,1,100.0,1,0.5,0,0,0,0,17,29,58.6,16,0,100.0,65.0,14,92.9,62.5,14,1,7.1,0,5.5
+2020-10-03,Marwin Hitz,Matchweek 3,Home,W 4–0,Dortmund,Freiburg,Y,GK,90,2,0,2,100.0,1,0.4,0,0,0,0,5,9,55.6,33,5,24.2,28.0,3,33.3,29.7,2,1,50.0,1,17.2
+2020-10-17,Marwin Hitz,Matchweek 4,Away,W 1–0,Dortmund,Hoffenheim,Y,GK,90,3,0,3,100.0,1,0.2,0,0,0,0,9,16,56.3,28,6,39.3,35.6,7,71.4,57.9,7,2,28.6,0,14.8
+2021-01-30,Marwin Hitz,Matchweek 19,Home,W 3–1,Dortmund,Augsburg,Y,GK,90,1,1,0,0.0,0,0.7,0,0,0,0,4,5,80.0,27,2,11.1,22.1,5,40.0,39.6,4,1,25.0,1,19.3
+2021-02-06,Marwin Hitz,Matchweek 20,Away,L 1–2,Dortmund,Freiburg,Y,GK,90,3,2,1,33.3,0,0.3,0,0,0,0,5,8,62.5,41,5,17.1,26.3,8,12.5,26.3,4,0,0.0,0,12.0
+2021-02-13,Marwin Hitz,Matchweek 21,Home,D 2–2,Dortmund,Hoffenheim,Y,GK,90,6,2,4,66.7,0,2.7,0,0,0,0,12,16,75.0,27,5,48.1,37.8,8,37.5,33.3,7,0,0.0,1,11.8
+2021-02-20,Marwin Hitz,Matchweek 22,Away,W 4–0,Dortmund,Schalke 04,Y,GK,90,2,0,1,100.0,1,0.4,0,0,0,0,2,7,28.6,19,2,15.8,27.7,10,40.0,35.6,3,0,0.0,1,20.5
+2021-02-27,Marwin Hitz,Matchweek 23,Home,W 3–0,Dortmund,Arminia,Y,GK,90,2,0,2,100.0,1,0.1,0,0,0,0,3,6,50.0,31,3,12.9,27.9,5,40.0,38.2,1,0,0.0,0,12.5
+2021-03-06,Marwin Hitz,Matchweek 24,Away,L 2–4,Dortmund,Bayern Munich,Y,GK,90,8,4,5,62.5,0,3.8,1,1,0,0,9,18,50.0,20,5,50.0,39.3,16,50.0,39.6,14,0,0.0,0,10.3
+2021-03-13,Marwin Hitz,Matchweek 25,Home,W 2–0,Dortmund,Hertha BSC,Y,GK,90,0,0,0,0,1,0.0,0,0,0,0,5,7,71.4,22,5,22.7,29.3,5,40.0,37.4,6,1,16.7,0,16.0
+2021-03-20,Marwin Hitz,Matchweek 26,Away,D 2–2,Dortmund,Köln,Y,GK,90,1,2,0,0.0,0,1.8,1,1,0,0,3,5,60.0,25,4,16.0,28.1,5,20.0,24.6,8,1,12.5,1,14.2
+2021-04-03,Marwin Hitz,Matchweek 27,Home,L 1–2,Dortmund,Eint Frankfurt,Y,GK,90,3,2,2,33.3,0,1.5,0,0,0,0,7,15,46.7,31,4,32.3,35.3,10,50.0,45.3,8,0,0.0,0,12.7
+2021-04-10,Marwin Hitz,Matchweek 28,Away,W 3–2,Dortmund,Stuttgart,Y,GK,90,3,2,1,33.3,0,1.3,0,0,0,0,8,18,44.4,36,11,33.3,33.5,11,54.5,43.0,7,0,0.0,0,14.4
+2021-04-18,Marwin Hitz,Matchweek 29,Home,W 4–1,Dortmund,Werder Bremen,Y,GK,90,3,1,2,66.7,0,0.8,0,0,0,0,2,3,66.7,19,4,15.8,27.7,3,0.0,18.0,3,0,0.0,0,15.5
+2021-04-21,Marwin Hitz,Matchweek 30,Home,W 2–0,Dortmund,Union Berlin,Y,GK,90,1,0,0,100.0,1,0.7,0,0,0,0,4,14,28.6,29,5,34.5,36.2,7,57.1,53.6,4,1,25.0,0,13.0
+2021-04-24,Marwin Hitz,Matchweek 31,Away,W 2–0,Dortmund,Wolfsburg,Y,GK,90,2,0,2,100.0,1,0.2,0,0,0,0,13,27,48.1,24,1,50.0,42.1,19,78.9,56.7,11,0,0.0,1,15.0
+2021-05-08,Marwin Hitz,Matchweek 32,Home,W 3–2,Dortmund,RB Leipzig,Y,GK,45,2,0,2,100.0,0,0.8,0,0,0,0,3,7,42.9,15,2,40.0,39.6,1,100.0,43.0,3,0,0.0,1,17.3
+2021-01-30,Loris Karius,Matchweek 19,Home,D 1–1,Union Berlin,M'Gladbach,N,GK,22,1,0,1,100.0,0,0.8,0,0,0,0,2,6,33.3,4,0,75.0,50.0,3,100.0,65.0,1,0,0.0,0,0
+2021-02-13,Loris Karius,Matchweek 21,Home,D 0–0,Union Berlin,Schalke 04,Y,GK,90,1,0,1,100.0,1,0.3,0,0,0,0,3,16,18.8,19,4,63.2,48.5,4,100.0,67.8,5,1,20.0,0,9.0
+2021-02-20,Loris Karius,Matchweek 22,Away,W 1–0,Union Berlin,Freiburg,Y,GK,90,1,0,1,100.0,1,0.0,0,0,0,0,7,16,43.8,23,2,47.8,43.0,8,62.5,57.3,15,1,6.7,0,9.5
+2021-02-28,Loris Karius,Matchweek 23,Home,D 1–1,Union Berlin,Hoffenheim,Y,GK,90,2,1,2,50.0,0,0.6,0,0,0,0,9,18,50.0,29,3,55.2,41.8,5,40.0,41.0,9,0,0.0,0,13.0
+2021-02-28,Lennart Grill,Matchweek 23,Home,L 1–2,Leverkusen,Freiburg,Y,GK,90,3,2,1,33.3,0,1.9,0,0,0,0,3,7,42.9,42,7,16.7,27.9,3,0.0,22.3,10,1,10.0,1,14.9
+2021-03-06,Lennart Grill,Matchweek 24,Away,W 1–0,Leverkusen,M'Gladbach,Y,GK,90,3,0,3,100.0,1,0.4,0,0,0,0,5,14,35.7,47,8,25.5,31.7,9,22.2,27.8,5,1,20.0,0,10.7
+2021-03-14,Lennart Grill,Matchweek 25,Home,L 1–2,Leverkusen,Arminia,Y,GK,90,6,2,4,66.7,0,2.1,0,0,0,0,1,2,50.0,24,6,8.3,21.3,8,0.0,18.5,6,0,0.0,1,17.2
+2021-03-21,Lennart Grill,Matchweek 26,Away,L 0–3,Leverkusen,Hertha BSC,Y,GK,90,8,3,5,62.5,0,2.0,0,0,0,0,1,2,50.0,23,5,8.7,23.5,5,0.0,18.0,2,1,50.0,2,17.9
+2020-09-19,Timo Horn,Matchweek 1,Home,L 2–3,Köln,Hoffenheim,Y,GK,90,6,3,4,66.7,0,2.6,1,1,0,0,12,20,60.0,51,3,37.3,33.9,6,16.7,30.7,5,0,0.0,1,17.7
+2020-09-26,Timo Horn,Matchweek 2,Away,L 0–1,Köln,Arminia,Y,GK,90,3,1,2,66.7,0,0.3,0,0,0,0,5,14,35.7,32,8,37.5,33.6,8,25.0,24.9,7,1,14.3,3,18.5
+2020-10-03,Timo Horn,Matchweek 3,Home,L 1–3,Köln,M'Gladbach,Y*,GK,90,9,3,7,77.8,0,2.2,1,1,0,0,6,17,35.3,32,5,50.0,40.6,2,50.0,49.0,4,0,0.0,1,14.8
+2020-10-18,Timo Horn,Matchweek 4,Home,D 1–1,Köln,Eint Frankfurt,Y*,GK,90,3,1,3,100.0,0,1.5,1,1,0,0,11,23,47.8,29,1,58.6,44.5,9,66.7,48.7,13,1,7.7,1,13.8
+2020-10-23,Timo Horn,Matchweek 5,Away,D 1–1,Köln,Stuttgart,Y*,GK,90,4,1,3,75.0,0,1.6,0,0,0,0,12,22,54.5,38,3,55.3,40.7,3,33.3,36.7,7,0,0.0,0,15.7
+2020-10-31,Timo Horn,Matchweek 6,Home,L 1–2,Köln,Bayern Munich,Y*,GK,90,3,2,2,66.7,0,1.4,1,1,0,0,13,25,52.0,33,1,57.6,42.1,11,54.5,45.1,6,0,0.0,1,11.0
+2020-11-06,Timo Horn,Matchweek 7,Away,D 1–1,Köln,Werder Bremen,Y*,GK,39,1,0,1,100.0,0,0.7,0,0,0,0,1,1,100.0,9,3,11.1,23.9,2,0.0,22.5,2,0,0.0,0,9.0
+2020-11-22,Timo Horn,Matchweek 8,Home,L 1–2,Köln,Union Berlin,Y*,GK,90,2,2,0,0.0,0,1.8,1,0,1,0,5,13,38.5,33,8,36.4,36.3,1,100.0,69.0,14,0,0.0,0,9.8
+2020-11-28,Timo Horn,Matchweek 9,Away,W 2–1,Köln,Dortmund,Y*,GK,90,4,1,3,75.0,0,1.3,0,0,0,0,12,30,40.0,26,2,76.9,53.8,11,90.9,64.5,8,0,0.0,0,9.0
+2020-12-05,Timo Horn,Matchweek 10,Home,D 2–2,Köln,Wolfsburg,Y*,GK,90,6,2,4,66.7,0,1.3,0,0,0,0,15,27,55.6,25,1,80.0,55.2,9,77.8,56.8,8,1,12.5,1,11.2
+2020-12-12,Timo Horn,Matchweek 11,Away,W 1–0,Köln,Mainz 05,Y*,GK,90,4,0,4,100.0,1,0.8,0,0,0,0,11,27,40.7,34,4,55.9,46.3,11,72.7,51.1,13,0,0.0,1,15.1
+2020-12-16,Timo Horn,Matchweek 12,Home,L 0–4,Köln,Leverkusen,Y*,GK,90,7,4,3,42.9,0,2.3,0,0,0,0,6,10,60.0,22,1,45.5,36.7,4,0.0,27.0,8,0,0.0,0,14.5
+2020-12-19,Timo Horn,Matchweek 13,Away,D 0–0,Köln,RB Leipzig,Y*,GK,90,6,0,6,100.0,1,0.7,0,0,0,0,17,35,48.6,52,2,55.8,43.0,10,60.0,43.6,9,0,0.0,0,7.2
+2021-01-02,Timo Horn,Matchweek 14,Home,L 0–1,Köln,Augsburg,Y*,GK,90,5,1,4,80.0,0,1.3,0,0,0,0,11,19,57.9,34,4,52.9,42.1,3,33.3,40.3,7,1,14.3,1,18.8
+2021-01-09,Timo Horn,Matchweek 15,Away,L 0–5,Köln,Freiburg,Y,GK,90,6,5,1,16.7,0,4.1,0,0,0,0,13,29,44.8,43,1,53.5,39.5,6,100.0,72.3,7,0,0.0,2,23.0
+2021-01-16,Timo Horn,Matchweek 16,Home,D 0–0,Köln,Hertha BSC,Y,GK,90,3,0,3,100.0,1,0.5,0,0,0,0,11,23,47.8,36,5,47.2,39.0,8,75.0,51.0,8,0,0.0,0,11.0
+2021-01-20,Timo Horn,Matchweek 17,Away,W 2–1,Köln,Schalke 04,Y,GK,90,6,1,5,83.3,0,0.7,0,0,0,0,5,20,25.0,30,5,60.0,45.4,4,50.0,47.3,5,0,0.0,1,12.8
+2021-01-24,Timo Horn,Matchweek 18,Away,L 0–3,Köln,Hoffenheim,Y,GK,90,2,3,1,50.0,0,2.3,2,2,0,0,2,4,50.0,20,6,15.0,30.6,8,12.5,26.6,5,1,20.0,0,15.8
+2021-01-31,Timo Horn,Matchweek 19,Home,W 3–1,Köln,Arminia,Y*,GK,90,3,1,2,66.7,0,1.4,0,0,0,0,10,25,40.0,31,4,58.1,44.8,9,77.8,53.0,10,2,20.0,0,9.8
+2021-02-06,Timo Horn,Matchweek 20,Away,W 2–1,Köln,M'Gladbach,Y*,GK,90,2,1,1,50.0,0,0.7,0,0,0,0,10,26,38.5,44,2,59.1,44.7,4,0.0,14.5,17,1,5.9,0,12.2
+2021-02-14,Timo Horn,Matchweek 21,Away,L 0–2,Köln,Eint Frankfurt,Y*,GK,90,7,2,5,71.4,0,2.9,0,0,0,0,12,20,60.0,39,7,46.2,37.8,6,33.3,35.2,11,0,0.0,0,11.6
+2021-02-20,Timo Horn,Matchweek 22,Home,L 0–1,Köln,Stuttgart,Y*,GK,90,3,1,2,66.7,0,0.5,0,0,0,0,3,10,30.0,47,4,19.1,31.1,5,20.0,26.6,3,0,0.0,0,10.4
+2021-02-27,Timo Horn,Matchweek 23,Away,L 1–5,Köln,Bayern Munich,Y*,GK,90,7,5,2,28.6,0,3.3,0,0,0,0,7,15,46.7,40,3,35.0,33.4,8,12.5,24.5,6,0,0.0,3,16.6
+2021-03-07,Timo Horn,Matchweek 24,Home,D 1–1,Köln,Werder Bremen,Y*,GK,90,5,1,4,80.0,0,1.0,0,0,0,0,5,12,41.7,29,4,37.9,36.2,4,25.0,39.5,10,0,0.0,1,18.8
+2021-03-13,Timo Horn,Matchweek 25,Away,L 1–2,Köln,Union Berlin,Y,GK,90,6,2,5,83.3,0,2.4,1,1,0,0,3,10,30.0,33,2,30.3,34.5,3,0.0,21.7,10,0,0.0,0,8.0
+2021-03-20,Timo Horn,Matchweek 26,Home,D 2–2,Köln,Dortmund,Y,GK,90,4,2,2,50.0,0,1.5,0,0,0,0,8,19,42.1,27,4,51.9,39.5,8,62.5,48.9,10,1,10.0,0,10.4
+2021-04-03,Timo Horn,Matchweek 27,Away,L 0–1,Köln,Wolfsburg,Y,GK,90,5,1,4,80.0,0,0.9,0,0,0,0,5,15,33.3,32,5,40.6,38.6,8,25.0,26.1,14,0,0.0,0,10.2
+2021-04-11,Timo Horn,Matchweek 28,Home,L 2–3,Köln,Mainz 05,Y,GK,90,5,3,2,40.0,0,2.2,0,0,0,0,9,14,64.3,40,5,32.5,36.7,4,25.0,25.5,5,0,0.0,4,25.8
+2021-04-17,Timo Horn,Matchweek 29,Away,L 0–3,Köln,Leverkusen,Y,GK,90,5,3,2,40.0,0,2.7,0,0,0,0,2,7,28.6,37,2,18.9,25.3,3,0.0,17.3,4,0,0.0,0,17.0
+2021-04-20,Timo Horn,Matchweek 30,Home,W 2–1,Köln,RB Leipzig,Y,GK,90,6,1,5,83.3,0,1.1,0,0,0,0,10,26,38.5,28,0,71.4,53.8,14,42.9,41.6,11,0,0.0,1,11.6
+2021-04-23,Timo Horn,Matchweek 31,Away,W 3–2,Köln,Augsburg,Y,GK,90,3,2,1,33.3,0,1.6,0,0,0,0,7,19,36.8,39,2,46.2,41.6,5,20.0,23.2,14,0,0.0,0,10.8
+2021-05-09,Timo Horn,Matchweek 32,Home,L 1–4,Köln,Freiburg,Y,GK,90,6,4,2,33.3,0,2.7,0,0,0,0,10,19,52.6,34,4,41.2,37.5,7,71.4,45.4,5,0,0.0,0,13.8
+2021-05-15,Timo Horn,Matchweek 33,Away,D 0–0,Köln,Hertha BSC,Y*,GK,90,1,0,1,100.0,1,0.0,0,0,0,0,2,2,100.0,19,5,5.3,21.1,5,20.0,24.2,3,0,0.0,1,11.4
+2021-05-22,Timo Horn,Matchweek 34,Home,W 1–0,Köln,Schalke 04,Y,GK,90,1,0,1,100.0,1,0.1,0,0,0,0,1,3,33.3,13,1,15.4,30.5,6,16.7,26.0,0,0,0.0,0,15.5
+2020-09-19,Yann Sommer,Matchweek 1,Away,L 0–3,M'Gladbach,Dortmund,Y,GK,90.0,3.0,3.0,1.0,33.3,0.0,2.3,1.0,1.0,0.0,0.0,1.0,2.0,50.0,23.0,2.0,8.7,24.5,6.0,0.0,16.8,4.0,0.0,0.0,0.0,10.0
+2020-09-26,Yann Sommer,Matchweek 2,Home,D 1–1,M'Gladbach,Union Berlin,Y,GK,90.0,2.0,1.0,1.0,50.0,0.0,0.3,0.0,0.0,0.0,0.0,4.0,7.0,57.1,26.0,4.0,23.1,26.4,7.0,14.3,20.7,7.0,1.0,14.3,1.0,18.5
+2020-10-03,Yann Sommer,Matchweek 3,Away,W 3–1,M'Gladbach,Köln,Y,GK,90.0,2.0,1.0,1.0,50.0,0.0,0.1,0.0,0.0,0.0,0.0,7.0,17.0,41.2,57.0,6.0,28.1,32.5,6.0,16.7,24.3,8.0,1.0,12.5,2.0,19.3
+2020-10-17,Yann Sommer,Matchweek 4,Home,D 1–1,M'Gladbach,Wolfsburg,Y,GK,90.0,5.0,1.0,4.0,80.0,0.0,1.2,0.0,0.0,0.0,0.0,5.0,12.0,41.7,29.0,6.0,37.9,35.3,6.0,16.7,17.8,8.0,1.0,12.5,0.0,12.0
+2020-10-24,Yann Sommer,Matchweek 5,Away,W 3–2,M'Gladbach,Mainz 05,Y,GK,90.0,6.0,2.0,4.0,66.7,0.0,2.2,0.0,0.0,0.0,0.0,3.0,10.0,30.0,32.0,4.0,31.3,34.0,4.0,0.0,14.8,10.0,0.0,0.0,0.0,13.0
+2020-10-31,Yann Sommer,Matchweek 6,Home,W 1–0,M'Gladbach,RB Leipzig,Y*,GK,90.0,3.0,0.0,3.0,100.0,1.0,0.8,0.0,0.0,0.0,0.0,8.0,19.0,42.1,39.0,4.0,35.9,36.1,13.0,38.5,38.1,9.0,2.0,22.2,0.0,11.8
+2020-11-08,Yann Sommer,Matchweek 7,Away,L 3–4,M'Gladbach,Leverkusen,Y,GK,90.0,4.0,4.0,0.0,0.0,0.0,2.5,0.0,0.0,0.0,0.0,2.0,10.0,20.0,30.0,2.0,30.0,29.9,8.0,12.5,20.8,8.0,0.0,0.0,0.0,12.5
+2020-11-21,Yann Sommer,Matchweek 8,Home,D 1–1,M'Gladbach,Augsburg,Y,GK,90.0,5.0,1.0,4.0,80.0,0.0,1.4,0.0,0.0,0.0,0.0,3.0,12.0,25.0,37.0,4.0,29.7,31.1,4.0,25.0,36.3,9.0,0.0,0.0,0.0,8.0
+2020-11-28,Yann Sommer,Matchweek 9,Home,W 4–1,M'Gladbach,Schalke 04,Y*,GK,90.0,2.0,1.0,1.0,50.0,0.0,0.9,0.0,0.0,0.0,0.0,6.0,12.0,50.0,40.0,2.0,25.0,30.4,7.0,28.6,25.6,4.0,1.0,25.0,0.0,9.5
+2020-12-05,Yann Sommer,Matchweek 10,Away,D 2–2,M'Gladbach,Freiburg,Y,GK,90.0,6.0,2.0,5.0,83.3,0.0,1.9,1.0,1.0,0.0,0.0,10.0,17.0,58.8,44.0,6.0,34.1,33.6,12.0,16.7,23.4,7.0,0.0,0.0,0.0,7.2
+2020-12-15,Yann Sommer,Matchweek 12,Away,D 3–3,M'Gladbach,Eint Frankfurt,Y,GK,90.0,2.0,3.0,0.0,0.0,0.0,2.2,1.0,1.0,0.0,0.0,14.0,24.0,58.3,47.0,6.0,46.8,35.9,6.0,33.3,33.8,6.0,1.0,16.7,0.0,11.8
+2020-12-19,Yann Sommer,Matchweek 13,Home,L 1–2,M'Gladbach,Hoffenheim,Y,GK,90.0,5.0,2.0,3.0,60.0,0.0,1.5,0.0,0.0,0.0,0.0,14.0,29.0,48.3,41.0,4.0,53.7,35.8,11.0,63.6,43.1,4.0,1.0,25.0,0.0,15.0
+2021-01-02,Yann Sommer,Matchweek 14,Away,W 1–0,M'Gladbach,Arminia,Y,GK,90.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,6.0,11.0,54.5,26.0,2.0,30.8,31.3,10.0,30.0,35.8,7.0,0.0,0.0,0.0,9.0
+2021-01-08,Yann Sommer,Matchweek 15,Home,W 3–2,M'Gladbach,Bayern Munich,Y,GK,90.0,2.0,2.0,1.0,50.0,0.0,0.8,1.0,1.0,0.0,0.0,6.0,10.0,60.0,26.0,1.0,30.8,32.4,9.0,22.2,25.1,14.0,0.0,0.0,0.0,8.7
+2021-01-16,Yann Sommer,Matchweek 16,Away,D 2–2,M'Gladbach,Stuttgart,Y,GK,90.0,5.0,2.0,4.0,80.0,0.0,2.2,1.0,1.0,0.0,0.0,8.0,22.0,36.4,37.0,9.0,51.4,40.2,5.0,60.0,41.8,15.0,0.0,0.0,1.0,10.6
+2021-01-19,Yann Sommer,Matchweek 17,Home,W 1–0,M'Gladbach,Werder Bremen,Y*,GK,90.0,2.0,0.0,2.0,100.0,1.0,0.8,0.0,0.0,0.0,0.0,3.0,9.0,33.3,22.0,0.0,31.8,32.5,5.0,40.0,36.2,8.0,0.0,0.0,3.0,15.2
+2021-01-22,Yann Sommer,Matchweek 18,Home,W 4–2,M'Gladbach,Dortmund,Y,GK,90.0,6.0,2.0,4.0,66.7,0.0,1.9,0.0,0.0,0.0,0.0,6.0,13.0,46.2,22.0,2.0,45.5,36.7,10.0,30.0,28.0,10.0,0.0,0.0,0.0,11.7
+2021-01-30,Yann Sommer,Matchweek 19,Away,D 1–1,M'Gladbach,Union Berlin,Y*,GK,90.0,2.0,1.0,1.0,50.0,0.0,0.3,0.0,0.0,0.0,0.0,6.0,9.0,66.7,34.0,4.0,20.6,29.1,9.0,22.2,27.8,7.0,0.0,0.0,0.0,10.8
+2021-02-06,Yann Sommer,Matchweek 20,Home,L 1–2,M'Gladbach,Köln,Y,GK,90.0,3.0,2.0,1.0,33.3,0.0,1.2,0.0,0.0,0.0,0.0,4.0,4.0,100.0,24.0,3.0,16.7,26.4,3.0,0.0,14.0,5.0,0.0,0.0,3.0,22.6
+2021-02-14,Yann Sommer,Matchweek 21,Away,D 0–0,M'Gladbach,Wolfsburg,Y,GK,90.0,6.0,0.0,6.0,100.0,1.0,1.0,0.0,0.0,0.0,0.0,5.0,14.0,35.7,43.0,3.0,27.9,31.6,9.0,22.2,34.3,15.0,0.0,0.0,2.0,14.9
+2021-02-20,Yann Sommer,Matchweek 22,Home,L 1–2,M'Gladbach,Mainz 05,Y,GK,90.0,6.0,2.0,4.0,66.7,0.0,0.9,0.0,0.0,0.0,0.0,5.0,6.0,83.3,46.0,8.0,10.9,23.3,6.0,16.7,26.2,5.0,0.0,0.0,1.0,14.6
+2021-02-27,Yann Sommer,Matchweek 23,Away,L 2–3,M'Gladbach,RB Leipzig,Y*,GK,90.0,9.0,3.0,5.0,66.7,0.0,2.9,0.0,0.0,0.0,0.0,10.0,33.0,30.3,46.0,5.0,58.7,38.6,11.0,54.5,44.5,17.0,0.0,0.0,1.0,12.6
+2021-03-06,Yann Sommer,Matchweek 24,Home,L 0–1,M'Gladbach,Leverkusen,Y*,GK,90.0,5.0,1.0,4.0,80.0,0.0,1.8,0.0,0.0,0.0,0.0,2.0,3.0,66.7,20.0,4.0,5.0,22.1,3.0,66.7,59.3,7.0,1.0,14.3,1.0,12.3
+2021-03-12,Yann Sommer,Matchweek 25,Away,L 1–3,M'Gladbach,Augsburg,Y,GK,90.0,3.0,3.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,4.0,6.0,66.7,30.0,5.0,13.3,26.4,8.0,25.0,21.5,2.0,0.0,0.0,0.0,14.6
+2021-03-20,Yann Sommer,Matchweek 26,Away,W 3–0,M'Gladbach,Schalke 04,Y,GK,90.0,1.0,0.0,1.0,100.0,1.0,0.0,0.0,0.0,0.0,0.0,9.0,11.0,81.8,37.0,4.0,29.7,31.2,3.0,0.0,16.3,5.0,2.0,40.0,1.0,25.0
+2021-04-03,Yann Sommer,Matchweek 27,Home,W 2–1,M'Gladbach,Freiburg,Y,GK,90.0,4.0,1.0,3.0,75.0,0.0,1.9,0.0,0.0,0.0,0.0,7.0,18.0,38.9,33.0,3.0,45.5,35.6,6.0,50.0,42.3,12.0,1.0,8.3,0.0,11.3
+2021-04-10,Yann Sommer,Matchweek 28,Away,D 2–2,M'Gladbach,Hertha BSC,Y,"WB,DM,GK",12.0,1.0,0.0,1.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,7.0,2.0,14.3,24.9,0.0,0.0,0.0,1.0,0.0,0.0,1.0,22.0
+2021-04-25,Yann Sommer,Matchweek 31,Home,W 5–0,M'Gladbach,Arminia,Y*,GK,90.0,4.0,0.0,4.0,100.0,1.0,0.8,0.0,0.0,0.0,0.0,5.0,9.0,55.6,35.0,6.0,25.7,26.9,2.0,0.0,20.5,3.0,0.0,0.0,0.0,11.3
+2021-05-08,Yann Sommer,Matchweek 32,Away,L 0–6,M'Gladbach,Bayern Munich,Y*,GK,90.0,6.0,6.0,1.0,16.7,0.0,3.5,1.0,1.0,0.0,0.0,8.0,12.0,66.7,30.0,5.0,30.0,31.5,11.0,27.3,25.4,7.0,0.0,0.0,1.0,12.4
+2021-05-15,Yann Sommer,Matchweek 33,Home,L 1–2,M'Gladbach,Stuttgart,Y,GK,90.0,6.0,2.0,4.0,66.7,0.0,1.0,0.0,0.0,0.0,0.0,3.0,18.0,16.7,42.0,4.0,40.5,38.8,4.0,25.0,26.0,8.0,1.0,12.5,1.0,15.9
+2021-05-22,Yann Sommer,Matchweek 34,Away,W 4–2,M'Gladbach,Werder Bremen,Y,GK,90.0,8.0,2.0,6.0,75.0,0.0,3.1,0.0,0.0,0.0,0.0,6.0,10.0,60.0,23.0,5.0,30.4,30.1,7.0,42.9,34.1,8.0,1.0,12.5,1.0,17.0
+2020-09-19,Oliver Baumann,Matchweek 1,Away,W 3–2,Hoffenheim,Köln,Y*,GK,90.0,6.0,2.0,3.0,66.7,0.0,1.6,0.0,0.0,0.0,0.0,7.0,23.0,30.4,43.0,6.0,30.2,31.8,12.0,83.3,60.5,9.0,0.0,0.0,1.0,18.4
+2020-09-27,Oliver Baumann,Matchweek 2,Home,W 4–1,Hoffenheim,Bayern Munich,Y*,GK,90.0,3.0,1.0,1.0,66.7,0.0,1.1,0.0,0.0,0.0,0.0,9.0,31.0,29.0,27.0,1.0,74.1,55.6,18.0,61.1,44.8,19.0,1.0,5.3,3.0,16.7
+2020-10-03,Oliver Baumann,Matchweek 3,Away,L 1–2,Hoffenheim,Eint Frankfurt,Y*,GK,90.0,6.0,2.0,4.0,66.7,0.0,2.2,0.0,0.0,0.0,0.0,5.0,18.0,27.8,40.0,7.0,40.0,36.1,12.0,16.7,29.8,8.0,0.0,0.0,0.0,13.4
+2020-10-17,Oliver Baumann,Matchweek 4,Home,L 0–1,Hoffenheim,Dortmund,Y*,GK,90.0,4.0,1.0,3.0,75.0,0.0,1.3,0.0,0.0,0.0,0.0,5.0,16.0,31.3,43.0,7.0,34.9,33.1,6.0,16.7,25.5,8.0,0.0,0.0,2.0,14.2
+2020-11-02,Oliver Baumann,Matchweek 6,Home,L 1–3,Hoffenheim,Union Berlin,Y*,GK,90.0,5.0,3.0,3.0,60.0,0.0,3.4,1.0,1.0,0.0,0.0,4.0,9.0,44.4,39.0,7.0,20.5,27.8,9.0,11.1,22.1,3.0,0.0,0.0,2.0,22.6
+2020-11-08,Oliver Baumann,Matchweek 7,Away,L 1–2,Hoffenheim,Wolfsburg,Y*,GK,90.0,7.0,2.0,5.0,71.4,0.0,2.6,1.0,0.0,0.0,1.0,8.0,17.0,47.1,34.0,3.0,47.1,36.3,5.0,20.0,35.0,10.0,0.0,0.0,2.0,17.2
+2020-11-21,Oliver Baumann,Matchweek 8,Home,D 3–3,Hoffenheim,Stuttgart,Y*,GK,90.0,9.0,3.0,6.0,66.7,0.0,4.1,0.0,0.0,0.0,0.0,5.0,16.0,31.3,28.0,6.0,46.4,35.5,7.0,42.9,40.0,8.0,1.0,12.5,3.0,18.5
+2020-11-29,Oliver Baumann,Matchweek 9,Away,D 1–1,Hoffenheim,Mainz 05,Y*,GK,90.0,4.0,1.0,3.0,75.0,0.0,1.0,0.0,0.0,0.0,0.0,6.0,13.0,46.2,29.0,4.0,44.8,37.9,3.0,0.0,15.7,14.0,0.0,0.0,1.0,10.0
+2020-12-07,Oliver Baumann,Matchweek 10,Home,W 3–1,Hoffenheim,Augsburg,Y*,GK,90.0,2.0,1.0,1.0,50.0,0.0,0.5,0.0,0.0,0.0,0.0,8.0,14.0,57.1,45.0,7.0,26.7,28.2,7.0,28.6,31.9,12.0,0.0,0.0,1.0,15.9
+2020-12-13,Oliver Baumann,Matchweek 11,Away,L 1–4,Hoffenheim,Leverkusen,Y*,GK,90.0,7.0,4.0,4.0,57.1,0.0,2.8,1.0,1.0,0.0,0.0,7.0,14.0,50.0,31.0,5.0,38.7,35.5,7.0,28.6,26.3,4.0,0.0,0.0,1.0,15.7
+2020-12-16,Oliver Baumann,Matchweek 12,Home,L 0–1,Hoffenheim,RB Leipzig,Y*,GK,90.0,3.0,1.0,2.0,66.7,0.0,0.6,0.0,0.0,0.0,0.0,4.0,7.0,57.1,39.0,6.0,17.9,26.2,4.0,0.0,20.8,7.0,0.0,0.0,1.0,19.5
+2020-12-19,Oliver Baumann,Matchweek 13,Away,W 2–1,Hoffenheim,M'Gladbach,Y*,GK,90.0,4.0,1.0,4.0,100.0,0.0,1.1,1.0,1.0,0.0,0.0,6.0,8.0,75.0,28.0,6.0,25.0,28.1,9.0,11.1,16.2,3.0,0.0,0.0,0.0,13.5
+2021-01-02,Oliver Baumann,Matchweek 14,Home,L 1–3,Hoffenheim,Freiburg,Y*,GK,90.0,4.0,3.0,3.0,50.0,0.0,2.2,1.0,1.0,0.0,0.0,5.0,10.0,50.0,42.0,7.0,23.8,28.8,5.0,0.0,18.4,4.0,0.0,0.0,4.0,18.8
+2021-01-09,Oliver Baumann,Matchweek 15,Away,L 0–4,Hoffenheim,Schalke 04,Y*,GK,90.0,5.0,4.0,1.0,20.0,0.0,1.5,0.0,0.0,0.0,0.0,2.0,3.0,66.7,22.0,6.0,13.6,22.2,3.0,0.0,27.3,4.0,0.0,0.0,0.0,15.6
+2021-01-16,Oliver Baumann,Matchweek 16,Home,D 0–0,Hoffenheim,Arminia,Y*,GK,90.0,2.0,0.0,2.0,100.0,1.0,0.4,0.0,0.0,0.0,0.0,7.0,14.0,50.0,29.0,8.0,31.0,29.4,7.0,71.4,46.4,2.0,0.0,0.0,1.0,20.0
+2021-01-19,Oliver Baumann,Matchweek 17,Away,W 3–0,Hoffenheim,Hertha BSC,Y*,GK,90.0,0.0,0.0,0.0,0.0,1.0,0.8,1.0,0.0,1.0,0.0,4.0,18.0,22.2,32.0,3.0,46.9,41.5,8.0,37.5,28.5,11.0,0.0,0.0,1.0,15.2
+2021-01-24,Oliver Baumann,Matchweek 18,Home,W 3–0,Hoffenheim,Köln,Y*,GK,90.0,2.0,0.0,2.0,100.0,1.0,0.9,1.0,0.0,1.0,0.0,7.0,16.0,43.8,24.0,4.0,41.7,40.4,6.0,100.0,66.0,22.0,3.0,13.6,0.0,11.2
+2021-01-30,Oliver Baumann,Matchweek 19,Away,L 1–4,Hoffenheim,Bayern Munich,Y*,GK,90.0,9.0,4.0,5.0,55.6,0.0,3.8,0.0,0.0,0.0,0.0,6.0,16.0,37.5,30.0,8.0,43.3,38.2,5.0,60.0,42.8,14.0,0.0,0.0,0.0,8.3
+2021-02-07,Oliver Baumann,Matchweek 20,Home,L 1–3,Hoffenheim,Eint Frankfurt,Y*,GK,90.0,5.0,3.0,2.0,40.0,0.0,1.9,0.0,0.0,0.0,0.0,8.0,13.0,61.5,28.0,3.0,35.7,33.4,8.0,37.5,31.0,10.0,0.0,0.0,0.0,11.0
+2021-02-13,Oliver Baumann,Matchweek 21,Away,D 2–2,Hoffenheim,Dortmund,Y*,GK,90.0,3.0,2.0,1.0,33.3,0.0,1.6,0.0,0.0,0.0,0.0,16.0,28.0,57.1,41.0,6.0,63.4,45.9,2.0,100.0,62.0,11.0,1.0,9.1,0.0,10.1
+2021-02-21,Oliver Baumann,Matchweek 22,Home,W 4–0,Hoffenheim,Werder Bremen,Y*,GK,90.0,1.0,0.0,1.0,100.0,1.0,0.3,0.0,0.0,0.0,0.0,6.0,17.0,35.3,36.0,4.0,36.1,37.6,5.0,80.0,52.4,7.0,0.0,0.0,1.0,14.3
+2021-02-28,Oliver Baumann,Matchweek 23,Away,D 1–1,Hoffenheim,Union Berlin,Y*,GK,90.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,7.0,14.0,50.0,40.0,4.0,30.0,28.7,2.0,100.0,53.5,7.0,0.0,0.0,2.0,14.7
+2021-03-06,Oliver Baumann,Matchweek 24,Home,W 2–1,Hoffenheim,Wolfsburg,Y*,GK,90.0,6.0,1.0,5.0,83.3,0.0,2.2,0.0,0.0,0.0,0.0,7.0,23.0,30.4,29.0,5.0,55.2,44.6,9.0,77.8,50.7,18.0,1.0,5.6,0.0,8.0
+2021-03-14,Oliver Baumann,Matchweek 25,Away,L 0–2,Hoffenheim,Stuttgart,Y*,GK,90.0,4.0,2.0,3.0,50.0,0.0,0.8,0.0,0.0,0.0,0.0,10.0,21.0,47.6,49.0,10.0,36.7,31.8,6.0,50.0,36.5,7.0,2.0,28.6,3.0,18.2
+2021-03-21,Oliver Baumann,Matchweek 26,Home,L 1–2,Hoffenheim,Mainz 05,Y*,GK,90.0,7.0,2.0,5.0,71.4,0.0,2.4,0.0,0.0,0.0,0.0,4.0,15.0,26.7,47.0,7.0,27.7,33.0,6.0,33.3,36.8,9.0,0.0,0.0,1.0,12.3
+2021-04-03,Oliver Baumann,Matchweek 27,Away,L 1–2,Hoffenheim,Augsburg,Y*,GK,90.0,2.0,2.0,0.0,0.0,0.0,1.4,0.0,0.0,0.0,0.0,3.0,7.0,42.9,37.0,6.0,16.2,23.6,5.0,20.0,25.2,3.0,0.0,0.0,2.0,19.0
+2021-04-12,Oliver Baumann,Matchweek 28,Home,D 0–0,Hoffenheim,Leverkusen,Y*,GK,90.0,4.0,0.0,4.0,100.0,1.0,0.7,0.0,0.0,0.0,0.0,5.0,12.0,41.7,60.0,7.0,20.0,27.7,2.0,0.0,8.5,3.0,1.0,33.3,0.0,13.9
+2021-04-16,Oliver Baumann,Matchweek 29,Away,D 0–0,Hoffenheim,RB Leipzig,Y*,GK,90.0,2.0,0.0,2.0,100.0,1.0,0.2,0.0,0.0,0.0,0.0,12.0,20.0,60.0,42.0,5.0,42.9,39.9,11.0,18.2,23.5,11.0,1.0,9.1,2.0,16.0
+2021-04-21,Oliver Baumann,Matchweek 30,Home,W 3–2,Hoffenheim,M'Gladbach,Y*,GK,90.0,2.0,2.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,2.0,9.0,22.2,49.0,4.0,14.3,25.1,3.0,66.7,50.3,9.0,0.0,0.0,1.0,11.2
+2021-04-24,Oliver Baumann,Matchweek 31,Away,D 1–1,Hoffenheim,Freiburg,Y*,GK,90.0,5.0,1.0,5.0,100.0,0.0,1.6,1.0,1.0,0.0,0.0,4.0,15.0,26.7,53.0,10.0,26.4,31.0,7.0,14.3,22.6,13.0,0.0,0.0,0.0,14.0
+2021-05-08,Oliver Baumann,Matchweek 32,Home,W 4–2,Hoffenheim,Schalke 04,Y*,GK,90.0,3.0,2.0,1.0,33.3,0.0,1.2,0.0,0.0,0.0,0.0,1.0,2.0,50.0,32.0,2.0,3.1,17.4,5.0,20.0,19.6,2.0,0.0,0.0,1.0,14.8
+2020-09-20,Robin Zentner,Matchweek 1,Away,L 1–3,Mainz 05,RB Leipzig,Y,GK,90.0,8.0,3.0,6.0,75.0,0.0,1.4,1.0,1.0,0.0,0.0,4.0,9.0,44.4,23.0,8.0,26.1,30.3,11.0,27.3,30.3,7.0,0.0,0.0,0.0,11.0
+2020-09-26,Robin Zentner,Matchweek 2,Home,L 1–4,Mainz 05,Stuttgart,Y,GK,90.0,7.0,4.0,3.0,42.9,0.0,2.7,0.0,0.0,0.0,0.0,3.0,10.0,30.0,39.0,5.0,23.1,29.9,8.0,12.5,22.1,10.0,1.0,10.0,1.0,17.4
+2020-10-02,Robin Zentner,Matchweek 3,Away,L 0–4,Mainz 05,Union Berlin,Y,GK,90.0,7.0,4.0,3.0,42.9,0.0,2.2,0.0,0.0,0.0,0.0,3.0,9.0,33.3,25.0,6.0,28.0,35.2,5.0,40.0,41.6,8.0,0.0,0.0,2.0,20.6
+2020-10-17,Robin Zentner,Matchweek 4,Home,L 0–1,Mainz 05,Leverkusen,Y,GK,90.0,4.0,1.0,3.0,75.0,0.0,0.5,0.0,0.0,0.0,0.0,10.0,20.0,50.0,28.0,6.0,53.6,39.8,8.0,62.5,48.4,6.0,1.0,16.7,1.0,21.7
+2020-10-24,Robin Zentner,Matchweek 5,Home,L 2–3,Mainz 05,M'Gladbach,Y,GK,90.0,8.0,3.0,6.0,75.0,0.0,3.1,1.0,1.0,0.0,0.0,8.0,28.0,28.6,43.0,6.0,48.8,39.2,7.0,100.0,77.1,10.0,0.0,0.0,2.0,13.1
+2020-10-31,Robin Zentner,Matchweek 6,Away,L 1–3,Mainz 05,Augsburg,Y,GK,90.0,6.0,3.0,3.0,50.0,0.0,2.6,0.0,0.0,0.0,0.0,3.0,7.0,42.9,31.0,8.0,16.1,26.6,9.0,22.2,34.9,7.0,1.0,14.3,2.0,20.5
+2020-11-07,Robin Zentner,Matchweek 7,Home,D 2–2,Mainz 05,Schalke 04,Y,GK,90.0,3.0,2.0,2.0,33.3,0.0,0.9,0.0,0.0,0.0,0.0,3.0,18.0,16.7,23.0,7.0,39.1,37.5,9.0,100.0,69.1,12.0,0.0,0.0,1.0,12.3
+2020-11-22,Robin Zentner,Matchweek 8,Away,W 3–1,Mainz 05,Freiburg,Y,GK,90.0,6.0,1.0,5.0,83.3,0.0,0.8,0.0,0.0,0.0,0.0,7.0,24.0,29.2,25.0,8.0,56.0,46.6,11.0,90.9,66.2,18.0,3.0,16.7,0.0,7.5
+2020-11-29,Robin Zentner,Matchweek 9,Home,D 1–1,Mainz 05,Hoffenheim,Y,GK,90.0,4.0,1.0,3.0,75.0,0.0,1.3,0.0,0.0,0.0,0.0,5.0,16.0,31.3,23.0,4.0,47.8,39.5,9.0,55.6,42.9,16.0,0.0,0.0,1.0,10.4
+2020-12-05,Robin Zentner,Matchweek 10,Away,L 1–2,Mainz 05,Arminia,Y,GK,90.0,5.0,2.0,3.0,60.0,0.0,1.5,0.0,0.0,0.0,0.0,4.0,13.0,30.8,28.0,12.0,28.6,31.4,8.0,62.5,54.5,8.0,0.0,0.0,0.0,9.2
+2020-12-12,Robin Zentner,Matchweek 11,Home,L 0–1,Mainz 05,Köln,Y,GK,90.0,6.0,1.0,5.0,83.3,0.0,1.4,0.0,0.0,0.0,0.0,3.0,10.0,30.0,29.0,9.0,24.1,29.8,4.0,75.0,60.0,9.0,4.0,44.4,1.0,19.6
+2020-12-15,Robin Zentner,Matchweek 12,Away,D 0–0,Mainz 05,Hertha BSC,Y,GK,90.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,2.0,13.0,15.4,21.0,3.0,42.9,37.6,11.0,36.4,33.8,11.0,0.0,0.0,0.0,13.3
+2020-12-19,Robin Zentner,Matchweek 13,Home,L 0–1,Mainz 05,Werder Bremen,Y,GK,90.0,7.0,1.0,6.0,85.7,0.0,2.1,0.0,0.0,0.0,0.0,6.0,12.0,50.0,32.0,13.0,28.1,33.1,6.0,50.0,44.5,8.0,0.0,0.0,1.0,13.5
+2021-01-09,Robin Zentner,Matchweek 15,Home,L 0–2,Mainz 05,Eint Frankfurt,Y,GK,90.0,5.0,2.0,5.0,100.0,0.0,1.7,2.0,2.0,0.0,0.0,3.0,9.0,33.3,20.0,5.0,40.0,39.6,3.0,33.3,31.7,14.0,0.0,0.0,1.0,15.7
+2021-01-16,Robin Zentner,Matchweek 16,Away,D 1–1,Mainz 05,Dortmund,Y,GK,90.0,8.0,1.0,7.0,87.5,0.0,2.0,1.0,0.0,0.0,1.0,10.0,24.0,41.7,27.0,4.0,59.3,48.3,14.0,57.1,47.0,12.0,1.0,8.3,1.0,14.3
+2021-01-19,Robin Zentner,Matchweek 17,Home,L 0–2,Mainz 05,Wolfsburg,Y,GK,90.0,2.0,2.0,0.0,0.0,0.0,1.8,0.0,0.0,0.0,0.0,5.0,16.0,31.3,22.0,5.0,54.5,45.1,8.0,50.0,42.1,7.0,1.0,14.3,0.0,13.0
+2021-01-23,Robin Zentner,Matchweek 18,Home,W 3–2,Mainz 05,RB Leipzig,Y,GK,90.0,5.0,2.0,2.0,60.0,0.0,2.3,0.0,0.0,0.0,0.0,5.0,21.0,23.8,26.0,6.0,61.5,50.3,7.0,71.4,56.7,8.0,0.0,0.0,0.0,12.6
+2021-01-29,Robin Zentner,Matchweek 19,Away,L 0–2,Mainz 05,Stuttgart,Y,GK,90.0,4.0,2.0,2.0,50.0,0.0,1.4,0.0,0.0,0.0,0.0,4.0,13.0,30.8,27.0,9.0,25.9,32.9,8.0,75.0,57.5,6.0,1.0,16.7,0.0,15.3
+2021-02-06,Robin Zentner,Matchweek 20,Home,W 1–0,Mainz 05,Union Berlin,Y,GK,90.0,4.0,0.0,4.0,100.0,1.0,1.3,0.0,0.0,0.0,0.0,6.0,22.0,27.3,32.0,5.0,50.0,44.0,7.0,85.7,63.6,7.0,1.0,14.3,1.0,14.7
+2021-02-13,Robin Zentner,Matchweek 21,Away,D 2–2,Mainz 05,Leverkusen,Y,GK,90.0,4.0,2.0,2.0,50.0,0.0,0.7,0.0,0.0,0.0,0.0,5.0,17.0,29.4,21.0,6.0,47.6,38.0,9.0,77.8,60.9,3.0,1.0,33.3,0.0,14.2
+2021-02-20,Robin Zentner,Matchweek 22,Away,W 2–1,Mainz 05,M'Gladbach,Y,GK,90.0,4.0,1.0,3.0,75.0,0.0,0.9,0.0,0.0,0.0,0.0,7.0,25.0,28.0,34.0,9.0,58.8,49.0,7.0,71.4,52.9,11.0,2.0,18.2,0.0,10.2
+2021-02-28,Robin Zentner,Matchweek 23,Home,L 0–1,Mainz 05,Augsburg,Y,GK,90.0,2.0,1.0,1.0,50.0,0.0,1.0,0.0,0.0,0.0,0.0,4.0,6.0,66.7,28.0,7.0,21.4,28.0,4.0,0.0,22.8,5.0,0.0,0.0,1.0,15.4
+2021-03-05,Robin Zentner,Matchweek 24,Away,D 0–0,Mainz 05,Schalke 04,Y,GK,90.0,2.0,0.0,2.0,100.0,1.0,0.2,0.0,0.0,0.0,0.0,7.0,14.0,50.0,30.0,1.0,46.7,39.3,2.0,0.0,12.0,2.0,1.0,50.0,0.0,25.0
+2021-03-13,Robin Zentner,Matchweek 25,Home,W 1–0,Mainz 05,Freiburg,Y,GK,90.0,2.0,0.0,2.0,100.0,1.0,0.2,0.0,0.0,0.0,0.0,5.0,14.0,35.7,34.0,7.0,38.2,39.1,5.0,20.0,30.0,9.0,3.0,33.3,0.0,13.5
+2021-03-21,Robin Zentner,Matchweek 26,Away,W 2–1,Mainz 05,Hoffenheim,Y,GK,90.0,2.0,1.0,1.0,50.0,0.0,0.8,0.0,0.0,0.0,0.0,3.0,21.0,14.3,26.0,7.0,61.5,47.7,8.0,62.5,52.8,10.0,3.0,30.0,0.0,11.2
+2021-04-03,Robin Zentner,Matchweek 27,Home,D 1–1,Mainz 05,Arminia,Y,GK,90.0,2.0,1.0,1.0,50.0,0.0,0.5,0.0,0.0,0.0,0.0,5.0,10.0,50.0,20.0,8.0,45.0,39.8,9.0,11.1,23.2,7.0,0.0,0.0,1.0,18.7
+2021-04-11,Robin Zentner,Matchweek 28,Away,W 3–2,Mainz 05,Köln,Y,GK,90.0,3.0,2.0,1.0,66.7,0.0,1.8,1.0,1.0,0.0,0.0,8.0,21.0,38.1,25.0,5.0,52.0,47.4,10.0,80.0,61.8,17.0,0.0,0.0,0.0,14.7
+2021-05-03,Robin Zentner,Matchweek 29,Home,D 1–1,Mainz 05,Hertha BSC,Y,GK,90.0,5.0,1.0,4.0,80.0,0.0,1.2,0.0,0.0,0.0,0.0,3.0,6.0,50.0,22.0,5.0,18.2,29.0,4.0,50.0,35.5,4.0,2.0,50.0,0.0,11.3
+2021-04-21,Robin Zentner,Matchweek 30,Away,W 1–0,Mainz 05,Werder Bremen,Y,GK,90.0,3.0,0.0,3.0,100.0,1.0,0.3,0.0,0.0,0.0,0.0,12.0,20.0,60.0,17.0,4.0,64.7,51.8,11.0,81.8,65.0,14.0,1.0,7.1,1.0,13.1
+2021-04-24,Robin Zentner,Matchweek 31,Home,W 2–1,Mainz 05,Bayern Munich,Y,GK,90.0,4.0,1.0,3.0,75.0,0.0,0.9,0.0,0.0,0.0,0.0,4.0,23.0,17.4,25.0,6.0,72.0,54.0,14.0,35.7,32.4,13.0,1.0,7.7,1.0,13.0
+2021-05-09,Robin Zentner,Matchweek 32,Away,D 1–1,Mainz 05,Eint Frankfurt,Y,GK,90.0,3.0,1.0,2.0,66.7,0.0,1.4,0.0,0.0,0.0,0.0,9.0,30.0,30.0,26.0,2.0,80.8,56.2,13.0,69.2,55.2,15.0,0.0,0.0,0.0,12.8
+2020-09-19,Andreas Luthe,Matchweek 1,Home,L 1–3,Union Berlin,Augsburg,Y,GK,90.0,5.0,3.0,2.0,40.0,0.0,0.9,0.0,0.0,0.0,0.0,6.0,13.0,46.2,37.0,4.0,27.0,30.9,5.0,60.0,47.0,6.0,0.0,0.0,0.0,12.3
+2020-09-26,Andreas Luthe,Matchweek 2,Away,D 1–1,Union Berlin,M'Gladbach,Y,GK,90.0,6.0,1.0,5.0,83.3,0.0,1.8,0.0,0.0,0.0,0.0,8.0,25.0,32.0,33.0,2.0,54.5,40.6,8.0,87.5,55.4,9.0,1.0,11.1,0.0,13.3
+2020-10-02,Andreas Luthe,Matchweek 3,Home,W 4–0,Union Berlin,Mainz 05,Y,GK,90.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,3.0,20.0,15.0,28.0,2.0,53.6,44.1,6.0,83.3,60.5,9.0,0.0,0.0,0.0,12.5
+2020-10-18,Andreas Luthe,Matchweek 4,Away,D 1–1,Union Berlin,Schalke 04,Y,GK,90.0,4.0,1.0,2.0,75.0,0.0,0.3,0.0,0.0,0.0,0.0,8.0,16.0,50.0,26.0,2.0,53.8,42.3,3.0,66.7,48.3,5.0,0.0,0.0,0.0,16.5
+2020-10-24,Andreas Luthe,Matchweek 5,Home,D 1–1,Union Berlin,Freiburg,Y,GK,90.0,4.0,1.0,3.0,75.0,0.0,0.9,0.0,0.0,0.0,0.0,6.0,18.0,33.3,29.0,3.0,51.7,44.0,4.0,75.0,53.5,8.0,0.0,0.0,0.0,14.1
+2020-11-02,Andreas Luthe,Matchweek 6,Away,W 3–1,Union Berlin,Hoffenheim,Y,GK,90.0,4.0,1.0,3.0,75.0,0.0,1.4,0.0,0.0,0.0,0.0,4.0,19.0,21.1,32.0,6.0,43.8,39.4,7.0,71.4,46.1,6.0,1.0,16.7,1.0,13.0
+2020-11-07,Andreas Luthe,Matchweek 7,Home,W 5–0,Union Berlin,Arminia,Y,GK,90.0,1.0,0.0,1.0,100.0,1.0,0.6,0.0,0.0,0.0,0.0,9.0,10.0,90.0,34.0,5.0,26.5,30.3,2.0,50.0,41.5,7.0,1.0,14.3,0.0,10.6
+2020-11-22,Andreas Luthe,Matchweek 8,Away,W 2–1,Union Berlin,Köln,Y,GK,90.0,3.0,1.0,2.0,66.7,0.0,0.9,0.0,0.0,0.0,0.0,3.0,12.0,25.0,26.0,4.0,26.9,30.5,10.0,50.0,39.1,7.0,0.0,0.0,0.0,7.5
+2020-11-28,Andreas Luthe,Matchweek 9,Home,D 3–3,Union Berlin,Eint Frankfurt,Y,GK,90.0,3.0,3.0,0.0,0.0,0.0,1.9,0.0,0.0,0.0,0.0,2.0,21.0,9.5,25.0,1.0,56.0,42.4,9.0,77.8,52.3,10.0,0.0,0.0,0.0,7.8
+2020-12-04,Andreas Luthe,Matchweek 10,Away,L 1–3,Union Berlin,Hertha BSC,Y,GK,90.0,7.0,3.0,4.0,57.1,0.0,2.3,0.0,0.0,0.0,0.0,8.0,15.0,53.3,18.0,3.0,55.6,44.9,6.0,83.3,56.5,10.0,1.0,10.0,0.0,12.0
+2020-12-12,Andreas Luthe,Matchweek 11,Home,D 1–1,Union Berlin,Bayern Munich,Y,GK,90.0,5.0,1.0,4.0,80.0,0.0,2.1,0.0,0.0,0.0,0.0,7.0,17.0,41.2,18.0,3.0,61.1,45.4,9.0,66.7,43.1,11.0,0.0,0.0,0.0,10.5
+2020-12-15,Andreas Luthe,Matchweek 12,Away,D 2–2,Union Berlin,Stuttgart,Y,GK,90.0,5.0,2.0,3.0,60.0,0.0,1.7,0.0,0.0,0.0,0.0,9.0,21.0,42.9,32.0,6.0,50.0,42.5,7.0,71.4,50.3,7.0,0.0,0.0,2.0,16.2
+2020-12-18,Andreas Luthe,Matchweek 13,Home,W 2–1,Union Berlin,Dortmund,Y,GK,90.0,3.0,1.0,2.0,66.7,0.0,0.5,0.0,0.0,0.0,0.0,7.0,19.0,36.8,24.0,4.0,41.7,36.4,11.0,81.8,53.5,7.0,0.0,0.0,0.0,12.6
+2021-01-02,Andreas Luthe,Matchweek 14,Away,W 2–0,Union Berlin,Werder Bremen,Y,GK,90.0,2.0,0.0,2.0,100.0,1.0,0.8,0.0,0.0,0.0,0.0,6.0,25.0,24.0,35.0,5.0,60.0,43.5,7.0,57.1,42.3,8.0,1.0,12.5,0.0,13.8
+2021-01-09,Andreas Luthe,Matchweek 15,Home,D 2–2,Union Berlin,Wolfsburg,Y,GK,90.0,4.0,2.0,3.0,75.0,0.0,2.9,1.0,1.0,0.0,0.0,3.0,10.0,30.0,23.0,2.0,34.8,33.8,8.0,25.0,27.9,8.0,2.0,25.0,0.0,10.3
+2021-01-15,Andreas Luthe,Matchweek 16,Home,W 1–0,Union Berlin,Leverkusen,Y,GK,90.0,3.0,0.0,3.0,100.0,1.0,1.0,0.0,0.0,0.0,0.0,6.0,12.0,50.0,28.0,1.0,32.1,32.9,6.0,50.0,40.2,14.0,0.0,0.0,0.0,12.1
+2021-01-20,Andreas Luthe,Matchweek 17,Away,L 0–1,Union Berlin,RB Leipzig,Y,GK,90.0,4.0,1.0,3.0,75.0,0.0,1.1,0.0,0.0,0.0,0.0,8.0,13.0,61.5,34.0,8.0,17.6,29.6,13.0,53.8,38.6,10.0,1.0,10.0,0.0,12.0
+2021-01-23,Andreas Luthe,Matchweek 18,Away,L 1–2,Union Berlin,Augsburg,Y,GK,90.0,4.0,2.0,2.0,50.0,0.0,1.5,0.0,0.0,0.0,0.0,7.0,13.0,53.8,31.0,4.0,25.8,31.0,10.0,50.0,41.6,3.0,0.0,0.0,0.0,13.3
+2021-01-30,Andreas Luthe,Matchweek 19,Home,D 1–1,Union Berlin,M'Gladbach,Y,GK,68.0,3.0,1.0,2.0,66.7,0.0,0.6,0.0,0.0,0.0,0.0,10.0,19.0,52.6,25.0,1.0,56.0,41.6,7.0,71.4,47.0,7.0,2.0,28.6,0.0,14.0
+2021-02-06,Andreas Luthe,Matchweek 20,Away,L 0–1,Union Berlin,Mainz 05,Y,GK,90.0,4.0,1.0,4.0,100.0,0.0,1.2,1.0,1.0,0.0,0.0,8.0,24.0,33.3,39.0,4.0,46.2,40.1,7.0,85.7,53.4,5.0,0.0,0.0,1.0,13.9
+2021-03-07,Andreas Luthe,Matchweek 24,Away,D 0–0,Union Berlin,Arminia,Y,GK,90.0,2.0,0.0,2.0,100.0,1.0,0.2,0.0,0.0,0.0,0.0,3.0,8.0,37.5,34.0,6.0,20.6,28.7,1.0,100.0,64.0,7.0,0.0,0.0,1.0,14.7
+2021-03-13,Andreas Luthe,Matchweek 25,Home,W 2–1,Union Berlin,Köln,Y,GK,90.0,4.0,1.0,4.0,100.0,0.0,1.2,1.0,1.0,0.0,0.0,9.0,22.0,40.9,27.0,4.0,70.4,49.6,3.0,100.0,62.3,10.0,3.0,30.0,0.0,13.0
+2021-03-20,Andreas Luthe,Matchweek 26,Away,L 2–5,Union Berlin,Eint Frankfurt,Y,GK,90.0,5.0,5.0,1.0,0.0,0.0,2.3,0.0,0.0,0.0,0.0,5.0,14.0,35.7,35.0,4.0,28.6,30.2,6.0,66.7,42.0,9.0,2.0,22.2,2.0,24.7
+2021-04-04,Andreas Luthe,Matchweek 27,Home,D 1–1,Union Berlin,Hertha BSC,Y,GK,90.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,3.0,8.0,37.5,23.0,2.0,26.1,31.1,4.0,50.0,38.3,3.0,0.0,0.0,0.0,17.7
+2021-04-10,Andreas Luthe,Matchweek 28,Away,D 1–1,Union Berlin,Bayern Munich,Y,GK,90.0,2.0,1.0,1.0,50.0,0.0,1.0,0.0,0.0,0.0,0.0,10.0,20.0,50.0,42.0,3.0,35.7,34.1,13.0,38.5,34.0,5.0,0.0,0.0,0.0,11.0
+2021-04-17,Andreas Luthe,Matchweek 29,Home,W 2–1,Union Berlin,Stuttgart,Y,GK,90.0,2.0,1.0,1.0,50.0,0.0,0.9,0.0,0.0,0.0,0.0,9.0,24.0,37.5,43.0,3.0,46.5,40.8,5.0,80.0,49.8,6.0,0.0,0.0,2.0,14.9
+2021-04-21,Andreas Luthe,Matchweek 30,Away,L 0–2,Union Berlin,Dortmund,Y,GK,90.0,9.0,2.0,7.0,77.8,0.0,2.8,1.0,0.0,1.0,0.0,8.0,11.0,72.7,29.0,3.0,24.1,32.4,12.0,33.3,30.8,6.0,1.0,16.7,0.0,10.8
+2021-04-24,Andreas Luthe,Matchweek 31,Home,W 3–1,Union Berlin,Werder Bremen,Y,GK,90.0,5.0,1.0,4.0,80.0,0.0,1.0,0.0,0.0,0.0,0.0,12.0,20.0,60.0,27.0,1.0,63.0,49.6,5.0,60.0,42.8,6.0,0.0,0.0,0.0,7.3
+2021-05-08,Andreas Luthe,Matchweek 32,Away,L 0–3,Union Berlin,Wolfsburg,Y,GK,90.0,8.0,3.0,5.0,62.5,0.0,3.3,0.0,0.0,0.0,0.0,9.0,11.0,81.8,21.0,2.0,33.3,34.8,8.0,50.0,36.0,8.0,0.0,0.0,1.0,20.0
+2021-05-15,Andreas Luthe,Matchweek 33,Away,D 1–1,Union Berlin,Leverkusen,Y,GK,90.0,4.0,1.0,2.0,75.0,0.0,1.0,0.0,0.0,0.0,0.0,4.0,8.0,50.0,33.0,4.0,12.1,28.7,7.0,57.1,44.6,11.0,0.0,0.0,0.0,15.5
+2021-05-22,Andreas Luthe,Matchweek 34,Home,W 2–1,Union Berlin,RB Leipzig,Y,GK,90.0,8.0,1.0,7.0,87.5,0.0,2.0,0.0,0.0,0.0,0.0,11.0,22.0,50.0,31.0,4.0,54.8,42.0,7.0,71.4,50.6,9.0,0.0,0.0,1.0,13.9
+2021-05-22,Elias Bördner,Matchweek 34,Home,W 3–1,Eint Frankfurt,Freiburg,Y,GK,90,6,1,5,83.3,0,0.8,0,0,0,0,4,18,22.2,32,9,50.0,38.0,11,18.2,23.7,10,0,0.0,0,7.5
+2020-09-18,Manuel Neuer,Matchweek 1,Home,W 8–0,Bayern Munich,Schalke 04,Y*,GK,90,1,0,1,100.0,1,0.0,0,0,0,0,1,2,50.0,37,6,5.4,24.2,1,0.0,25.0,3,0,0.0,0,15.8
+2020-09-27,Manuel Neuer,Matchweek 2,Away,L 1–4,Bayern Munich,Hoffenheim,Y*,GK,90,7,4,3,57.1,0,5.1,1,1,0,0,4,7,57.1,25,6,24.0,30.0,6,16.7,30.0,7,0,0.0,0,13.3
+2020-10-04,Manuel Neuer,Matchweek 3,Home,W 4–3,Bayern Munich,Hertha BSC,Y*,GK,90,5,3,2,40.0,0,2.3,0,0,0,0,4,4,100.0,18,2,16.7,26.9,5,20.0,33.0,12,0,0.0,0,12.0
+2020-10-17,Manuel Neuer,Matchweek 4,Away,W 4–1,Bayern Munich,Arminia,Y*,GK,90,5,1,4,80.0,0,1.9,0,0,0,0,8,10,80.0,37,7,27.0,31.5,4,0.0,27.0,0,0,0,0,8.0
+2020-10-24,Manuel Neuer,Matchweek 5,Home,W 5–0,Bayern Munich,Eint Frankfurt,Y*,GK,90,2,0,2,100.0,1,0.2,0,0,0,0,12,19,63.2,55,12,32.7,30.7,7,14.3,22.3,10,0,0.0,0,13.1
+2020-10-31,Manuel Neuer,Matchweek 6,Away,W 2–1,Bayern Munich,Köln,Y*,GK,90,2,1,1,50.0,0,1.4,0,0,0,0,2,5,40.0,29,7,13.8,29.0,5,20.0,37.8,11,0,0.0,1,18.8
+2020-11-07,Manuel Neuer,Matchweek 7,Away,W 3–2,Bayern Munich,Dortmund,Y*,GK,90,5,2,3,60.0,0,2.5,0,0,0,0,14,25,56.0,50,7,42.0,37.3,8,50.0,40.0,9,0,0.0,3,14.9
+2020-11-21,Manuel Neuer,Matchweek 8,Home,D 1–1,Bayern Munich,Werder Bremen,Y*,GK,90,4,1,3,75.0,0,1.9,0,0,0,0,6,7,85.7,16,2,25.0,30.6,4,75.0,44.0,5,0,0.0,1,18.3
+2020-11-28,Manuel Neuer,Matchweek 9,Away,W 3–1,Bayern Munich,Stuttgart,Y*,GK,90,5,1,4,80.0,0,1.6,0,0,0,0,12,19,63.2,41,6,36.6,34.1,10,40.0,35.5,9,1,11.1,0,14.3
+2020-12-05,Manuel Neuer,Matchweek 10,Home,D 3–3,Bayern Munich,RB Leipzig,Y*,GK,90,4,3,1,25.0,0,2.0,0,0,0,0,6,12,50.0,36,5,30.6,33.2,4,25.0,26.5,6,0,0.0,6,23.2
+2020-12-12,Manuel Neuer,Matchweek 11,Away,D 1–1,Bayern Munich,Union Berlin,Y*,GK,90,5,1,4,80.0,0,1.8,0,0,0,0,10,14,71.4,37,6,24.3,30.3,7,71.4,45.9,8,0,0.0,2,15.9
+2020-12-16,Manuel Neuer,Matchweek 12,Home,W 2–1,Bayern Munich,Wolfsburg,Y*,GK,90,6,1,5,83.3,0,1.4,0,0,0,0,15,21,71.4,38,7,52.6,38.4,7,14.3,22.9,9,1,11.1,0,12.2
+2020-12-19,Manuel Neuer,Matchweek 13,Away,W 2–1,Bayern Munich,Leverkusen,Y*,GK,90,3,1,2,66.7,0,0.2,0,0,0,0,10,22,45.5,62,9,33.9,31.0,8,12.5,27.0,10,0,0.0,4,18.1
+2021-01-03,Manuel Neuer,Matchweek 14,Home,W 5–2,Bayern Munich,Mainz 05,Y*,GK,90,6,2,4,66.7,0,0.8,0,0,0,0,12,15,80.0,43,6,32.6,31.9,3,33.3,38.7,2,0,0.0,3,20.3
+2021-01-08,Manuel Neuer,Matchweek 15,Away,L 2–3,Bayern Munich,M'Gladbach,Y*,GK,90,4,3,1,25.0,0,2.1,0,0,0,0,8,13,61.5,45,4,28.9,30.4,3,0.0,18.3,3,0,0.0,2,18.2
+2021-01-17,Manuel Neuer,Matchweek 16,Home,W 2–1,Bayern Munich,Freiburg,Y*,GK,90,3,1,2,66.7,0,0.6,0,0,0,0,10,16,62.5,33,4,42.4,34.4,4,50.0,37.8,11,0,0.0,0,7.7
+2021-01-20,Manuel Neuer,Matchweek 17,Away,W 1–0,Bayern Munich,Augsburg,Y*,GK,90,0,0,0,0,1,0.0,1,0,0,1,6,9,66.7,19,5,36.8,30.2,10,20.0,25.0,4,1,25.0,2,16.4
+2021-01-24,Manuel Neuer,Matchweek 18,Away,W 4–0,Bayern Munich,Schalke 04,Y*,GK,90,4,0,4,100.0,1,1.0,0,0,0,0,5,6,83.3,17,5,23.5,29.4,10,20.0,27.4,5,0,0.0,1,15.3
+2021-01-30,Manuel Neuer,Matchweek 19,Home,W 4–1,Bayern Munich,Hoffenheim,Y*,GK,90,5,1,4,80.0,0,1.9,0,0,0,0,8,11,72.7,31,4,35.5,33.9,5,0.0,25.2,8,0,0.0,0,14.5
+2021-02-05,Manuel Neuer,Matchweek 20,Away,W 1–0,Bayern Munich,Hertha BSC,Y*,GK,90,7,0,7,100.0,1,1.3,0,0,0,0,6,8,75.0,30,6,26.7,30.4,6,0.0,17.5,4,0,0.0,2,32.0
+2021-02-15,Manuel Neuer,Matchweek 21,Home,D 3–3,Bayern Munich,Arminia,Y*,GK,90,3,3,0,0.0,0,2.1,0,0,0,0,4,5,80.0,29,3,17.2,25.0,3,0.0,16.3,1,0,0.0,1,15.0
+2021-02-20,Manuel Neuer,Matchweek 22,Away,L 1–2,Bayern Munich,Eint Frankfurt,Y*,GK,90,4,2,2,50.0,0,1.5,0,0,0,0,6,13,46.2,39,8,30.8,31.5,7,14.3,27.3,8,0,0.0,1,12.3
+2021-02-27,Manuel Neuer,Matchweek 23,Home,W 5–1,Bayern Munich,Köln,Y*,GK,90,3,1,2,66.7,0,1.2,0,0,0,0,7,10,70.0,33,4,27.3,29.2,4,25.0,23.3,5,0,0.0,5,24.7
+2021-03-06,Manuel Neuer,Matchweek 24,Home,W 4–2,Bayern Munich,Dortmund,Y*,GK,90,3,2,1,33.3,0,0.9,0,0,0,0,3,4,75.0,27,3,14.8,25.8,1,0.0,13.0,2,0,0.0,0,11.5
+2021-03-13,Manuel Neuer,Matchweek 25,Away,W 3–1,Bayern Munich,Werder Bremen,Y*,GK,90,4,1,3,75.0,0,0.9,0,0,0,0,5,6,83.3,21,5,28.6,30.8,3,0.0,30.0,4,0,0.0,0,8.0
+2021-03-20,Manuel Neuer,Matchweek 26,Home,W 4–0,Bayern Munich,Stuttgart,Y*,GK,90,5,0,5,100.0,1,0.7,0,0,0,0,9,27,33.3,45,8,55.6,42.3,6,33.3,36.3,14,1,7.1,1,20.2
+2021-04-03,Manuel Neuer,Matchweek 27,Away,W 1–0,Bayern Munich,RB Leipzig,Y*,GK,90,2,0,2,100.0,1,0.1,0,0,0,0,12,22,54.5,47,4,38.3,38.4,11,36.4,36.5,11,1,9.1,0,9.7
+2021-04-10,Manuel Neuer,Matchweek 28,Home,D 1–1,Bayern Munich,Union Berlin,Y*,GK,90,2,1,1,50.0,0,1.1,0,0,0,0,4,8,50.0,28,5,28.6,31.2,5,0.0,13.4,10,0,0.0,1,22.3
+2021-04-17,Manuel Neuer,Matchweek 29,Away,W 3–2,Bayern Munich,Wolfsburg,Y*,GK,90,3,2,1,33.3,0,2.0,0,0,0,0,10,22,45.5,42,6,47.6,38.9,9,22.2,30.7,8,0,0.0,0,14.8
+2021-04-20,Manuel Neuer,Matchweek 30,Home,W 2–0,Bayern Munich,Leverkusen,Y*,GK,90,4,0,4,100.0,1,0.5,0,0,0,0,7,8,87.5,29,7,27.6,29.9,5,0.0,20.6,7,0,0.0,1,15.7
+2021-04-24,Manuel Neuer,Matchweek 31,Away,L 1–2,Bayern Munich,Mainz 05,Y*,GK,90,4,2,1,50.0,0,0.6,0,0,0,0,7,12,58.3,35,6,31.4,31.9,2,50.0,38.0,5,0,0.0,1,16.4
+2021-05-08,Manuel Neuer,Matchweek 32,Home,W 6–0,Bayern Munich,M'Gladbach,Y*,GK,90,3,0,3,100.0,1,0.7,0,0,0,0,2,5,40.0,30,9,16.7,28.6,9,0.0,19.4,10,1,10.0,1,11.7
+2021-05-22,Manuel Neuer,Matchweek 34,Home,W 5–2,Bayern Munich,Augsburg,Y*,GK,90,3,2,1,33.3,0,2.0,1,0,1,0,4,4,100.0,26,4,11.5,28.4,4,25.0,25.5,7,0,0.0,3,22.5
+2021-02-13,Niklas Lomb,Matchweek 21,Home,D 2–2,Leverkusen,Mainz 05,N,GK,45,5,2,3,60.0,0,1.7,0,0,0,0,1,10,10.0,22,3,36.4,36.9,2,100.0,63.5,11,1,9.1,0,10.0
+2021-02-21,Niklas Lomb,Matchweek 22,Away,D 1–1,Leverkusen,Augsburg,Y,GK,90,3,1,2,66.7,0,1.4,0,0,0,0,4,7,57.1,31,10,19.4,25.9,5,20.0,27.6,1,0,0.0,1,15.3
+2020-09-19,Roman Bürki,Matchweek 1,Home,W 3–0,Dortmund,M'Gladbach,Y,GK,90,2,0,2,100.0,1,0.4,0,0,0,0,3,10,30.0,23,5,34.8,31.5,6,33.3,36.5,7,0,0.0,0,9.6
+2020-09-26,Roman Bürki,Matchweek 2,Away,L 0–2,Dortmund,Augsburg,Y,GK,90,4,2,2,50.0,0,1.5,0,0,0,0,3,5,60.0,23,5,21.7,29.0,5,0.0,22.4,5,0,0.0,0,18.0
+2020-10-24,Roman Bürki,Matchweek 5,Home,W 3–0,Dortmund,Schalke 04,Y,GK,90,0,0,0,0,1,0.0,0,0,0,0,1,6,16.7,24,1,25.0,31.4,2,0.0,17.5,0,0,0,0,13.0
+2020-10-31,Roman Bürki,Matchweek 6,Away,W 2–0,Dortmund,Arminia,Y,GK,90,2,0,2,100.0,1,0.3,0,0,0,0,5,11,45.5,29,3,31.0,35.7,4,50.0,45.5,2,0,0.0,0,17.0
+2020-11-07,Roman Bürki,Matchweek 7,Home,L 2–3,Dortmund,Bayern Munich,Y,GK,90,7,3,4,57.1,0,1.9,0,0,0,0,3,11,27.3,23,6,43.5,35.9,6,16.7,22.7,13,2,15.4,0,9.5
+2020-11-21,Roman Bürki,Matchweek 8,Away,W 5–2,Dortmund,Hertha BSC,Y,GK,90,2,2,1,50.0,0,1.0,1,1,0,0,2,7,28.6,18,5,38.9,38.5,3,0.0,13.7,5,0,0.0,0,6.8
+2020-11-28,Roman Bürki,Matchweek 9,Home,L 1–2,Dortmund,Köln,Y,GK,90,5,2,3,60.0,0,2.0,0,0,0,0,2,3,66.7,19,8,15.8,22.2,2,0.0,24.5,4,1,25.0,0,16.8
+2020-12-05,Roman Bürki,Matchweek 10,Away,D 1–1,Dortmund,Eint Frankfurt,Y,GK,90,1,1,0,0.0,0,0.3,0,0,0,0,4,14,28.6,32,4,34.4,31.3,7,42.9,35.6,7,0,0.0,0,13.0
+2020-12-12,Roman Bürki,Matchweek 11,Home,L 1–5,Dortmund,Stuttgart,Y,GK,90,9,5,5,55.6,0,4.1,1,1,0,0,7,11,63.6,28,4,32.1,32.3,4,50.0,44.3,7,0,0.0,2,18.3
+2020-12-15,Roman Bürki,Matchweek 12,Away,W 2–1,Dortmund,Werder Bremen,Y,GK,90,3,1,2,66.7,0,0.8,0,0,0,0,1,10,10.0,23,5,34.8,35.3,7,28.6,31.0,8,0,0.0,1,23.8
+2020-12-18,Roman Bürki,Matchweek 13,Away,L 1–2,Dortmund,Union Berlin,Y,GK,90,5,2,3,60.0,0,1.9,0,0,0,0,3,9,33.3,31,7,16.1,25.8,6,66.7,44.2,3,0,0.0,1,13.3
+2021-01-03,Roman Bürki,Matchweek 14,Home,W 2–0,Dortmund,Wolfsburg,Y,GK,90,5,0,5,100.0,1,0.4,0,0,0,0,12,18,66.7,34,7,38.2,36.0,12,41.7,36.4,14,0,0.0,0,5.0
+2021-01-09,Roman Bürki,Matchweek 15,Away,W 3–1,Dortmund,RB Leipzig,Y,GK,90,4,1,3,75.0,0,1.2,0,0,0,0,12,18,66.7,27,4,40.7,34.6,11,63.6,46.0,8,1,12.5,0,14.0
+2021-01-16,Roman Bürki,Matchweek 16,Home,D 1–1,Dortmund,Mainz 05,Y,GK,90,3,1,2,66.7,0,0.8,0,0,0,0,6,7,85.7,27,7,25.9,30.9,4,0.0,24.8,5,3,60.0,0,12.8
+2021-01-19,Roman Bürki,Matchweek 17,Away,L 1–2,Dortmund,Leverkusen,Y,GK,90,13,2,11,84.6,0,1.7,0,0,0,0,5,15,33.3,47,11,27.7,32.1,5,40.0,45.8,6,0,0.0,0,11.4
+2021-01-22,Roman Bürki,Matchweek 18,Away,L 2–4,Dortmund,M'Gladbach,Y,GK,90,7,4,3,42.9,0,2.2,0,0,0,0,3,7,42.9,34,4,14.7,25.4,3,66.7,52.0,0,0,0,1,13.0
+2021-05-08,Roman Bürki,Matchweek 32,Home,W 3–2,Dortmund,RB Leipzig,N,GK,45,6,2,4,66.7,0,1.5,0,0,0,0,3,10,30.0,16,9,37.5,38.1,5,80.0,52.8,7,2,28.6,0,6.3
+2021-05-16,Roman Bürki,Matchweek 33,Away,W 3–1,Dortmund,Mainz 05,Y,GK,90,5,1,5,100.0,0,1.9,1,1,0,0,9,14,64.3,23,4,47.8,42.7,8,37.5,44.8,11,0,0.0,1,16.7
+2021-05-22,Roman Bürki,Matchweek 34,Home,W 3–1,Dortmund,Leverkusen,Y,GK,90,6,1,6,100.0,0,1.4,1,1,0,0,8,15,53.3,39,7,33.3,33.1,9,22.2,24.7,9,0,0.0,0,7.3
+2020-11-06,Ron-Robert Zieler,Matchweek 7,Away,D 1–1,Köln,Werder Bremen,N,GK,51,2,1,2,100.0,0,0.7,1,1,0,0,6,11,54.5,17,4,35.3,35.0,6,83.3,49.7,10,0,0.0,0,11.8
+2020-10-03,Frederik Rønnow,Matchweek 3,Away,L 0–4,Schalke 04,RB Leipzig,N,GK,45,3,1,3,100.0,0,1.6,1,1,0,0,3,7,42.9,13,3,46.2,36.4,6,16.7,22.3,5,0,0.0,0,4.0
+2020-10-18,Frederik Rønnow,Matchweek 4,Home,D 1–1,Schalke 04,Union Berlin,Y,GK,90,7,1,6,85.7,0,1.5,0,0,0,0,6,14,42.9,28,6,25.0,29.8,11,63.6,48.8,7,0,0.0,0,17.3
+2020-10-24,Frederik Rønnow,Matchweek 5,Away,L 0–3,Schalke 04,Dortmund,Y,GK,90,7,3,4,57.1,0,2.0,0,0,0,0,4,16,25.0,21,4,57.1,42.4,6,66.7,56.5,3,0,0.0,0,12.0
+2020-10-30,Frederik Rønnow,Matchweek 6,Home,D 1–1,Schalke 04,Stuttgart,Y,GK,90,7,1,7,100.0,0,2.2,1,1,0,0,6,7,85.7,30,10,16.7,29.0,8,25.0,30.6,9,0,0.0,0,14.5
+2020-11-07,Frederik Rønnow,Matchweek 7,Away,D 2–2,Schalke 04,Mainz 05,Y,GK,90,5,2,5,100.0,0,2.8,2,2,0,0,5,8,62.5,30,6,20.0,28.4,6,33.3,32.3,3,0,0.0,0,9.7
+2020-11-21,Frederik Rønnow,Matchweek 8,Home,L 0–2,Schalke 04,Wolfsburg,Y,GK,90,7,2,5,71.4,0,2.8,0,0,0,0,3,13,23.1,31,8,35.5,32.2,8,25.0,28.0,4,1,25.0,0,10.3
+2020-11-28,Frederik Rønnow,Matchweek 9,Away,L 1–4,Schalke 04,M'Gladbach,Y,GK,90,9,4,5,55.6,0,3.6,0,0,0,0,4,11,36.4,26,4,30.8,31.6,7,42.9,34.7,5,0,0.0,2,21.4
+2021-03-05,Frederik Rønnow,Matchweek 24,Home,D 0–0,Schalke 04,Mainz 05,Y,GK,90,2,0,2,100.0,1,0.4,0,0,0,0,5,20,25.0,35,8,28.6,31.9,16,62.5,43.9,15,0,0.0,1,15.4
+2021-03-13,Frederik Rønnow,Matchweek 25,Away,L 0–5,Schalke 04,Wolfsburg,Y,GK,90,7,5,3,28.6,0,1.9,0,0,0,0,6,17,35.3,38,10,39.5,31.8,7,28.6,32.6,5,1,20.0,1,13.4
+2021-03-20,Frederik Rønnow,Matchweek 26,Home,L 0–3,Schalke 04,M'Gladbach,Y,GK,90,7,3,5,57.1,0,2.7,0,0,0,0,6,20,30.0,16,2,56.3,41.1,13,84.6,53.7,8,0,0.0,2,19.4
+2021-04-03,Frederik Rønnow,Matchweek 27,Away,L 1–2,Schalke 04,Leverkusen,Y,GK,90,3,2,1,33.3,0,1.2,0,0,0,0,3,10,30.0,21,3,38.1,34.1,6,33.3,32.0,7,1,14.3,0,10.4
+2021-05-09,Mark Flekken,Matchweek 32,Away,W 4–1,Freiburg,Köln,Y,GK,90,2,1,1,50.0,0,0.9,1,0,0,1,11,27,40.7,35,2,51.4,47.8,9,100.0,78.2,11,0,0.0,0,13.5
+2021-05-15,Mark Flekken,Matchweek 33,Home,D 2–2,Freiburg,Bayern Munich,Y,GK,90,5,2,4,80.0,0,2.8,1,1,0,0,9,15,60.0,32,4,34.4,37.3,7,57.1,52.0,9,0,0.0,0,6.3
+2021-05-22,Mark Flekken,Matchweek 34,Away,L 1–3,Freiburg,Eint Frankfurt,Y,GK,90,9,3,7,77.8,0,3.7,1,1,0,0,11,22,50.0,31,3,41.9,38.2,11,81.8,64.2,12,1,8.3,1,15.0
+2020-09-20,Lukáš Hrádecký,Matchweek 1,Away,D 0–0,Leverkusen,Wolfsburg,Y,GK,90.0,1.0,0.0,1.0,100.0,1.0,0.6,0.0,0.0,0.0,0.0,4.0,11.0,36.4,39.0,7.0,23.1,29.4,6.0,33.3,34.8,7.0,0.0,0.0,1.0,18.8
+2020-09-26,Lukáš Hrádecký,Matchweek 2,Home,D 1–1,Leverkusen,RB Leipzig,Y,GK,90.0,2.0,1.0,1.0,50.0,0.0,0.7,0.0,0.0,0.0,0.0,8.0,15.0,53.3,36.0,3.0,38.9,35.0,4.0,25.0,27.0,7.0,1.0,14.3,2.0,20.0
+2020-10-03,Lukáš Hrádecký,Matchweek 3,Away,D 1–1,Leverkusen,Stuttgart,Y,GK,90.0,2.0,1.0,1.0,50.0,0.0,0.8,0.0,0.0,0.0,0.0,10.0,24.0,41.7,39.0,3.0,41.0,35.5,11.0,72.7,43.5,8.0,0.0,0.0,2.0,19.1
+2020-10-17,Lukáš Hrádecký,Matchweek 4,Away,W 1–0,Leverkusen,Mainz 05,Y,GK,90.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,9.0,18.0,50.0,44.0,6.0,36.4,35.9,7.0,28.6,29.3,8.0,1.0,12.5,2.0,18.6
+2020-10-26,Lukáš Hrádecký,Matchweek 5,Home,W 3–1,Leverkusen,Augsburg,Y,GK,90.0,3.0,1.0,2.0,66.7,0.0,0.2,0.0,0.0,0.0,0.0,6.0,18.0,33.3,40.0,7.0,40.0,36.7,5.0,40.0,33.8,5.0,0.0,0.0,1.0,20.0
+2020-11-01,Lukáš Hrádecký,Matchweek 6,Away,W 4–2,Leverkusen,Freiburg,Y,GK,90.0,5.0,2.0,3.0,60.0,0.0,1.3,0.0,0.0,0.0,0.0,5.0,27.0,18.5,61.0,5.0,41.0,40.0,5.0,40.0,44.4,5.0,0.0,0.0,1.0,14.8
+2020-11-08,Lukáš Hrádecký,Matchweek 7,Home,W 4–3,Leverkusen,M'Gladbach,Y,GK,90.0,5.0,3.0,3.0,60.0,0.0,3.2,1.0,1.0,0.0,0.0,5.0,19.0,26.3,59.0,5.0,27.1,31.0,5.0,60.0,40.6,4.0,1.0,25.0,1.0,17.1
+2020-11-21,Lukáš Hrádecký,Matchweek 8,Away,W 2–1,Leverkusen,Arminia,Y,GK,90.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.0,19.0,42.1,45.0,3.0,42.2,38.4,2.0,0.0,24.0,5.0,1.0,20.0,2.0,19.5
+2020-11-29,Lukáš Hrádecký,Matchweek 9,Home,D 0–0,Leverkusen,Hertha BSC,Y,GK,90.0,3.0,0.0,3.0,100.0,1.0,0.7,0.0,0.0,0.0,0.0,9.0,20.0,45.0,46.0,4.0,41.3,34.8,4.0,25.0,21.0,6.0,1.0,16.7,2.0,25.7
+2020-12-06,Lukáš Hrádecký,Matchweek 10,Away,W 3–0,Leverkusen,Schalke 04,Y,GK,90.0,3.0,0.0,3.0,100.0,1.0,1.1,1.0,0.0,1.0,0.0,13.0,24.0,54.2,47.0,6.0,44.7,39.4,4.0,75.0,55.8,7.0,0.0,0.0,1.0,16.7
+2020-12-13,Lukáš Hrádecký,Matchweek 11,Home,W 4–1,Leverkusen,Hoffenheim,Y,GK,90.0,4.0,1.0,3.0,75.0,0.0,1.5,0.0,0.0,0.0,0.0,5.0,20.0,25.0,46.0,3.0,32.6,32.3,7.0,71.4,42.7,7.0,0.0,0.0,0.0,16.0
+2020-12-16,Lukáš Hrádecký,Matchweek 12,Away,W 4–0,Leverkusen,Köln,Y,GK,90.0,1.0,0.0,1.0,100.0,1.0,0.8,0.0,0.0,0.0,0.0,4.0,9.0,44.4,39.0,6.0,17.9,24.9,5.0,40.0,41.4,8.0,0.0,0.0,0.0,14.3
+2020-12-19,Lukáš Hrádecký,Matchweek 13,Home,L 1–2,Leverkusen,Bayern Munich,Y,GK,90.0,3.0,2.0,1.0,33.3,0.0,1.1,0.0,0.0,0.0,0.0,8.0,22.0,36.4,50.0,9.0,42.0,36.3,7.0,14.3,23.6,9.0,1.0,11.1,2.0,15.3
+2021-01-02,Lukáš Hrádecký,Matchweek 14,Away,L 1–2,Leverkusen,Eint Frankfurt,Y,GK,90.0,4.0,2.0,3.0,50.0,0.0,1.1,0.0,0.0,0.0,0.0,6.0,16.0,37.5,42.0,5.0,38.1,35.9,6.0,0.0,16.2,11.0,1.0,9.1,1.0,15.5
+2021-01-09,Lukáš Hrádecký,Matchweek 15,Home,D 1–1,Leverkusen,Werder Bremen,Y,GK,90.0,1.0,1.0,0.0,0.0,0.0,0.8,0.0,0.0,0.0,0.0,1.0,4.0,25.0,27.0,2.0,11.1,27.1,4.0,25.0,33.0,3.0,0.0,0.0,1.0,25.0
+2021-01-15,Lukáš Hrádecký,Matchweek 16,Away,L 0–1,Leverkusen,Union Berlin,Y,GK,90.0,3.0,1.0,2.0,66.7,0.0,0.4,0.0,0.0,0.0,0.0,8.0,15.0,53.3,41.0,8.0,31.7,32.0,7.0,28.6,38.9,4.0,0.0,0.0,0.0,5.0
+2021-01-19,Lukáš Hrádecký,Matchweek 17,Home,W 2–1,Leverkusen,Dortmund,Y,GK,90.0,2.0,1.0,1.0,50.0,0.0,0.4,0.0,0.0,0.0,0.0,6.0,24.0,25.0,51.0,7.0,41.2,35.9,6.0,50.0,33.2,5.0,0.0,0.0,2.0,18.1
+2021-01-23,Lukáš Hrádecký,Matchweek 18,Home,L 0–1,Leverkusen,Wolfsburg,Y,GK,90.0,4.0,1.0,3.0,75.0,0.0,0.9,0.0,0.0,0.0,0.0,5.0,9.0,55.6,40.0,7.0,20.0,27.0,7.0,14.3,33.4,5.0,1.0,20.0,0.0,15.3
+2021-01-30,Lukáš Hrádecký,Matchweek 19,Away,L 0–1,Leverkusen,RB Leipzig,Y,GK,90.0,2.0,1.0,1.0,50.0,0.0,0.7,0.0,0.0,0.0,0.0,9.0,23.0,39.1,58.0,10.0,39.7,34.6,7.0,0.0,21.0,6.0,1.0,16.7,1.0,15.8
+2021-02-06,Lukáš Hrádecký,Matchweek 20,Home,W 5–2,Leverkusen,Stuttgart,Y,GK,90.0,7.0,2.0,5.0,71.4,0.0,2.4,0.0,0.0,0.0,0.0,16.0,27.0,59.3,49.0,5.0,49.0,39.7,3.0,100.0,66.3,2.0,0.0,0.0,2.0,22.3
+2021-02-13,Lukáš Hrádecký,Matchweek 21,Home,D 2–2,Leverkusen,Mainz 05,Y,GK,45.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,6.0,33.3,23.0,6.0,21.7,31.4,4.0,25.0,30.8,2.0,0.0,0.0,0.0,10.6
+2021-04-03,Lukáš Hrádecký,Matchweek 27,Home,W 2–1,Leverkusen,Schalke 04,Y,GK,90.0,2.0,1.0,1.0,50.0,0.0,0.4,0.0,0.0,0.0,0.0,9.0,20.0,45.0,48.0,7.0,37.5,37.3,5.0,40.0,37.2,10.0,1.0,10.0,2.0,15.3
+2021-04-12,Lukáš Hrádecký,Matchweek 28,Away,D 0–0,Leverkusen,Hoffenheim,Y,GK,90.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,9.0,13.0,69.2,37.0,5.0,35.1,35.8,3.0,0.0,14.0,12.0,2.0,16.7,2.0,16.8
+2021-04-17,Lukáš Hrádecký,Matchweek 29,Home,W 3–0,Leverkusen,Köln,Y,GK,90.0,2.0,0.0,2.0,100.0,1.0,0.7,0.0,0.0,0.0,0.0,9.0,18.0,50.0,34.0,5.0,41.2,36.8,11.0,36.4,32.3,15.0,1.0,6.7,1.0,15.0
+2021-04-20,Lukáš Hrádecký,Matchweek 30,Away,L 0–2,Leverkusen,Bayern Munich,Y,GK,90.0,9.0,2.0,7.0,77.8,0.0,3.0,0.0,0.0,0.0,0.0,6.0,11.0,54.5,32.0,11.0,34.4,33.6,10.0,0.0,15.5,9.0,3.0,33.3,0.0,12.6
+2021-04-24,Lukáš Hrádecký,Matchweek 31,Home,W 3–1,Leverkusen,Eint Frankfurt,Y,GK,90.0,4.0,1.0,3.0,75.0,0.0,2.0,0.0,0.0,0.0,0.0,10.0,21.0,47.6,45.0,7.0,37.8,36.4,6.0,66.7,44.2,10.0,1.0,10.0,0.0,13.8
+2021-05-08,Lukáš Hrádecký,Matchweek 32,Away,D 0–0,Leverkusen,Werder Bremen,Y,GK,90.0,1.0,0.0,1.0,100.0,1.0,0.0,0.0,0.0,0.0,0.0,6.0,14.0,42.9,30.0,10.0,30.0,32.3,11.0,45.5,35.1,12.0,3.0,25.0,1.0,15.0
+2021-05-15,Lukáš Hrádecký,Matchweek 33,Home,D 1–1,Leverkusen,Union Berlin,Y,GK,90.0,6.0,1.0,5.0,83.3,0.0,0.8,0.0,0.0,0.0,0.0,9.0,30.0,30.0,44.0,11.0,54.5,42.8,8.0,75.0,50.8,15.0,1.0,6.7,1.0,11.0
+2021-05-22,Lukáš Hrádecký,Matchweek 34,Away,L 1–3,Leverkusen,Dortmund,Y,GK,90.0,3.0,3.0,0.0,0.0,0.0,1.1,0.0,0.0,0.0,0.0,4.0,6.0,66.7,23.0,7.0,13.0,27.6,6.0,50.0,33.5,2.0,0.0,0.0,0.0,13.1
+2021-05-15,Alexander Nübel,Matchweek 33,Away,D 2–2,Bayern Munich,Freiburg,Y,GK,90,4,2,2,50.0,0,1.9,0,0,0,0,1,3,33.3,27,2,11.1,26.7,8,0.0,28.1,10,0,0.0,0,9.5
+2020-09-20,Péter Gulácsi,Matchweek 1,Home,W 3–1,RB Leipzig,Mainz 05,Y*,GK,90,1,1,0,0.0,0,0.5,0,0,0,0,3,4,75.0,34,2,11.8,25.9,4,0.0,17.0,5,0,0.0,1,12.4
+2020-09-26,Péter Gulácsi,Matchweek 2,Away,D 1–1,RB Leipzig,Leverkusen,Y*,GK,90,4,1,3,75.0,0,0.4,0,0,0,0,10,19,52.6,33,3,48.5,39.7,9,33.3,34.0,11,1,9.1,0,9.0
+2020-10-03,Péter Gulácsi,Matchweek 3,Home,W 4–0,RB Leipzig,Schalke 04,Y*,GK,90,1,0,1,100.0,1,0.0,0,0,0,0,1,2,50.0,21,4,9.5,27.7,4,0.0,16.3,1,0,0.0,0,13.0
+2020-10-17,Péter Gulácsi,Matchweek 4,Away,W 2–0,RB Leipzig,Augsburg,Y*,GK,90,2,0,2,100.0,1,0.8,0,0,0,0,2,3,66.7,30,7,6.7,23.6,2,50.0,44.5,5,0,0.0,1,23.8
+2020-10-24,Péter Gulácsi,Matchweek 5,Home,W 2–1,RB Leipzig,Hertha BSC,Y*,GK,90,2,1,1,50.0,0,0.9,0,0,0,0,4,7,57.1,17,1,35.3,34.4,7,14.3,29.3,2,0,0.0,4,22.1
+2020-10-31,Péter Gulácsi,Matchweek 6,Away,L 0–1,RB Leipzig,M'Gladbach,Y,GK,90,3,1,2,66.7,0,1.0,0,0,0,0,4,10,40.0,37,8,24.3,30.1,1,100.0,41.0,9,1,11.1,1,16.2
+2020-11-07,Péter Gulácsi,Matchweek 7,Home,W 3–0,RB Leipzig,Freiburg,Y,GK,90,3,0,3,100.0,1,0.3,0,0,0,0,5,12,41.7,36,6,25.0,30.3,6,50.0,46.0,7,0,0.0,2,20.8
+2020-11-21,Péter Gulácsi,Matchweek 8,Away,D 1–1,RB Leipzig,Eint Frankfurt,Y,GK,90,3,1,1,66.7,0,1.0,0,0,0,0,9,17,52.9,33,4,33.3,34.0,12,50.0,40.9,7,2,28.6,3,28.3
+2020-11-28,Péter Gulácsi,Matchweek 9,Home,W 2–1,RB Leipzig,Arminia,Y*,GK,90,3,1,2,66.7,0,0.5,0,0,0,0,2,7,28.6,24,1,29.2,29.7,5,0.0,24.8,6,0,0.0,1,18.3
+2020-12-05,Péter Gulácsi,Matchweek 10,Away,D 3–3,RB Leipzig,Bayern Munich,Y,GK,90,5,3,2,40.0,0,1.1,0,0,0,0,6,11,54.5,30,12,36.7,36.0,8,0.0,22.9,11,1,9.1,0,14.5
+2020-12-12,Péter Gulácsi,Matchweek 11,Home,W 2–0,RB Leipzig,Werder Bremen,Y,GK,90,2,0,2,100.0,1,0.1,0,0,0,0,3,7,42.9,25,6,28.0,33.6,3,0.0,15.0,10,1,10.0,2,18.0
+2020-12-16,Péter Gulácsi,Matchweek 12,Away,W 1–0,RB Leipzig,Hoffenheim,Y,GK,90,3,0,3,100.0,1,0.5,0,0,0,0,6,13,46.2,41,6,29.3,30.6,5,20.0,21.2,8,0,0.0,2,17.2
+2020-12-19,Péter Gulácsi,Matchweek 13,Home,D 0–0,RB Leipzig,Köln,Y,GK,90,1,0,1,100.0,1,0.0,0,0,0,0,7,9,77.8,30,3,26.7,27.9,2,50.0,37.5,2,0,0.0,3,27.8
+2021-01-02,Péter Gulácsi,Matchweek 14,Away,W 1–0,RB Leipzig,Stuttgart,Y,GK,90,1,0,1,100.0,1,0.3,0,0,0,0,9,19,47.4,37,6,37.8,35.9,8,62.5,48.6,7,0,0.0,0,13.5
+2021-01-09,Péter Gulácsi,Matchweek 15,Home,L 1–3,RB Leipzig,Dortmund,Y,GK,90,6,3,2,50.0,0,2.2,0,0,0,0,1,5,20.0,28,7,17.9,29.1,8,0.0,16.1,4,0,0.0,2,19.3
+2021-01-16,Péter Gulácsi,Matchweek 16,Away,D 2–2,RB Leipzig,Wolfsburg,Y,GK,90,2,2,0,0.0,0,1.5,0,0,0,0,4,12,33.3,32,7,31.3,33.4,4,50.0,40.5,7,0,0.0,1,16.3
+2021-01-20,Péter Gulácsi,Matchweek 17,Home,W 1–0,RB Leipzig,Union Berlin,Y,GK,90,1,0,1,100.0,1,0.2,0,0,0,0,4,7,57.1,29,6,20.7,30.5,4,25.0,35.8,4,0,0.0,1,17.7
+2021-01-23,Péter Gulácsi,Matchweek 18,Away,L 2–3,RB Leipzig,Mainz 05,Y,GK,90,4,3,1,25.0,0,1.8,0,0,0,0,2,6,33.3,42,10,14.3,25.7,5,0.0,21.8,10,0,0.0,4,22.8
+2021-01-30,Péter Gulácsi,Matchweek 19,Home,W 1–0,RB Leipzig,Leverkusen,Y,GK,90,3,0,3,100.0,1,0.9,0,0,0,0,10,18,55.6,35,5,51.4,40.1,3,0.0,17.0,7,1,14.3,0,12.3
+2021-02-06,Péter Gulácsi,Matchweek 20,Away,W 3–0,RB Leipzig,Schalke 04,Y,GK,90,1,0,1,100.0,1,0.0,0,0,0,0,1,2,50.0,30,10,6.7,24.8,2,0.0,17.0,1,0,0.0,0,12.1
+2021-02-12,Péter Gulácsi,Matchweek 21,Home,W 2–1,RB Leipzig,Augsburg,Y*,GK,90,1,1,1,100.0,0,1.6,1,1,0,0,4,11,36.4,37,4,27.0,31.5,2,50.0,51.5,6,1,16.7,0,10.3
+2021-02-21,Péter Gulácsi,Matchweek 22,Away,W 3–0,RB Leipzig,Hertha BSC,Y,GK,90,4,0,4,100.0,1,1.1,0,0,0,0,5,6,83.3,27,7,18.5,30.9,7,14.3,20.0,4,0,0.0,3,23.0
+2021-02-27,Péter Gulácsi,Matchweek 23,Home,W 3–2,RB Leipzig,M'Gladbach,Y,GK,90,1,2,0,0.0,0,1.4,1,1,0,0,1,1,100.0,14,4,7.1,21.2,1,0.0,34.0,1,0,0.0,0,10.7
+2021-03-06,Péter Gulácsi,Matchweek 24,Away,W 3–0,RB Leipzig,Freiburg,Y*,GK,90,1,0,1,100.0,1,0.0,0,0,0,0,2,6,33.3,24,3,25.0,34.7,4,0.0,17.3,7,2,28.6,2,25.0
+2021-03-14,Péter Gulácsi,Matchweek 25,Home,D 1–1,RB Leipzig,Eint Frankfurt,Y,GK,90,2,1,1,50.0,0,1.8,0,0,0,0,2,8,25.0,29,3,24.1,33.1,6,16.7,24.7,7,0,0.0,1,26.7
+2021-03-19,Péter Gulácsi,Matchweek 26,Away,W 1–0,RB Leipzig,Arminia,Y,GK,90,0,0,0,0.0,1,0.0,0,0,0,0,3,3,100.0,27,6,11.1,24.3,4,0.0,26.8,4,0,0.0,3,20.1
+2021-04-03,Péter Gulácsi,Matchweek 27,Home,L 0–1,RB Leipzig,Bayern Munich,Y,GK,90,5,1,4,80.0,0,0.7,0,0,0,0,4,8,50.0,32,4,25.0,31.9,8,0.0,19.9,2,0,0.0,3,21.2
+2021-04-10,Péter Gulácsi,Matchweek 28,Away,W 4–1,RB Leipzig,Werder Bremen,Y,GK,90,1,1,1,100.0,0,0.5,1,1,0,0,5,8,62.5,38,6,15.8,26.4,11,18.2,27.0,7,1,14.3,1,17.2
+2021-04-16,Péter Gulácsi,Matchweek 29,Home,D 0–0,RB Leipzig,Hoffenheim,Y,GK,90,0,0,0,0.0,1,0.0,0,0,0,0,6,12,50.0,40,5,27.5,27.0,6,16.7,26.7,6,1,16.7,3,22.3
+2021-04-20,Péter Gulácsi,Matchweek 30,Away,L 1–2,RB Leipzig,Köln,Y*,GK,90,3,2,1,33.3,0,1.2,0,0,0,0,6,7,85.7,32,6,21.9,28.7,2,0.0,13.0,10,0,0.0,3,19.3
+2021-04-25,Péter Gulácsi,Matchweek 31,Home,W 2–0,RB Leipzig,Stuttgart,Y*,GK,90,0,0,0,0.0,1,0.0,0,0,0,0,0,0,0.0,20,2,0.0,20.6,0,0.0,0.0,0,0,0.0,4,31.8
+2021-05-08,Péter Gulácsi,Matchweek 32,Away,L 2–3,RB Leipzig,Dortmund,Y,GK,90,4,3,1,25.0,0,1.1,0,0,0,0,5,8,62.5,27,3,25.9,31.8,9,11.1,22.1,8,0,0.0,1,18.0
+2021-05-16,Péter Gulácsi,Matchweek 33,Home,D 2–2,RB Leipzig,Wolfsburg,Y,GK,90,4,2,2,50.0,0,1.2,0,0,0,0,1,7,14.3,32,4,21.9,28.8,4,0.0,9.8,0,0,0.0,1,18.2
+2020-09-19,Stefan Ortega,Matchweek 1,Away,D 1–1,Arminia,Eint Frankfurt,Y,GK,90,6,1,5,83.3,0,1.2,0,0,0,0,13,36,36.1,46,4,63.0,47.6,9,77.8,62.9,15,1,6.7,0,10.9
+2020-09-26,Stefan Ortega,Matchweek 2,Home,W 1–0,Arminia,Köln,Y,GK,90,2,0,2,100.0,1,0.8,0,0,0,0,18,27,66.7,60,2,43.3,37.4,5,20.0,30.0,9,1,11.1,2,18.0
+2020-10-03,Stefan Ortega,Matchweek 3,Away,L 0–1,Arminia,Werder Bremen,Y,GK,90,2,1,1,50.0,0,0.9,0,0,0,0,17,24,70.8,67,7,32.8,35.5,8,25.0,33.8,5,0,0.0,2,17.3
+2020-10-17,Stefan Ortega,Matchweek 4,Home,L 1–4,Arminia,Bayern Munich,Y,GK,90,10,4,6,60.0,0,3.3,0,0,0,0,8,21,38.1,45,4,44.4,42.9,8,12.5,22.9,16,2,12.5,0,10.0
+2020-10-25,Stefan Ortega,Matchweek 5,Away,L 1–2,Arminia,Wolfsburg,Y,GK,90,4,2,2,50.0,0,1.9,0,0,0,0,11,28,39.3,54,2,48.1,38.7,4,50.0,46.8,12,0,0.0,2,14.0
+2020-10-31,Stefan Ortega,Matchweek 6,Home,L 0–2,Arminia,Dortmund,Y,GK,90,10,2,8,80.0,0,2.4,0,0,0,0,13,33,39.4,40,5,62.5,46.7,10,80.0,55.6,11,0,0.0,0,13.4
+2020-11-07,Stefan Ortega,Matchweek 7,Away,L 0–5,Arminia,Union Berlin,Y,GK,90,8,5,4,50.0,0,2.8,1,1,0,0,2,6,33.3,35,4,11.4,30.5,3,66.7,40.0,3,0,0.0,0,14.7
+2020-11-21,Stefan Ortega,Matchweek 8,Home,L 1–2,Arminia,Leverkusen,Y,GK,90,4,2,2,50.0,0,1.4,0,0,0,0,12,28,42.9,44,4,52.3,43.3,5,100.0,63.4,20,0,0.0,1,17.5
+2020-11-28,Stefan Ortega,Matchweek 9,Away,L 1–2,Arminia,RB Leipzig,Y,GK,90,5,2,3,60.0,0,2.0,1,0,1,0,20,37,54.1,57,3,61.4,43.8,5,40.0,32.6,5,0,0.0,0,12.4
+2020-12-05,Stefan Ortega,Matchweek 10,Home,W 2–1,Arminia,Mainz 05,Y,GK,90,5,1,4,80.0,0,1.5,0,0,0,0,15,27,55.6,36,2,52.8,43.3,9,88.9,61.4,11,0,0.0,0,8.3
+2020-12-12,Stefan Ortega,Matchweek 11,Away,L 0–2,Arminia,Freiburg,Y,GK,90,6,2,5,83.3,0,2.8,1,1,0,0,13,32,40.6,71,5,36.6,37.8,8,75.0,58.4,8,1,12.5,3,19.8
+2020-12-16,Stefan Ortega,Matchweek 12,Home,L 0–1,Arminia,Augsburg,Y,GK,90,2,1,1,50.0,0,0.9,0,0,0,0,14,41,34.1,56,4,67.9,49.1,8,37.5,34.4,8,1,12.5,1,14.2
+2020-12-19,Stefan Ortega,Matchweek 13,Away,W 1–0,Arminia,Schalke 04,Y,GK,90,2,0,2,100.0,1,0.6,0,0,0,0,10,33,30.3,47,3,63.8,48.9,5,60.0,40.2,8,0,0.0,0,10.0
+2021-01-02,Stefan Ortega,Matchweek 14,Home,L 0–1,Arminia,M'Gladbach,Y,GK,90,7,1,6,85.7,0,2.0,0,0,0,0,21,45,46.7,54,3,66.7,49.6,10,90.0,65.8,9,0,0.0,1,14.4
+2021-01-10,Stefan Ortega,Matchweek 15,Home,W 1–0,Arminia,Hertha BSC,Y,GK,90,5,0,5,100.0,1,2.1,0,0,0,0,23,34,67.6,47,2,70.2,49.5,6,16.7,27.5,8,0,0.0,1,14.0
+2021-01-16,Stefan Ortega,Matchweek 16,Away,D 0–0,Arminia,Hoffenheim,Y,GK,90,5,0,5,100.0,1,0.4,0,0,0,0,21,29,72.4,52,6,50.0,43.4,8,37.5,36.0,15,1,6.7,1,12.2
+2021-01-20,Stefan Ortega,Matchweek 17,Home,W 3–0,Arminia,Stuttgart,Y,GK,90,3,0,3,100.0,1,0.7,0,0,0,0,20,36,55.6,45,2,68.9,53.4,8,62.5,49.9,12,1,8.3,0,13.3
+2021-01-23,Stefan Ortega,Matchweek 18,Home,L 1–5,Arminia,Eint Frankfurt,Y,GK,90,8,5,4,37.5,0,2.6,0,0,0,0,11,26,42.3,52,1,44.2,40.0,4,75.0,55.8,8,0,0.0,0,14.3
+2021-01-31,Stefan Ortega,Matchweek 19,Away,L 1–3,Arminia,Köln,Y,GK,90,5,3,2,40.0,0,1.8,0,0,0,0,20,39,51.3,58,3,55.2,44.3,11,63.6,53.7,11,1,9.1,1,17.5
+2021-03-10,Stefan Ortega,Matchweek 20,Home,L 0–2,Arminia,Werder Bremen,Y*,GK,90,2,2,0,0.0,0,1.6,0,0,0,0,13,25,52.0,60,5,41.7,39.6,4,0.0,21.5,6,1,16.7,1,19.0
+2021-02-15,Stefan Ortega,Matchweek 21,Away,D 3–3,Arminia,Bayern Munich,Y,GK,90,12,3,9,75.0,0,2.6,0,0,0,0,10,26,38.5,53,10,41.5,42.6,5,80.0,58.8,15,1,6.7,1,12.5
+2021-02-19,Stefan Ortega,Matchweek 22,Home,L 0–3,Arminia,Wolfsburg,Y,GK,90,6,3,3,50.0,0,1.6,0,0,0,0,8,20,40.0,65,4,30.8,35.0,3,0.0,26.3,7,1,14.3,1,15.7
+2021-02-27,Stefan Ortega,Matchweek 23,Away,L 0–3,Arminia,Dortmund,Y,GK,90,8,3,6,75.0,0,2.1,1,1,0,0,17,25,68.0,55,2,38.2,37.6,8,50.0,38.4,7,0,0.0,2,22.9
+2021-03-07,Stefan Ortega,Matchweek 24,Home,D 0–0,Arminia,Union Berlin,Y,GK,90,3,0,3,100.0,1,0.9,0,0,0,0,14,28,50.0,54,6,42.6,40.2,6,83.3,62.2,10,1,10.0,1,12.9
+2021-03-14,Stefan Ortega,Matchweek 25,Away,W 2–1,Arminia,Leverkusen,Y,GK,90,5,1,4,80.0,0,1.2,0,0,0,0,24,40,60.0,39,2,71.8,51.9,12,100.0,67.2,16,3,18.8,1,10.9
+2021-03-19,Stefan Ortega,Matchweek 26,Home,L 0–1,Arminia,RB Leipzig,Y,GK,90,7,1,5,85.7,0,1.5,0,0,0,0,18,37,48.6,30,1,90.0,59.7,11,90.9,65.1,5,0,0.0,0,11.9
+2021-04-03,Stefan Ortega,Matchweek 27,Away,D 1–1,Arminia,Mainz 05,Y*,GK,90,3,1,3,100.0,0,1.2,1,1,0,0,16,41,39.0,58,2,62.1,52.3,8,62.5,53.3,8,2,25.0,3,19.2
+2021-04-09,Stefan Ortega,Matchweek 28,Home,W 1–0,Arminia,Freiburg,Y,GK,90,1,0,1,100.0,1,0.1,0,0,0,0,11,25,44.0,45,1,40.0,39.6,8,87.5,64.1,7,0,0.0,2,23.0
+2021-04-17,Stefan Ortega,Matchweek 29,Away,D 0–0,Arminia,Augsburg,Y,GK,90,2,0,2,100.0,1,0.4,0,0,0,0,13,33,39.4,84,5,39.3,36.6,5,0.0,18.6,13,3,23.1,2,17.6
+2021-04-20,Stefan Ortega,Matchweek 30,Home,W 1–0,Arminia,Schalke 04,Y,GK,90,0,0,0,0.0,1,0.0,0,0,0,0,11,31,35.5,32,4,71.9,50.7,9,88.9,66.2,10,1,10.0,0,14.1
+2021-04-25,Stefan Ortega,Matchweek 31,Away,L 0–5,Arminia,M'Gladbach,Y,GK,90,11,5,7,63.6,0,4.5,1,1,0,0,6,27,22.2,58,1,39.7,39.8,6,66.7,62.3,8,1,12.5,2,18.0
+2021-05-09,Stefan Ortega,Matchweek 32,Away,D 0–0,Arminia,Hertha BSC,Y,GK,90,4,0,4,100.0,1,1.0,0,0,0,0,13,36,36.1,41,2,68.3,54.6,9,88.9,68.0,9,0,0.0,1,20.4
+2021-05-15,Stefan Ortega,Matchweek 33,Home,D 1–1,Arminia,Hoffenheim,Y,GK,90,3,1,2,66.7,0,1.4,0,0,0,0,13,25,52.0,47,3,38.3,37.0,9,77.8,59.9,12,2,16.7,2,21.0
+2021-05-22,Stefan Ortega,Matchweek 34,Away,W 2–0,Arminia,Stuttgart,Y,GK,90,0,0,0,0.0,1,0.0,0,0,0,0,19,37,51.4,33,2,90.9,66.6,9,77.8,61.9,11,3,27.3,0,11.6
+2020-10-25,Philipp Pentke,Matchweek 5,Away,D 1–1,Hoffenheim,Werder Bremen,Y,GK,90,2,1,1,50.0,0,0.4,0,0,0,0,2,6,33.3,25,5,20.0,29.8,4,25.0,31.5,2,0,0.0,1,20.3
+2021-05-15,Philipp Pentke,Matchweek 33,Away,D 1–1,Hoffenheim,Arminia,Y,GK,90,6,1,5,83.3,0,2.8,0,0,0,0,7,13,53.8,37,10,35.1,32.7,8,0.0,13.8,4,0,0.0,0,15.2
+2021-05-22,Philipp Pentke,Matchweek 34,Home,W 2–1,Hoffenheim,Hertha BSC,Y,GK,90,5,1,4,80.0,0,1.4,0,0,0,0,3,6,50.0,28,4,17.9,25.8,8,12.5,18.6,4,0,0.0,0,11.0
+2020-09-27,Pavao Pervan,Matchweek 2,Away,D 1–1,Wolfsburg,Freiburg,Y,GK,90,7,1,5,85.7,0,2.7,0,0,0,0,8,19,42.1,23,1,56.5,43.2,9,66.7,53.4,13,1,7.7,0,11.3
+2021-05-22,Pavao Pervan,Matchweek 34,Home,L 2–3,Wolfsburg,Mainz 05,Y,GK,90,7,3,4,57.1,0,2.0,0,0,0,0,7,13,53.8,30,5,26.7,31.1,9,55.6,46.0,7,1,14.3,0,12.5
+2020-09-19,Florian Müller,Matchweek 1,Away,W 3–2,Freiburg,Stuttgart,Y,GK,90,6,2,4,66.7,0,1.8,0,0,0,0,8,22,36.4,28,2,35.7,35.4,12,100.0,71.0,11,1,9.1,0,11.0
+2020-09-27,Florian Müller,Matchweek 2,Home,D 1–1,Freiburg,Wolfsburg,Y,GK,90,2,1,1,50.0,0,1.0,0,0,0,0,4,12,33.3,25,2,24.0,28.4,10,60.0,48.7,3,0,0.0,0,8.3
+2020-10-03,Florian Müller,Matchweek 3,Away,L 0–4,Freiburg,Dortmund,Y,GK,90,6,4,2,33.3,0,2.7,0,0,0,0,6,20,30.0,30,3,43.3,38.6,10,70.0,52.0,4,0,0.0,0,11.0
+2020-10-17,Florian Müller,Matchweek 4,Home,D 1–1,Freiburg,Werder Bremen,Y,GK,90,3,1,3,100.0,0,1.7,1,1,0,0,3,8,37.5,18,2,22.2,29.7,9,44.4,46.6,6,0,0.0,0,10.0
+2020-10-24,Florian Müller,Matchweek 5,Away,D 1–1,Freiburg,Union Berlin,Y,GK,90,7,1,6,85.7,0,1.5,0,0,0,0,10,26,38.5,31,3,48.4,45.2,12,91.7,70.3,15,1,6.7,1,17.3
+2020-11-01,Florian Müller,Matchweek 6,Home,L 2–4,Freiburg,Leverkusen,Y,GK,90,7,4,3,42.9,0,2.2,0,0,0,0,5,18,27.8,36,4,44.4,42.2,5,40.0,45.4,10,0,0.0,0,9.3
+2020-11-07,Florian Müller,Matchweek 7,Away,L 0–3,Freiburg,RB Leipzig,Y,GK,90,6,3,4,66.7,0,2.4,1,1,0,0,2,16,12.5,33,3,42.4,40.3,5,40.0,39.0,8,1,12.5,1,16.7
+2020-11-22,Florian Müller,Matchweek 8,Home,L 1–3,Freiburg,Mainz 05,Y,GK,90,8,3,5,62.5,0,2.5,0,0,0,0,1,7,14.3,35,1,5.7,21.7,9,55.6,44.0,3,0,0.0,1,45.0
+2020-11-28,Florian Müller,Matchweek 9,Away,D 1–1,Freiburg,Augsburg,Y,GK,90,2,1,1,50.0,0,0.3,0,0,0,0,12,25,48.0,36,3,41.7,43.6,11,90.9,64.0,8,0,0.0,0,17.3
+2020-12-05,Florian Müller,Matchweek 10,Home,D 2–2,Freiburg,M'Gladbach,Y,GK,90,4,2,2,50.0,0,1.4,0,0,0,0,10,22,45.5,29,6,48.3,43.8,8,100.0,71.9,5,1,20.0,1,19.0
+2020-12-12,Florian Müller,Matchweek 11,Home,W 2–0,Freiburg,Arminia,Y,GK,90,3,0,3,100.0,1,1.2,0,0,0,0,7,20,35.0,35,9,51.4,43.4,4,50.0,43.3,9,0,0.0,1,11.2
+2020-12-16,Florian Müller,Matchweek 12,Away,W 2–0,Freiburg,Schalke 04,Y,GK,90,2,0,2,100.0,1,0.0,0,0,0,0,3,18,16.7,28,6,42.9,40.5,7,85.7,62.1,6,1,16.7,0,11.4
+2020-12-20,Florian Müller,Matchweek 13,Home,W 4–1,Freiburg,Hertha BSC,Y,GK,90,3,1,2,66.7,0,1.2,0,0,0,0,8,33,24.2,33,3,75.8,57.2,8,100.0,74.4,8,0,0.0,0,12.4
+2021-01-02,Florian Müller,Matchweek 14,Away,W 3–1,Freiburg,Hoffenheim,Y,GK,90,6,1,5,83.3,0,1.8,0,0,0,0,8,20,40.0,22,4,59.1,45.0,7,100.0,67.9,8,0,0.0,0,9.8
+2021-01-09,Florian Müller,Matchweek 15,Home,W 5–0,Freiburg,Köln,Y,GK,90,2,0,2,100.0,1,0.1,0,0,0,0,12,23,52.2,38,5,47.4,39.8,5,100.0,70.0,10,1,10.0,1,15.3
+2021-01-17,Florian Müller,Matchweek 16,Away,L 1–2,Freiburg,Bayern Munich,Y,GK,90,9,2,7,77.8,0,3.5,0,0,0,0,8,20,40.0,31,4,41.9,38.2,10,70.0,48.1,9,0,0.0,0,9.0
+2021-01-20,Florian Müller,Matchweek 17,Home,D 2–2,Freiburg,Eint Frankfurt,Y,GK,90,3,2,2,33.3,0,0.6,0,0,0,0,4,31,12.9,33,4,63.6,48.2,10,100.0,71.3,11,0,0.0,3,18.4
+2021-01-23,Florian Müller,Matchweek 18,Home,W 2–1,Freiburg,Stuttgart,Y,GK,90,8,1,7,87.5,0,2.3,1,0,1,0,9,34,26.5,32,3,65.6,54.8,14,92.9,72.0,14,1,7.1,1,14.4
+2021-01-31,Florian Müller,Matchweek 19,Away,L 0–3,Freiburg,Wolfsburg,Y,GK,90,5,3,2,40.0,0,2.9,0,0,0,0,7,19,36.8,34,4,47.1,38.0,6,50.0,41.2,12,1,8.3,0,15.8
+2021-02-06,Florian Müller,Matchweek 20,Home,W 2–1,Freiburg,Dortmund,Y,GK,90,5,1,4,80.0,0,1.8,0,0,0,0,1,18,5.6,34,8,38.2,40.4,10,50.0,46.0,8,2,25.0,1,13.1
+2021-02-13,Florian Müller,Matchweek 21,Away,D 0–0,Freiburg,Werder Bremen,Y,GK,90,4,0,4,100.0,1,0.3,0,0,0,0,4,8,50.0,28,8,21.4,32.6,7,28.6,35.4,7,0,0.0,1,17.3
+2021-02-20,Florian Müller,Matchweek 22,Home,L 0–1,Freiburg,Union Berlin,Y,GK,90,4,1,3,75.0,0,1.5,0,0,0,0,3,15,20.0,42,8,19.0,24.7,9,77.8,63.8,6,0,0.0,2,14.6
+2021-02-28,Florian Müller,Matchweek 23,Away,W 2–1,Freiburg,Leverkusen,Y,GK,90,5,1,4,80.0,0,0.3,0,0,0,0,5,25,20.0,30,4,26.7,34.1,18,94.4,68.2,11,0,0.0,0,10.2
+2021-03-06,Florian Müller,Matchweek 24,Home,L 0–3,Freiburg,RB Leipzig,Y,GK,90,7,3,4,57.1,0,1.8,0,0,0,0,5,16,31.3,52,8,13.5,28.8,11,81.8,61.8,7,0,0.0,1,17.4
+2021-03-13,Florian Müller,Matchweek 25,Away,L 0–1,Freiburg,Mainz 05,Y,GK,90,7,1,6,85.7,0,1.8,0,0,0,0,4,20,20.0,51,6,29.4,32.8,6,83.3,62.7,7,0,0.0,3,17.8
+2021-03-21,Florian Müller,Matchweek 26,Home,W 2–0,Freiburg,Augsburg,Y,GK,90,7,0,7,100.0,1,1.9,0,0,0,0,14,28,50.0,42,4,42.9,39.7,11,90.9,69.9,9,1,11.1,1,26.3
+2021-04-03,Florian Müller,Matchweek 27,Away,L 1–2,Freiburg,M'Gladbach,Y,GK,90,6,2,4,66.7,0,1.7,0,0,0,0,5,13,38.5,46,11,21.7,30.9,7,42.9,40.7,7,0,0.0,1,15.4
+2021-04-09,Florian Müller,Matchweek 28,Away,L 0–1,Freiburg,Arminia,Y,GK,90,3,1,3,66.7,0,0.2,0,0,0,0,8,21,38.1,49,7,38.8,36.1,10,20.0,30.1,11,1,9.1,0,10.5
+2021-04-17,Florian Müller,Matchweek 29,Home,W 4–0,Freiburg,Schalke 04,Y,GK,90,2,0,2,100.0,1,0.8,0,0,0,0,1,7,14.3,47,5,8.5,25.0,4,75.0,57.3,4,0,0.0,1,18.8
+2021-05-06,Florian Müller,Matchweek 30,Away,L 0–3,Freiburg,Hertha BSC,Y,GK,90,6,3,3,50.0,0,2.4,0,0,0,0,7,9,77.8,32,4,18.8,26.0,9,33.3,31.3,2,0,0.0,1,19.0
+2021-04-24,Florian Müller,Matchweek 31,Home,D 1–1,Freiburg,Hoffenheim,Y,GK,90,4,1,3,75.0,0,1.3,0,0,0,0,5,13,38.5,26,5,26.9,33.0,8,75.0,56.9,6,0,0.0,1,19.6
+2020-09-19,Gregor Kobel,Matchweek 1,Home,L 2–3,Stuttgart,Freiburg,Y,GK,90.0,5.0,3.0,2.0,40.0,0.0,1.3,0.0,0.0,0.0,0.0,4.0,5.0,80.0,36.0,4.0,13.9,21.8,3.0,0.0,14.0,3.0,0.0,0.0,1.0,19.5
+2020-09-26,Gregor Kobel,Matchweek 2,Away,W 4–1,Stuttgart,Mainz 05,Y,GK,90.0,2.0,1.0,1.0,50.0,0.0,1.0,0.0,0.0,0.0,0.0,9.0,13.0,69.2,24.0,4.0,41.7,35.0,8.0,37.5,40.0,9.0,0.0,0.0,2.0,18.5
+2020-10-03,Gregor Kobel,Matchweek 3,Home,D 1–1,Stuttgart,Leverkusen,Y,GK,90.0,7.0,1.0,6.0,85.7,0.0,1.4,0.0,0.0,0.0,0.0,8.0,18.0,44.4,34.0,7.0,44.1,37.3,13.0,23.1,29.3,6.0,0.0,0.0,1.0,15.8
+2020-10-17,Gregor Kobel,Matchweek 4,Away,W 2–0,Stuttgart,Hertha BSC,Y,GK,90.0,4.0,0.0,4.0,100.0,1.0,0.6,0.0,0.0,0.0,0.0,2.0,14.0,14.3,23.0,6.0,56.5,42.1,11.0,9.1,17.9,12.0,0.0,0.0,0.0,10.7
+2020-10-23,Gregor Kobel,Matchweek 5,Home,D 1–1,Stuttgart,Köln,Y,GK,90.0,3.0,1.0,3.0,100.0,0.0,1.1,1.0,1.0,0.0,0.0,7.0,12.0,58.3,24.0,4.0,37.5,31.5,8.0,37.5,36.5,19.0,1.0,5.3,1.0,12.2
+2020-10-30,Gregor Kobel,Matchweek 6,Away,D 1–1,Stuttgart,Schalke 04,Y,GK,90.0,2.0,1.0,1.0,50.0,0.0,0.9,0.0,0.0,0.0,0.0,5.0,8.0,62.5,25.0,6.0,24.0,29.4,5.0,40.0,25.6,2.0,0.0,0.0,1.0,14.2
+2020-11-07,Gregor Kobel,Matchweek 7,Home,D 2–2,Stuttgart,Eint Frankfurt,Y,GK,90.0,7.0,2.0,5.0,71.4,0.0,2.5,0.0,0.0,0.0,0.0,4.0,13.0,30.8,26.0,6.0,38.5,32.7,9.0,33.3,19.4,13.0,1.0,7.7,0.0,12.8
+2020-11-21,Gregor Kobel,Matchweek 8,Away,D 3–3,Stuttgart,Hoffenheim,Y,GK,90.0,7.0,3.0,5.0,71.4,0.0,2.2,1.0,1.0,0.0,0.0,4.0,8.0,50.0,38.0,11.0,21.1,26.1,6.0,0.0,8.8,10.0,0.0,0.0,1.0,16.4
+2020-11-28,Gregor Kobel,Matchweek 9,Home,L 1–3,Stuttgart,Bayern Munich,Y,GK,90.0,6.0,3.0,3.0,50.0,0.0,0.7,0.0,0.0,0.0,0.0,3.0,6.0,50.0,28.0,11.0,17.9,21.8,7.0,14.3,19.0,12.0,0.0,0.0,0.0,12.8
+2020-12-06,Gregor Kobel,Matchweek 10,Away,W 2–1,Stuttgart,Werder Bremen,Y,GK,90.0,3.0,1.0,2.0,66.7,0.0,0.6,0.0,0.0,0.0,0.0,4.0,11.0,36.4,35.0,8.0,31.4,31.4,9.0,0.0,9.0,12.0,0.0,0.0,2.0,15.1
+2020-12-12,Gregor Kobel,Matchweek 11,Away,W 5–1,Stuttgart,Dortmund,Y,GK,90.0,4.0,1.0,3.0,75.0,0.0,1.0,0.0,0.0,0.0,0.0,2.0,11.0,18.2,21.0,5.0,47.6,44.0,5.0,20.0,16.6,10.0,0.0,0.0,0.0,11.1
+2020-12-15,Gregor Kobel,Matchweek 12,Home,D 2–2,Stuttgart,Union Berlin,Y,GK,90.0,5.0,2.0,3.0,60.0,0.0,1.2,0.0,0.0,0.0,0.0,4.0,10.0,40.0,27.0,4.0,25.9,31.7,9.0,33.3,27.4,8.0,1.0,12.5,1.0,16.0
+2020-12-20,Gregor Kobel,Matchweek 13,Away,L 0–1,Stuttgart,Wolfsburg,Y,GK,90.0,5.0,1.0,4.0,80.0,0.0,2.2,0.0,0.0,0.0,0.0,3.0,7.0,42.9,33.0,6.0,21.2,27.2,11.0,0.0,16.1,9.0,0.0,0.0,0.0,13.9
+2021-01-02,Gregor Kobel,Matchweek 14,Home,L 0–1,Stuttgart,RB Leipzig,Y,GK,90.0,7.0,1.0,6.0,85.7,0.0,2.8,1.0,0.0,1.0,0.0,3.0,10.0,30.0,27.0,6.0,29.6,33.3,15.0,13.3,21.4,14.0,1.0,7.1,0.0,0.0
+2021-01-10,Gregor Kobel,Matchweek 15,Away,W 4–1,Stuttgart,Augsburg,Y,GK,90.0,3.0,1.0,1.0,66.7,0.0,1.0,0.0,0.0,0.0,0.0,0.0,6.0,0.0,27.0,5.0,22.2,25.5,9.0,0.0,14.6,5.0,1.0,20.0,0.0,15.0
+2021-01-16,Gregor Kobel,Matchweek 16,Home,D 2–2,Stuttgart,M'Gladbach,Y,GK,90.0,4.0,2.0,3.0,75.0,0.0,2.2,1.0,1.0,0.0,0.0,3.0,4.0,75.0,29.0,3.0,13.8,23.6,4.0,0.0,12.0,2.0,0.0,0.0,1.0,22.0
+2021-01-20,Gregor Kobel,Matchweek 17,Away,L 0–3,Stuttgart,Arminia,Y,GK,90.0,4.0,3.0,2.0,25.0,0.0,2.1,0.0,0.0,0.0,0.0,2.0,6.0,33.3,31.0,6.0,19.4,26.3,8.0,0.0,16.6,2.0,1.0,50.0,0.0,10.0
+2021-01-23,Gregor Kobel,Matchweek 18,Away,L 1–2,Stuttgart,Freiburg,Y,GK,90.0,5.0,2.0,3.0,60.0,0.0,1.7,0.0,0.0,0.0,0.0,6.0,13.0,46.2,35.0,8.0,25.7,29.4,8.0,50.0,42.1,9.0,0.0,0.0,0.0,13.3
+2021-01-29,Gregor Kobel,Matchweek 19,Home,W 2–0,Stuttgart,Mainz 05,Y,GK,90.0,2.0,0.0,2.0,100.0,1.0,0.1,0.0,0.0,0.0,0.0,6.0,13.0,46.2,28.0,7.0,32.1,31.3,11.0,36.4,34.7,11.0,2.0,18.2,0.0,8.2
+2021-02-06,Gregor Kobel,Matchweek 20,Away,L 2–5,Stuttgart,Leverkusen,Y,GK,90.0,13.0,5.0,7.0,61.5,0.0,3.5,0.0,0.0,0.0,0.0,8.0,14.0,57.1,28.0,4.0,42.9,35.0,7.0,28.6,31.4,7.0,1.0,14.3,1.0,16.2
+2021-02-13,Gregor Kobel,Matchweek 21,Home,D 1–1,Stuttgart,Hertha BSC,Y,GK,90.0,1.0,1.0,0.0,0.0,0.0,0.7,0.0,0.0,0.0,0.0,2.0,13.0,15.4,24.0,4.0,54.2,40.7,8.0,0.0,18.9,6.0,0.0,0.0,0.0,9.0
+2021-02-20,Gregor Kobel,Matchweek 22,Away,W 1–0,Stuttgart,Köln,Y,GK,90.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,4.0,16.0,25.0,27.0,8.0,29.6,29.0,12.0,66.7,51.1,5.0,3.0,60.0,1.0,17.3
+2021-02-27,Gregor Kobel,Matchweek 23,Home,W 5–1,Stuttgart,Schalke 04,Y,GK,90.0,4.0,1.0,3.0,75.0,0.0,2.2,1.0,0.0,1.0,0.0,6.0,12.0,50.0,25.0,3.0,44.0,34.5,7.0,14.3,22.6,5.0,1.0,20.0,0.0,13.5
+2021-03-06,Gregor Kobel,Matchweek 24,Away,D 1–1,Stuttgart,Eint Frankfurt,Y,GK,90.0,7.0,1.0,6.0,85.7,0.0,1.8,0.0,0.0,0.0,0.0,4.0,11.0,36.4,27.0,7.0,33.3,34.8,5.0,40.0,29.8,11.0,0.0,0.0,1.0,17.3
+2021-03-14,Gregor Kobel,Matchweek 25,Home,W 2–0,Stuttgart,Hoffenheim,Y,GK,90.0,5.0,0.0,5.0,100.0,1.0,0.4,0.0,0.0,0.0,0.0,9.0,11.0,81.8,30.0,9.0,33.3,30.9,11.0,9.1,19.7,17.0,2.0,11.8,0.0,14.0
+2021-03-20,Gregor Kobel,Matchweek 26,Away,L 0–4,Stuttgart,Bayern Munich,Y,GK,90.0,7.0,4.0,3.0,42.9,0.0,2.8,0.0,0.0,0.0,0.0,1.0,2.0,50.0,20.0,7.0,10.0,22.0,7.0,0.0,15.7,6.0,0.0,0.0,2.0,17.0
+2021-04-04,Gregor Kobel,Matchweek 27,Home,W 1–0,Stuttgart,Werder Bremen,Y,GK,90.0,2.0,0.0,2.0,100.0,1.0,0.0,0.0,0.0,0.0,0.0,3.0,7.0,42.9,30.0,9.0,16.7,26.3,10.0,20.0,27.8,7.0,1.0,14.3,1.0,12.9
+2021-04-10,Gregor Kobel,Matchweek 28,Home,L 2–3,Stuttgart,Dortmund,Y,GK,90.0,7.0,3.0,4.0,57.1,0.0,1.7,0.0,0.0,0.0,0.0,5.0,12.0,41.7,30.0,8.0,30.0,28.9,9.0,33.3,28.3,6.0,0.0,0.0,0.0,13.0
+2021-04-17,Gregor Kobel,Matchweek 29,Away,L 1–2,Stuttgart,Union Berlin,Y,GK,90.0,4.0,2.0,2.0,50.0,0.0,1.2,0.0,0.0,0.0,0.0,5.0,9.0,55.6,27.0,6.0,25.9,27.6,5.0,40.0,35.0,7.0,1.0,14.3,0.0,10.3
+2021-04-21,Gregor Kobel,Matchweek 30,Home,L 1–3,Stuttgart,Wolfsburg,Y,GK,90.0,4.0,3.0,1.0,25.0,0.0,1.9,0.0,0.0,0.0,0.0,4.0,9.0,44.4,26.0,3.0,30.8,27.9,10.0,10.0,15.7,5.0,1.0,20.0,0.0,4.5
+2021-04-25,Gregor Kobel,Matchweek 31,Away,L 0–2,Stuttgart,RB Leipzig,Y,GK,90.0,10.0,2.0,9.0,90.0,0.0,2.9,1.0,1.0,0.0,0.0,6.0,20.0,30.0,44.0,6.0,31.8,31.5,14.0,42.9,35.2,18.0,0.0,0.0,0.0,9.6
+2021-05-15,Gregor Kobel,Matchweek 33,Away,W 2–1,Stuttgart,M'Gladbach,Y,GK,90.0,4.0,1.0,3.0,75.0,0.0,1.6,0.0,0.0,0.0,0.0,2.0,10.0,20.0,31.0,5.0,25.8,28.2,5.0,40.0,38.2,6.0,1.0,16.7,0.0,7.8
+2021-05-22,Gregor Kobel,Matchweek 34,Home,L 0–2,Stuttgart,Arminia,Y,GK,90.0,2.0,2.0,1.0,50.0,0.0,1.4,1.0,1.0,0.0,0.0,0.0,3.0,0.0,20.0,4.0,15.0,23.8,7.0,0.0,21.6,8.0,1.0,12.5,0.0,9.6
+2020-09-19,Kevin Trapp,Matchweek 1,Home,D 1–1,Eint Frankfurt,Arminia,Y,GK,90,4,1,3,75.0,0,1.3,0,0,0,0,6,13,46.2,32,5,31.3,30.1,7,42.9,34.6,7,1,14.3,0,9.5
+2020-09-25,Kevin Trapp,Matchweek 2,Away,W 3–1,Eint Frankfurt,Hertha BSC,Y,GK,90,6,1,6,83.3,0,0.7,0,0,0,0,10,19,52.6,34,7,47.1,42.1,5,60.0,49.2,16,1,6.3,1,17.5
+2020-10-03,Kevin Trapp,Matchweek 3,Home,W 2–1,Eint Frankfurt,Hoffenheim,Y,GK,90,3,1,2,66.7,0,1.3,0,0,0,0,12,23,52.2,38,7,50.0,39.3,7,57.1,49.9,6,2,33.3,2,18.4
+2020-10-18,Kevin Trapp,Matchweek 4,Away,D 1–1,Eint Frankfurt,Köln,Y,GK,90,5,1,4,80.0,0,1.3,0,0,0,0,21,33,63.6,50,1,56.0,38.9,5,100.0,74.6,9,1,11.1,0,21.0
+2020-10-24,Kevin Trapp,Matchweek 5,Away,L 0–5,Eint Frankfurt,Bayern Munich,Y,GK,90,9,5,4,44.4,0,4.1,0,0,0,0,8,18,44.4,24,5,58.3,44.3,9,44.4,38.6,10,1,10.0,0,11.5
+2020-10-31,Kevin Trapp,Matchweek 6,Home,D 1–1,Eint Frankfurt,Werder Bremen,Y,GK,90,4,1,3,75.0,0,0.4,0,0,0,0,3,5,60.0,30,6,16.7,25.7,5,0.0,17.2,7,1,14.3,1,18.7
+2020-11-07,Kevin Trapp,Matchweek 7,Away,D 2–2,Eint Frankfurt,Stuttgart,Y,GK,90,4,2,3,75.0,0,1.2,1,1,0,0,4,11,36.4,24,3,33.3,32.1,8,37.5,41.6,5,0,0.0,0,13.0
+2020-11-21,Kevin Trapp,Matchweek 8,Home,D 1–1,Eint Frankfurt,RB Leipzig,Y,GK,90,2,1,1,50.0,0,1.0,0,0,0,0,11,32,34.4,45,8,57.8,40.6,7,85.7,55.6,12,0,0.0,1,12.9
+2020-11-28,Kevin Trapp,Matchweek 9,Away,D 3–3,Eint Frankfurt,Union Berlin,Y,GK,90,6,3,4,66.7,0,3.4,1,1,0,0,6,14,42.9,35,5,31.4,32.5,7,42.9,39.4,11,1,9.1,1,16.2
+2020-12-05,Kevin Trapp,Matchweek 10,Home,D 1–1,Eint Frankfurt,Dortmund,Y,GK,90,5,1,4,80.0,0,0.5,0,0,0,0,8,30,26.7,31,3,80.6,49.2,9,55.6,41.9,6,0,0.0,0,11.8
+2020-12-11,Kevin Trapp,Matchweek 11,Away,L 1–2,Eint Frankfurt,Wolfsburg,Y,GK,90,8,2,7,87.5,0,3.0,1,1,0,0,9,26,34.6,40,8,57.5,42.8,9,33.3,33.0,11,2,18.2,2,13.5
+2020-12-15,Kevin Trapp,Matchweek 12,Home,D 3–3,Eint Frankfurt,M'Gladbach,Y,GK,90,3,3,1,33.3,0,2.1,1,1,0,0,7,27,25.9,30,2,70.0,48.0,6,100.0,63.8,8,0,0.0,0,16.9
+2020-12-19,Kevin Trapp,Matchweek 13,Away,W 2–0,Eint Frankfurt,Augsburg,Y,GK,90,4,0,4,100.0,1,1.0,0,0,0,0,10,22,45.5,33,8,45.5,38.7,13,53.8,43.6,11,2,18.2,1,15.5
+2021-01-02,Kevin Trapp,Matchweek 14,Home,W 2–1,Eint Frankfurt,Leverkusen,Y,GK,90,2,1,1,50.0,0,0.2,0,0,0,0,11,25,44.0,23,2,69.6,50.0,9,100.0,67.6,10,0,0.0,1,12.4
+2021-01-09,Kevin Trapp,Matchweek 15,Away,W 2–0,Eint Frankfurt,Mainz 05,Y,GK,90,1,0,1,100.0,1,0.2,0,0,0,0,13,28,46.4,40,4,57.5,39.6,8,62.5,48.9,10,0,0.0,0,8.0
+2021-01-17,Kevin Trapp,Matchweek 16,Home,W 3–1,Eint Frankfurt,Schalke 04,Y,GK,90,1,1,0,0.0,0,0.2,0,0,0,0,6,12,50.0,30,4,23.3,29.7,7,71.4,43.6,7,1,14.3,1,21.0
+2021-01-20,Kevin Trapp,Matchweek 17,Away,D 2–2,Eint Frankfurt,Freiburg,Y,GK,90,4,2,2,50.0,0,1.5,0,0,0,0,7,19,36.8,33,4,45.5,37.3,9,44.4,40.7,8,0,0.0,0,14.6
+2021-01-23,Kevin Trapp,Matchweek 18,Away,W 5–1,Eint Frankfurt,Arminia,Y,GK,90,4,1,3,75.0,0,0.7,0,0,0,0,3,8,37.5,29,5,27.6,30.1,2,0.0,34.0,9,2,22.2,0,5.0
+2021-01-30,Kevin Trapp,Matchweek 19,Home,W 3–1,Eint Frankfurt,Hertha BSC,Y,GK,90,3,1,2,66.7,0,0.9,0,0,0,0,8,19,42.1,38,8,39.5,36.8,9,44.4,38.2,6,2,33.3,2,21.6
+2021-02-07,Kevin Trapp,Matchweek 20,Away,W 3–1,Eint Frankfurt,Hoffenheim,Y,GK,90,1,1,0,0.0,0,0.9,0,0,0,0,6,17,35.3,29,3,48.3,39.1,9,33.3,34.2,3,0,0.0,0,6.3
+2021-02-14,Kevin Trapp,Matchweek 21,Home,W 2–0,Eint Frankfurt,Köln,Y,GK,90,1,0,1,100.0,1,0.0,0,0,0,0,4,14,28.6,34,3,35.3,35.3,5,40.0,37.4,4,0,0.0,1,16.6
+2021-02-20,Kevin Trapp,Matchweek 22,Home,W 2–1,Eint Frankfurt,Bayern Munich,Y,GK,90,6,1,5,83.3,0,1.7,0,0,0,0,15,35,42.9,32,5,71.9,51.8,18,66.7,55.1,15,1,6.7,1,15.4
+2021-02-26,Kevin Trapp,Matchweek 23,Away,L 1–2,Eint Frankfurt,Werder Bremen,Y,GK,90,5,2,3,60.0,0,1.8,0,0,0,0,4,10,40.0,26,6,38.5,34.0,3,0.0,24.7,2,1,50.0,0,14.8
+2021-03-06,Kevin Trapp,Matchweek 24,Home,D 1–1,Eint Frankfurt,Stuttgart,Y,GK,90,1,1,0,0.0,0,0.2,0,0,0,0,5,17,29.4,31,4,51.6,38.8,8,12.5,23.5,9,2,22.2,0,10.3
+2021-03-14,Kevin Trapp,Matchweek 25,Away,D 1–1,Eint Frankfurt,RB Leipzig,Y,GK,90,8,1,7,87.5,0,1.5,0,0,0,0,11,32,34.4,45,9,60.0,42.6,6,83.3,65.5,10,1,10.0,3,15.8
+2021-03-20,Kevin Trapp,Matchweek 26,Home,W 5–2,Eint Frankfurt,Union Berlin,Y,GK,90,6,2,4,66.7,0,2.2,0,0,0,0,7,22,31.8,32,6,43.8,38.4,10,80.0,63.8,17,1,5.9,0,17.2
+2021-04-03,Kevin Trapp,Matchweek 27,Away,W 2–1,Eint Frankfurt,Dortmund,Y,GK,90,5,1,4,80.0,0,1.2,0,0,0,0,7,23,30.4,30,6,56.7,40.5,13,46.2,39.1,10,0,0.0,1,15.5
+2021-04-10,Kevin Trapp,Matchweek 28,Home,W 4–3,Eint Frankfurt,Wolfsburg,Y,GK,90,7,3,5,57.1,0,1.3,0,0,0,0,13,25,52.0,25,1,72.0,48.0,12,58.3,42.6,10,0,0.0,0,12.0
+2021-04-17,Kevin Trapp,Matchweek 29,Away,L 0–4,Eint Frankfurt,M'Gladbach,Y,GK,90,4,4,0,0.0,0,1.6,0,0,0,0,5,14,35.7,25,4,32.0,30.2,10,60.0,44.8,10,0,0.0,0,14.8
+2021-04-20,Kevin Trapp,Matchweek 30,Home,W 2–0,Eint Frankfurt,Augsburg,Y,GK,90,4,0,4,100.0,1,0.0,1,0,0,1,3,15,20.0,32,5,40.6,37.0,8,25.0,32.3,9,0,0.0,2,18.1
+2021-04-24,Kevin Trapp,Matchweek 31,Away,L 1–3,Eint Frankfurt,Leverkusen,Y,GK,90,9,3,6,66.7,0,3.4,0,0,0,0,12,25,48.0,60,6,33.3,34.1,9,55.6,45.9,8,0,0.0,2,14.7
+2021-05-09,Kevin Trapp,Matchweek 32,Home,D 1–1,Eint Frankfurt,Mainz 05,Y,GK,90,3,1,2,66.7,0,0.6,0,0,0,0,1,5,20.0,34,6,11.8,22.5,5,20.0,26.4,9,1,11.1,0,14.0
+2021-05-15,Kevin Trapp,Matchweek 33,Away,L 3–4,Eint Frankfurt,Schalke 04,Y,GK,90,5,4,1,20.0,0,3.2,1,0,1,0,1,2,50.0,15,2,6.7,29.6,6,16.7,26.5,1,0,0.0,0,20.5
+2020-12-06,Michael Langer,Matchweek 10,Home,L 0–3,Schalke 04,Leverkusen,Y,GK,90,9,3,7,66.7,0,3.1,0,0,0,0,8,14,57.1,13,1,53.8,40.8,15,46.7,36.6,9,0,0.0,0,6.0
+2021-02-20,Michael Langer,Matchweek 22,Home,L 0–4,Schalke 04,Dortmund,N,GK,59,5,4,1,20.0,0,2.7,0,0,0,0,2,8,25.0,12,1,41.7,38.3,3,100.0,65.3,3,0,0.0,0,9.0
+2021-02-27,Michael Langer,Matchweek 23,Away,L 1–5,Schalke 04,Stuttgart,Y,GK,90,10,5,5,50.0,0,2.9,0,0,0,0,1,13,7.7,25,5,40.0,36.9,8,37.5,34.6,11,0,0.0,3,20.7
+2021-05-07,Fabian Bredlow,Matchweek 32,Home,W 2–1,Stuttgart,Augsburg,Y,GK,90,9,1,8,88.9,0,2.4,0,0,0,0,2,11,18.2,27,5,37.0,33.1,9,11.1,27.6,17,1,5.9,0,10.3
+2020-09-20,Koen Casteels,Matchweek 1,Home,D 0–0,Wolfsburg,Leverkusen,Y*,GK,90.0,3.0,0.0,3.0,100.0,1.0,0.5,0.0,0.0,0.0,0.0,10.0,27.0,37.0,41.0,3.0,56.1,43.9,5.0,80.0,59.2,11.0,1.0,9.1,0.0,13.7
+2020-10-04,Koen Casteels,Matchweek 3,Home,D 0–0,Wolfsburg,Augsburg,Y,GK,90.0,1.0,0.0,1.0,100.0,1.0,0.1,0.0,0.0,0.0,0.0,4.0,9.0,44.4,28.0,5.0,25.0,34.1,4.0,50.0,41.5,6.0,2.0,33.3,1.0,17.0
+2020-10-17,Koen Casteels,Matchweek 4,Away,D 1–1,Wolfsburg,M'Gladbach,Y,GK,90.0,1.0,1.0,1.0,100.0,0.0,0.4,1.0,1.0,0.0,0.0,9.0,23.0,39.1,39.0,6.0,41.0,36.9,9.0,77.8,52.7,8.0,2.0,25.0,0.0,10.7
+2020-10-25,Koen Casteels,Matchweek 5,Home,W 2–1,Wolfsburg,Arminia,Y,GK,90.0,1.0,1.0,0.0,0.0,0.0,0.8,0.0,0.0,0.0,0.0,11.0,22.0,50.0,35.0,7.0,48.6,39.0,5.0,100.0,68.8,9.0,0.0,0.0,0.0,14.8
+2020-11-01,Koen Casteels,Matchweek 6,Away,D 1–1,Wolfsburg,Hertha BSC,Y*,GK,90.0,5.0,1.0,4.0,80.0,0.0,1.0,0.0,0.0,0.0,0.0,5.0,13.0,38.5,18.0,5.0,50.0,37.6,9.0,44.4,40.8,7.0,0.0,0.0,0.0,12.2
+2020-11-08,Koen Casteels,Matchweek 7,Home,W 2–1,Wolfsburg,Hoffenheim,Y*,GK,90.0,4.0,1.0,3.0,75.0,0.0,1.7,1.0,0.0,1.0,0.0,12.0,24.0,50.0,24.0,6.0,62.5,44.7,10.0,90.0,63.1,16.0,1.0,6.3,1.0,16.4
+2020-11-21,Koen Casteels,Matchweek 8,Away,W 2–0,Wolfsburg,Schalke 04,Y*,GK,90.0,6.0,0.0,6.0,100.0,1.0,0.7,0.0,0.0,0.0,0.0,8.0,21.0,38.1,39.0,6.0,38.5,36.6,7.0,85.7,61.4,10.0,0.0,0.0,0.0,12.2
+2020-11-27,Koen Casteels,Matchweek 9,Home,W 5–3,Wolfsburg,Werder Bremen,Y*,GK,90.0,4.0,3.0,2.0,25.0,0.0,1.5,0.0,0.0,0.0,0.0,6.0,7.0,85.7,21.0,5.0,28.6,29.2,4.0,25.0,29.0,6.0,3.0,50.0,0.0,17.0
+2020-12-05,Koen Casteels,Matchweek 10,Away,D 2–2,Wolfsburg,Köln,Y*,GK,90.0,3.0,2.0,1.0,33.3,0.0,2.3,0.0,0.0,0.0,0.0,3.0,8.0,37.5,28.0,5.0,17.9,28.5,4.0,75.0,65.0,8.0,1.0,12.5,1.0,14.7
+2020-12-11,Koen Casteels,Matchweek 11,Home,W 2–1,Wolfsburg,Eint Frankfurt,Y*,GK,90.0,3.0,1.0,3.0,100.0,0.0,1.2,1.0,1.0,0.0,0.0,8.0,21.0,38.1,41.0,3.0,43.9,39.1,3.0,100.0,66.7,8.0,1.0,12.5,1.0,15.8
+2020-12-16,Koen Casteels,Matchweek 12,Away,L 1–2,Wolfsburg,Bayern Munich,Y*,GK,90.0,2.0,2.0,0.0,0.0,0.0,1.4,0.0,0.0,0.0,0.0,8.0,13.0,61.5,22.0,3.0,45.5,41.7,5.0,60.0,43.2,8.0,0.0,0.0,3.0,18.6
+2020-12-20,Koen Casteels,Matchweek 13,Home,W 1–0,Wolfsburg,Stuttgart,Y*,GK,90.0,2.0,0.0,2.0,100.0,1.0,0.1,0.0,0.0,0.0,0.0,12.0,22.0,54.5,41.0,12.0,43.9,38.3,5.0,80.0,62.4,7.0,1.0,14.3,2.0,13.9
+2021-01-03,Koen Casteels,Matchweek 14,Away,L 0–2,Wolfsburg,Dortmund,Y*,GK,90.0,7.0,2.0,5.0,71.4,0.0,1.9,0.0,0.0,0.0,0.0,6.0,11.0,54.5,28.0,3.0,32.1,32.8,7.0,28.6,40.0,9.0,1.0,11.1,2.0,24.8
+2021-01-09,Koen Casteels,Matchweek 15,Away,D 2–2,Wolfsburg,Union Berlin,Y*,GK,90.0,6.0,2.0,4.0,66.7,0.0,2.0,0.0,0.0,0.0,0.0,5.0,22.0,22.7,29.0,7.0,41.4,37.7,11.0,90.9,65.2,14.0,2.0,14.3,1.0,12.0
+2021-01-16,Koen Casteels,Matchweek 16,Home,D 2–2,Wolfsburg,RB Leipzig,Y,GK,90.0,8.0,2.0,6.0,75.0,0.0,2.8,0.0,0.0,0.0,0.0,8.0,11.0,72.7,26.0,4.0,26.9,29.3,6.0,66.7,50.0,5.0,0.0,0.0,2.0,24.0
+2021-01-19,Koen Casteels,Matchweek 17,Away,W 2–0,Wolfsburg,Mainz 05,Y*,GK,90.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,14.0,24.0,58.3,37.0,4.0,51.4,40.6,7.0,71.4,46.3,4.0,0.0,0.0,3.0,18.6
+2021-01-23,Koen Casteels,Matchweek 18,Away,W 1–0,Wolfsburg,Leverkusen,Y*,GK,90.0,3.0,0.0,3.0,100.0,1.0,1.1,0.0,0.0,0.0,0.0,11.0,25.0,44.0,40.0,5.0,50.0,42.6,7.0,71.4,53.0,11.0,2.0,18.2,1.0,12.8
+2021-01-31,Koen Casteels,Matchweek 19,Home,W 3–0,Wolfsburg,Freiburg,Y*,GK,90.0,2.0,0.0,2.0,100.0,1.0,0.3,0.0,0.0,0.0,0.0,12.0,18.0,66.7,30.0,5.0,36.7,34.2,7.0,100.0,62.9,11.0,0.0,0.0,0.0,12.2
+2021-02-06,Koen Casteels,Matchweek 20,Away,W 2–0,Wolfsburg,Augsburg,Y*,GK,90.0,1.0,0.0,1.0,100.0,1.0,0.1,0.0,0.0,0.0,0.0,5.0,12.0,41.7,40.0,8.0,30.0,30.4,5.0,0.0,15.8,5.0,0.0,0.0,1.0,15.3
+2021-02-14,Koen Casteels,Matchweek 21,Home,D 0–0,Wolfsburg,M'Gladbach,Y*,GK,90.0,3.0,0.0,3.0,100.0,1.0,0.2,0.0,0.0,0.0,0.0,9.0,16.0,56.3,44.0,4.0,31.8,33.3,7.0,28.6,33.1,5.0,1.0,20.0,1.0,14.3
+2021-02-19,Koen Casteels,Matchweek 22,Away,W 3–0,Wolfsburg,Arminia,Y*,GK,90.0,2.0,0.0,2.0,100.0,1.0,0.0,0.0,0.0,0.0,0.0,8.0,13.0,61.5,37.0,4.0,29.7,32.2,6.0,33.3,40.2,3.0,0.0,0.0,0.0,15.3
+2021-02-27,Koen Casteels,Matchweek 23,Home,W 2–0,Wolfsburg,Hertha BSC,Y*,GK,90.0,2.0,0.0,2.0,100.0,1.0,0.7,0.0,0.0,0.0,0.0,2.0,13.0,15.4,29.0,4.0,34.5,36.8,3.0,100.0,74.3,11.0,0.0,0.0,0.0,11.6
+2021-03-06,Koen Casteels,Matchweek 24,Away,L 1–2,Wolfsburg,Hoffenheim,Y*,GK,90.0,4.0,2.0,2.0,50.0,0.0,1.7,0.0,0.0,0.0,0.0,2.0,9.0,22.2,27.0,2.0,29.6,34.1,5.0,20.0,26.8,10.0,0.0,0.0,2.0,25.2
+2021-03-13,Koen Casteels,Matchweek 25,Home,W 5–0,Wolfsburg,Schalke 04,Y,GK,90.0,1.0,0.0,1.0,100.0,1.0,0.1,0.0,0.0,0.0,0.0,7.0,16.0,43.8,40.0,5.0,32.5,36.5,5.0,60.0,44.0,5.0,0.0,0.0,2.0,19.8
+2021-03-20,Koen Casteels,Matchweek 26,Away,W 2–1,Wolfsburg,Werder Bremen,Y*,GK,90.0,4.0,1.0,3.0,75.0,0.0,1.6,0.0,0.0,0.0,0.0,8.0,23.0,34.8,36.0,4.0,50.0,39.0,6.0,83.3,57.8,6.0,0.0,0.0,0.0,11.7
+2021-04-03,Koen Casteels,Matchweek 27,Home,W 1–0,Wolfsburg,Köln,Y*,GK,90.0,1.0,0.0,1.0,100.0,1.0,0.0,0.0,0.0,0.0,0.0,8.0,15.0,53.3,30.0,3.0,23.3,30.6,10.0,80.0,57.4,11.0,0.0,0.0,1.0,19.5
+2021-04-10,Koen Casteels,Matchweek 28,Away,L 3–4,Wolfsburg,Eint Frankfurt,Y*,GK,90.0,5.0,4.0,1.0,20.0,0.0,2.9,0.0,0.0,0.0,0.0,5.0,18.0,27.8,37.0,10.0,40.5,40.4,4.0,75.0,64.3,10.0,2.0,20.0,2.0,15.2
+2021-04-17,Koen Casteels,Matchweek 29,Home,L 2–3,Wolfsburg,Bayern Munich,Y*,GK,90.0,7.0,3.0,4.0,57.1,0.0,1.5,0.0,0.0,0.0,0.0,7.0,15.0,46.7,38.0,6.0,28.9,31.1,8.0,50.0,45.8,6.0,0.0,0.0,2.0,18.2
+2021-04-21,Koen Casteels,Matchweek 30,Away,W 3–1,Wolfsburg,Stuttgart,Y*,GK,90.0,3.0,1.0,2.0,66.7,0.0,1.7,1.0,0.0,1.0,0.0,10.0,27.0,37.0,32.0,2.0,68.8,51.0,5.0,100.0,70.4,5.0,1.0,20.0,3.0,15.9
+2021-04-24,Koen Casteels,Matchweek 31,Home,L 0–2,Wolfsburg,Dortmund,Y*,GK,90.0,3.0,2.0,1.0,33.3,0.0,1.1,0.0,0.0,0.0,0.0,2.0,2.0,100.0,16.0,5.0,6.3,24.2,5.0,20.0,32.8,5.0,0.0,0.0,0.0,10.6
+2021-05-08,Koen Casteels,Matchweek 32,Home,W 3–0,Wolfsburg,Union Berlin,Y*,GK,90.0,1.0,0.0,1.0,100.0,1.0,0.1,0.0,0.0,0.0,0.0,5.0,16.0,31.3,37.0,3.0,24.3,34.1,10.0,70.0,61.4,12.0,0.0,0.0,1.0,15.8
+2021-05-16,Koen Casteels,Matchweek 33,Away,D 2–2,Wolfsburg,RB Leipzig,Y*,GK,90.0,3.0,2.0,2.0,66.7,0.0,2.0,1.0,1.0,0.0,0.0,6.0,19.0,31.6,34.0,2.0,35.3,35.5,9.0,77.8,59.8,5.0,0.0,0.0,1.0,17.5
+2021-01-03,Finn Dahmen,Matchweek 14,Away,L 2–5,Mainz 05,Bayern Munich,Y,GK,90,11,5,7,63.6,0,5.5,1,1,0,0,0,5,0.0,18,8,27.8,32.3,5,0.0,16.0,16,1,6.3,0,8.4
+2021-05-16,Finn Dahmen,Matchweek 33,Home,L 1–3,Mainz 05,Dortmund,Y,GK,90,4,3,1,25.0,0,2.1,0,0,0,0,5,8,62.5,15,3,33.3,30.3,13,23.1,21.2,6,0,0.0,1,11.9
+2021-05-22,Finn Dahmen,Matchweek 34,Away,W 3–2,Mainz 05,Wolfsburg,Y,GK,90,5,2,3,60.0,0,1.6,0,0,0,0,4,13,30.8,26,5,38.5,34.8,9,33.3,37.4,12,0,0.0,1,17.5

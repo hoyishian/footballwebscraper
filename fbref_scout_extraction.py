@@ -3,22 +3,24 @@ import numpy as np
 import requests
 from bs4 import BeautifulSoup
 import re
-
-
-
+import sys
 
 def extract_goalkeeper_stats(player_link, goalkeeper_file_name):
     name = extractName(player_link)
     # new_player_link = player_link.replace("summary", "keeper")
-    # print(player_link)
+    
     try:
         df = pd.read_html(player_link, header=1)[0]
+        if (len(df.columns) < 36):
+            print("Invalid length of columns", player_link)
+            return
         df = df.drop(columns=['Match Report'])
+        df = df.drop(columns=['Comp'], errors = 'ignore')
         df = df.rename(columns={"Day": "Name"})
         df.dropna(subset=["Date"], inplace=True)
         df['Name'] = df['Name'].replace(
-            ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
-        df = df.rename(columns={"SOT": "Shots on Target Against"})
+                ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
+        df = df.rename(columns={"SoTA": "Shots on Target Against"})
         df = df.rename(columns={"GA": "Goals Against"})
         df = df.rename(columns={"Save%": "Save Percentage"})
         df = df.rename(columns={"CS": "Clean Sheets"})
@@ -31,52 +33,283 @@ def extract_goalkeeper_stats(player_link, goalkeeper_file_name):
         df = df.rename(columns={"PKA": "Penalty Kicks Allowed"})
         df = df.rename(columns={"PKsv": "Penalty Kicks Saved"})
         df = df.rename(columns={"PKm": "Penalty Kicks Missed"})
+            
+        df = df.rename(columns={"Cmp": "Passes Completed (Passes longer than 40 yards)"})
+        df = df.rename(columns={"Att": "Passes Attempted (Passes longer than 40 yards)"})
+        df = df.rename(columns={"Cmp%": "Pass Completion Percentage (Passes longer than 40 yards)"})
+
+        df = df.rename(columns={"Att.1": "Passes Attempted"})
+        df = df.rename(columns={"Thr": "Throws Attempted"})
+        df = df.rename(columns={"Launch%": "Percentage of Passes that were Launched"})
+        df = df.rename(columns={"AvgLen": "Average length of passes, in yards"})
+
+        df = df.rename(columns={"Att.2": "Goal Kick Passes Attempted"})
+        df = df.rename(columns={"Launch%.1": "Percentage of Goal Kicks that were Launched"})
+        df = df.rename(columns={"AvgLen.1": "Average length of goal kicks"})
+
+        df = df.rename(columns={"Opp": "Opponent's attempted crosses into penalty area"})
+        df = df.rename(columns={"Stp": "Number of crosses into penalty area successfully stopped"})
+        df = df.rename(columns={"Stp%": "Percentage of crosses into penalty area successfully stopped"})
+
+        df = df.rename(columns={"#OPA": "Number of defensive actions outside of penalty area"})
+        df = df.rename(columns={"AvgDist": "Average distance from goal to perform defensive actions"})
+        df.drop(
+                    df[df["Pos"] == "On matchday squad, but did not play"].index, inplace=True)
+        df = df[df.Round != "Round"]
+        df['sort'] = df['Round'].str.extract(
+                    '(\d+)', expand=False).astype(int)
+        df.sort_values('sort', inplace=True)
+        df = df.drop('sort', axis=1)
+        df.fillna(0, inplace=True)
 
         try:
-            df.drop(
-                df[df["Pos"] == "On matchday squad, but did not play"].index, inplace=True)
-            df['sort'] = df['Round'].str.extract(
-                '(\d+)', expand=False).astype(int)
-            df.sort_values('sort', inplace=True)
-            df = df.drop('sort', axis=1)
             f = open(goalkeeper_file_name)
             df.to_csv(goalkeeper_file_name, index=False,
-                      header=False, mode='a')
+                        header=False, mode='a')
             f.close()
         except:
-            df["Passes Completed (Passes longer than 40 yards)"] = np.nan
-            df["Passes Attempted (Passes longer than 40 yards)"] = np.nan
-            df["Pass Completion Percentage (Passes longer than 40 yards)"] = np.nan
-            df["Passes Attempted"] = np.nan
-            df["Throws Attempted"] = np.nan
-            df["Percentage of Passes that were Launched"] = np.nan
-            df["Average length of passes, in yards"] = np.nan
-            df["Goal Kick Passes Attempted"] = np.nan
-            df["Percentage of Goal Kicks that were Launched"] = np.nan
-            df["Average length of goal kicks"] = np.nan
-            df["Opponent's attempted crosses into penalty area"] = np.nan
-            df["Number of crosses into penalty area successfully stopped"] = np.nan
-            df["Percentage of crosses into penalty area successfully stopped"] = np.nan
-            df["Number of defensive actions outside of penalty area"] = np.nan
-            df["Average distance from goal to perform defensive actions"] = np.nan
-            df.drop(
-                df[df["Pos"] == "On matchday squad, but did not play"].index, inplace=True)
-            df['sort'] = df['Round'].str.extract(
-                '(\d+)', expand=False).astype(int)
-            df.sort_values('sort', inplace=True)
-            df = df.drop('sort', axis=1)
             df.to_csv(goalkeeper_file_name, index=False)
     except:
-        print(player_link)
+        print("Invalid", player_link)
         return
 
 
 def extract_player_stats(player_link, player_file_name):
     name = extractName(player_link)
     new_player_link = player_link.replace("keeper", "passing")
+    # df = pd.read_html(new_player_link, header=1)[0]
+    # df = df.drop(columns=['Match Report'])
+    # df = df.drop(columns=['Comp'], errors = 'ignore')
+    # df = df.rename(columns={"Day": "Name"})
+    # df.dropna(subset=["Date"], inplace=True)
+    # df['Name'] = df['Name'].replace(
+    #         ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
+    # df = df.rename(columns={"Cmp": "Total Passes Completed"})
+    # df = df.rename(columns={"Att": "Total Passes Attempted"})
+    # df = df.rename(columns={"Cmp%": "Total Pass Completion Percentage"})
+    # df = df.rename(
+    #         columns={"TotDist": "Total Distance travelled by Passes"})
+    # df = df.rename(columns={"PrgDist": "Progressive Distance"})
+    # df = df.rename(columns={"Cmp.1": "Short Passes Completed"})
+    # df = df.rename(columns={"Att.1": "Short Passes Attempted"})
+    # df = df.rename(
+    #         columns={"Cmp%.1": "Short Passes Completion Percentage"})
+    # df = df.rename(columns={"Cmp.2": "Medium Passes Completed"})
+    # df = df.rename(columns={"Att.2": "Medium Passes Attempted"})
+    # df = df.rename(
+    #         columns={"Cmp%.2": "Medium Passes Completion Percentage"})
+    # df = df.rename(columns={"Cmp.3": "Long Passes Completed"})
+    # df = df.rename(columns={"Att.3": "Long Passes Attempted"})
+    # df = df.rename(columns={"Cmp%.3": "Long Passes Completion Percentage"})
+    # df = df.rename(columns={"Ast": "Assists"})
+    # df = df.rename(columns={"xA": "Expected Assist"})
+    # df = df.rename(columns={"KP": "Key Passes"})
+    # df = df.rename(columns={"1/3": "Passes into Final Third"})
+    # df = df.rename(columns={"PPA": "Passes into Penalty Area"})
+    # df = df.rename(columns={"CrsPA": "Crosses into Penalty Area"})
+    # df = df.rename(columns={"Prog": "Progressive Passes"})
+    # df.fillna(0, inplace=True)
+
+    # new_player_link = player_link.replace("keeper", "gca")
+    # df_2 = pd.read_html(new_player_link, header=1)[0]
+    # df_2 = df_2.drop(columns=['Match Report'])
+    # df_2 = df_2.drop(columns=['Comp'], errors = 'ignore')
+    # df_2 = df_2.rename(columns={"Day": "Name"})
+    # df_2.dropna(subset=["Date"], inplace=True)
+    # df_2['Name'] = df_2['Name'].replace(
+    #         ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
+    # df_2 = df_2.drop(['Date', 'Name', 'Round', 'Venue', 'Result',
+    #                    'Squad', 'Opponent', 'Start', 'Pos', 'Min'], axis=1)
+    # df_2 = df_2.rename(columns={"SCA": "Shot-Creating Action"})
+    # df_2 = df_2.rename(
+    #         columns={"PassLive": "Completed Live-Passes that lead to shot attempt"})
+    # df_2 = df_2.rename(
+    #         columns={"PassDead": "Completed Dead-Passes that lead to shot attempt"})
+    # df_2 = df_2.rename(
+    #         columns={"Drib": "Successful Dribbles that lead to shot attempt"})
+    # df_2 = df_2.rename(
+    #        columns={"Sh": "Shot that lead to another shot attempt"})
+    # df_2 = df_2.rename(
+    #         columns={"Fld": "Fouls drawn that lead to shot attempt"})
+    # df_2 = df_2.rename(
+    #         columns={"Def": "Defensive Actions that lead to shot attempt"})
+    # df_2 = df_2.rename(columns={"GCA": "Goal-Creating Action"})
+    # df_2 = df_2.rename(
+    #         columns={"PassLive.1": "Completed Live-Passes that lead to Goal"})
+    # df_2 = df_2.rename(
+    #         columns={"PassDead.1": "Completed Dead-Passes that lead to Goal"})
+    # df_2 = df_2.rename(
+    #         columns={"Drib.1": "Successful Dribbles that lead to Goal"})
+    # df_2 = df_2.rename(columns={"Sh.1": "Shot that lead to another Goal"})
+    # df_2 = df_2.rename(columns={"Fld.1": "Fouls drawn that lead to Goal"})
+    # df_2 = df_2.rename(
+    #         columns={"Def.1": "Defensive Actions that lead to Goal"})
+    # df_2 = df_2.rename(
+    #         columns={"OG": "Actions that lead to opponent scoring own goal"})
+    # df_2.fillna(0, inplace=True)
+
+    # new_player_link = player_link.replace("keeper", "defense")
+    # df_3 = pd.read_html(new_player_link, header=1)[0]
+    # df_3 = df_3.drop(columns=['Match Report'])
+    # df_3 = df_3.drop(columns=['Comp'], errors = 'ignore')
+    # df_3 = df_3.rename(columns={"Day": "Name"})
+    # df_3.dropna(subset=["Date"], inplace=True)
+    # df_3['Name'] = df_3['Name'].replace(
+    #         ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
+    # df_3 = df_3.drop(['Date', 'Name', 'Round', 'Venue', 'Result',
+    #                      'Squad', 'Opponent', 'Start', 'Pos', 'Min'], axis=1)
+    # df_3 = df_3.rename(columns={"Tkl": "Number of players tackled"})
+    # df_3 = df_3.rename(columns={"TklW": "Tackles Won"})
+    # df_3 = df_3.rename(
+    #         columns={"Def 3rd": "Tackles won in Defensive Third"})
+    # df_3 = df_3.rename(
+    #         columns={"Mid 3rd": "Tackles won in Midfield Third"})
+    # df_3 = df_3.rename(columns={"Att 3rd": "Tackles won in Attack Third"})
+    # df_3 = df_3.rename(columns={"Tkl.1": "Number of Dribblers tackled"})
+    # df_3 = df_3.rename(columns={"Att": "Dribbles contested"})
+    # df_3 = df_3.rename(columns={"Tkl%": "Percentage of dribblers tackled"})
+    # df_3 = df_3.rename(columns={"Past": "Number of times dribbled past"})
+    # df_3 = df_3.rename(columns={"Press": "Pressures"})
+    # df_3 = df_3.rename(columns={"Succ": "Successful Pressures"})
+    # df_3 = df_3.rename(columns={"%": "Successful Pressure Percentage"})
+    # df_3 = df_3.rename(
+    #         columns={"Def 3rd.1": "Number of times applying pressures in Defensive third"})
+    # df_3 = df_3.rename(
+    #         columns={"Mid 3rd.1": "Number of times applying pressures in Midfield third"})
+    # df_3 = df_3.rename(
+    #        columns={"Att 3rd.1": "Number of times applying pressures in Attacking third"})
+    # df_3 = df_3.rename(
+    #         columns={"Blocks": "Number of times blocking the ball by standing in its path"})
+    # df_3 = df_3.rename(
+    #         columns={"Sh": "Number of times blocking a shot by standing in its path"})
+    # df_3 = df_3.rename(columns={
+    #                        "ShSv": "Number of times blocking a shot that was on target, by standing in its path"})
+    # df_3 = df_3.rename(
+    #         columns={"Pass": "Number of times blocking a pass by standing in its path"})
+    # df_3 = df_3.rename(columns={"Int": "Interceptions"})
+    # df_3 = df_3.rename(
+    #         columns={"Tkl+Int": "Number of players tackled plus number of interceptions"})
+    # df_3 = df_3.rename(columns={"Clr": "Clearances"})
+    # df_3 = df_3.rename(
+    #         columns={"Err": "Errors leading to an opponent's shot"})
+    # df_3.fillna(0, inplace=True)
+
+    # new_player_link = player_link.replace("keeper", "possession")
+    # df_4 = pd.read_html(new_player_link, header=1)[0]
+    # df_4 = df_4.drop(columns=['Match Report'])
+    # df_4 = df_4.drop(columns=['Comp'], errors = 'ignore')
+    # df_4 = df_4.rename(columns={"Day": "Name"})
+    # df_4.dropna(subset=["Date"], inplace=True)
+    # df_4['Name'] = df_4['Name'].replace(
+    #         ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
+    # df_4 = df_4.drop(['Date', 'Name', 'Round', 'Venue', 'Result',
+    #                      'Squad', 'Opponent', 'Start', 'Pos', 'Min'], axis=1)
+    # df_4 = df_4.rename(
+    #         columns={"Def Pen": "Touches in Defensive Penalty Area"})
+    # df_4 = df_4.rename(columns={"Def 3rd": "Touches in Defensive Third"})
+    # df_4 = df_4.rename(columns={"Mid 3rd": "Touches in Midfield Third"})
+    # df_4 = df_4.rename(columns={"Att 3rd": "Touches in Attacking Third"})
+    # df_4 = df_4.rename(
+    #         columns={"Att Pen": "Touches in Attacking Penalty Area"})
+    # df_4 = df_4.rename(columns={"Live": "Live-Ball Touches"})
+    # df_4 = df_4.rename(columns={"Succ": "Dribbles completed successfully"})
+    # df_4 = df_4.rename(columns={"Att": "Dribbles attempted"})
+    # df_4 = df_4.rename(
+    #         columns={"Succ%": "Percentage of Dribbles completed successfully"})
+    # df_4 = df_4.rename(columns={"#Pl": "Number of players dribbled past"})
+    # df_4 = df_4.rename(columns={"Megs": "Nutmegs"})
+    # df_4 = df_4.rename(columns={"TotDist": "Total Distance Carried"})
+    # df_4 = df_4.rename(columns={"PrgDist": "Progressive Distance"})
+    # df_4 = df_4.rename(columns={"Prog": "Progressive Carries"})
+    # df_4 = df_4.rename(columns={"1/3": "Carries into Final Third"})
+    # df_4 = df_4.rename(columns={"CPA": "Carries into Penalty Area"})
+    # df_4 = df_4.rename(columns={"Mis": "Miscontrols"})
+    # df_4 = df_4.rename(columns={"Dis": "Dispossessed"})
+    # df_4 = df_4.rename(columns={"Targ": "Pass Targets"})
+    # df_4 = df_4.rename(columns={"Rec": "Passes Received"})
+    # df_4 = df_4.rename(columns={"Rec%": "Passes Received Percentage"})
+    # df_4 = df_4.rename(columns={"Prog.1": "Progressive Passes Received"})
+    # df_4.fillna(0, inplace=True)
+
+    # new_player_link = player_link.replace("keeper", "summary")
+    # print(new_player_link)
+    # df_5 = pd.read_html(new_player_link, header=1)[0]
+    # df_5 = df_5.drop(columns=['Match Report'])
+    # df_5 = df_5.drop(columns=['Comp'], errors = 'ignore')
+    # df_5 = df_5.drop(columns=['Ast'], errors = 'ignore')
+    # df_5 = df_5.drop(columns=['Ast'], errors = 'ignore')
+    # df_5 = df_5.drop(columns=['Press'], errors = 'ignore')
+    # df_5 = df_5.drop(columns=['Tkl'], errors = 'ignore')
+    # df_5 = df_5.drop(columns=['Int'], errors = 'ignore')
+    # df_5 = df_5.drop(columns=['Blocks'], errors = 'ignore')
+    # df_5 = df_5.drop(columns=['xA'], errors = 'ignore')
+    # df_5 = df_5.drop(columns=['SCA'], errors = 'ignore')
+    # df_5 = df_5.drop(columns=['GCA'], errors = 'ignore')
+
+    # df_5 = df_5.drop(columns=['Cmp'], errors = 'ignore')
+    # df_5 = df_5.drop(columns=['Att'], errors = 'ignore')
+    # df_5 = df_5.drop(columns=['Cmp%'], errors = 'ignore')
+    # df_5 = df_5.drop(columns=['Prog'], errors = 'ignore')
+
+    # df_5 = df_5.drop(columns=['Carries'], errors = 'ignore')
+    # df_5 = df_5.drop(columns=['Prog.1'], errors = 'ignore')
+
+    # df_5 = df_5.drop(columns=['Succ'], errors = 'ignore')
+    # df_5 = df_5.drop(columns=['Att.1'], errors = 'ignore')
+
+    # df_5 = df_5.rename(columns={"Day": "Name"})
+    # df_5.dropna(subset=["Date"], inplace=True)
+    # df_5['Name'] = df_5['Name'].replace(
+    #         ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
+    # df_5 = df_5.drop(['Date', 'Name', 'Round', 'Venue', 'Result',
+    #                      'Squad', 'Opponent', 'Start', 'Pos', 'Min'], axis=1)
+    # df_5 = df_5.rename(
+    #         columns={"Gls": "Goals"})
+    # df_5 = df_5.rename(
+    #        columns={"PK": "Penalty Kicks Made"})
+    # df_5 = df_5.rename(
+    #         columns={"PKatt": "Penalty Kicks Attempted"})
+    # df_5 = df_5.rename(
+    #         columns={"Sh": "Total Shots attempted"})
+    # df_5 = df_5.rename(
+    #         columns={"SoT": "Shots on Target"})
+    # df_5 = df_5.rename(
+    #         columns={"CrdY": "Yellow Cards"})
+    # df_5 = df_5.rename(
+    #         columns={"CrdR": "Red Cards"})
+    # df_5 = df_5.rename(
+    #         columns={"xG": "Expected Goals"})
+    # df_5 = df_5.rename(
+    #         columns={"npxG": "Non-Penalty Expected Goals"})
+    # print(df_5.columns)
+    # df_5.fillna(0, inplace=True)
+            
+    # concatenated = pd.concat([df, df_2, df_3, df_4, df_5], axis=1)
+    # concatenated.drop(
+    #         concatenated[concatenated["Date"] == "Date"].index, inplace=True)
+    # try:
+    #     concatenated.drop(
+    #          concatenated[concatenated["Pos"] == "On matchday squad, but did not play"].index, inplace=True)
+    #     concatenated['sort'] = concatenated['Round'].str.extract(
+    #             '(\d+)', expand=False).astype(int)
+    #     concatenated.sort_values('sort', inplace=True)
+    #     concatenated = concatenated.drop('sort', axis=1)
+    #     f = open(player_file_name)
+    #     concatenated.to_csv(
+    #         player_file_name, index=False, header=False, mode='a')
+    #     f.close()
+    # except:
+    #     concatenated.drop(
+    #         concatenated[concatenated["Pos"] == "On matchday squad, but did not play"].index, inplace=True)
+    #     concatenated['sort'] = concatenated['Round'].str.extract(
+    #             '(\d+)', expand=False).astype(int)
+    #     concatenated.sort_values('sort', inplace=True)
+    #     concatenated = concatenated.drop('sort', axis=1)
+    #     concatenated.to_csv(player_file_name, index=False)
     try:
         df = pd.read_html(new_player_link, header=1)[0]
         df = df.drop(columns=['Match Report'])
+        df = df.drop(columns=['Comp'], errors = 'ignore')
         df = df.rename(columns={"Day": "Name"})
         df.dropna(subset=["Date"], inplace=True)
         df['Name'] = df['Name'].replace(
@@ -105,10 +338,12 @@ def extract_player_stats(player_link, player_file_name):
         df = df.rename(columns={"PPA": "Passes into Penalty Area"})
         df = df.rename(columns={"CrsPA": "Crosses into Penalty Area"})
         df = df.rename(columns={"Prog": "Progressive Passes"})
+        df.fillna(0, inplace=True)
 
         new_player_link = player_link.replace("keeper", "gca")
         df_2 = pd.read_html(new_player_link, header=1)[0]
         df_2 = df_2.drop(columns=['Match Report'])
+        df_2 = df_2.drop(columns=['Comp'], errors = 'ignore')
         df_2 = df_2.rename(columns={"Day": "Name"})
         df_2.dropna(subset=["Date"], inplace=True)
         df_2['Name'] = df_2['Name'].replace(
@@ -141,10 +376,12 @@ def extract_player_stats(player_link, player_file_name):
             columns={"Def.1": "Defensive Actions that lead to Goal"})
         df_2 = df_2.rename(
             columns={"OG": "Actions that lead to opponent scoring own goal"})
+        df_2.fillna(0, inplace=True)
 
         new_player_link = player_link.replace("keeper", "defense")
         df_3 = pd.read_html(new_player_link, header=1)[0]
         df_3 = df_3.drop(columns=['Match Report'])
+        df_3 = df_3.drop(columns=['Comp'], errors = 'ignore')
         df_3 = df_3.rename(columns={"Day": "Name"})
         df_3.dropna(subset=["Date"], inplace=True)
         df_3['Name'] = df_3['Name'].replace(
@@ -185,10 +422,12 @@ def extract_player_stats(player_link, player_file_name):
         df_3 = df_3.rename(columns={"Clr": "Clearances"})
         df_3 = df_3.rename(
             columns={"Err": "Errors leading to an opponent's shot"})
+        df_3.fillna(0, inplace=True)
 
         new_player_link = player_link.replace("keeper", "possession")
         df_4 = pd.read_html(new_player_link, header=1)[0]
         df_4 = df_4.drop(columns=['Match Report'])
+        df_4 = df_4.drop(columns=['Comp'], errors = 'ignore')
         df_4 = df_4.rename(columns={"Day": "Name"})
         df_4.dropna(subset=["Date"], inplace=True)
         df_4['Name'] = df_4['Name'].replace(
@@ -219,8 +458,72 @@ def extract_player_stats(player_link, player_file_name):
         df_4 = df_4.rename(columns={"Targ": "Pass Targets"})
         df_4 = df_4.rename(columns={"Rec": "Passes Received"})
         df_4 = df_4.rename(columns={"Rec%": "Passes Received Percentage"})
+        df_4 = df_4.rename(columns={"Prog.1": "Progressive Passes Received"})
+        df_4.fillna(0, inplace=True)
 
-        concatenated = pd.concat([df, df_2, df_3, df_4], axis=1)
+        new_player_link = player_link.replace("keeper", "summary")
+        # print(new_player_link)
+        df_5 = pd.read_html(new_player_link, header=1)[0]
+        df_5 = df_5.drop(columns=['Match Report'])
+        df_5 = df_5.drop(columns=['Comp'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['Ast'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['Ast'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['Press'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['Tkl'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['Int'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['Blocks'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['xA'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['SCA'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['GCA'], errors = 'ignore')
+
+        df_5 = df_5.drop(columns=['Cmp'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['Att'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['Cmp%'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['Prog'], errors = 'ignore')
+
+        df_5 = df_5.drop(columns=['Carries'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['Prog.1'], errors = 'ignore')
+
+        df_5 = df_5.drop(columns=['Succ'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['Att.1'], errors = 'ignore')
+
+        df_5 = df_5.drop(columns=['Fls'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['Fld'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['Off'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['Crs'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['TklW'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['OG'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['PKwon'], errors = 'ignore')
+        df_5 = df_5.drop(columns=['PKcon'], errors = 'ignore')
+
+        df_5 = df_5.rename(columns={"Day": "Name"})
+        df_5.dropna(subset=["Date"], inplace=True)
+        df_5['Name'] = df_5['Name'].replace(
+            ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
+        df_5 = df_5.drop(['Date', 'Name', 'Round', 'Venue', 'Result',
+                         'Squad', 'Opponent', 'Start', 'Pos', 'Min'], axis=1)
+        df_5 = df_5.rename(
+            columns={"Gls": "Goals"})
+        df_5 = df_5.rename(
+            columns={"PK": "Penalty Kicks Made"})
+        df_5 = df_5.rename(
+            columns={"PKatt": "Penalty Kicks Attempted"})
+        df_5 = df_5.rename(
+            columns={"Sh": "Total Shots attempted"})
+        df_5 = df_5.rename(
+            columns={"SoT": "Shots on Target"})
+        df_5 = df_5.rename(
+            columns={"CrdY": "Yellow Cards"})
+        df_5 = df_5.rename(
+            columns={"CrdR": "Red Cards"})
+        df_5 = df_5.rename(
+            columns={"xG": "Expected Goals"})
+        df_5 = df_5.rename(
+            columns={"npxG": "Non-Penalty Expected Goals"})
+        # print(df_5.columns)
+        df_5.fillna(0, inplace=True)
+            
+        concatenated = pd.concat([df, df_2, df_3, df_4, df_5], axis=1)
         concatenated.drop(
             concatenated[concatenated["Date"] == "Date"].index, inplace=True)
         try:
@@ -243,7 +546,7 @@ def extract_player_stats(player_link, player_file_name):
             concatenated = concatenated.drop('sort', axis=1)
             concatenated.to_csv(player_file_name, index=False)
     except:
-        print(player_link)
+        print("Invalid Outfield Player", player_link)
         return
 
 
@@ -582,3 +885,5 @@ def scrapeSimilarPlayers():
 
 scrapeStats()
 # scrapeSimilarPlayers()
+
+# extract_goalkeeper_stats("https://fbref.com/en/players/4535e4bb/matchlogs/s10728/keeper/Mathew-Ryan-Match-Logs", "goalkeeperstats_epl.csv")
