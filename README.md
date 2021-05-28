@@ -39,12 +39,12 @@ PKm -- Penalty Kicks Missed
 #### Launched
 Cmp -- Passes Completed (Passes longer than 40 yards)
 
-Att -- Passes Attempted (Passes longer than 40 yards)
+PassAttemptedLong -- Passes Attempted (Passes longer than 40 yards)
 
 Cmp% -- Pass Completion Percentage (Passes longer than 40 yards)
 
 #### Passes
-Att -- Passes Attempted (Not including goal kicks)
+PassAtt -- Passes Attempted (Not including goal kicks)
 
 Thr -- Throws Attempted
 
@@ -54,11 +54,11 @@ AvgLen -- Average length of passes, in yards (Not including goal kicks)
 
 #### Goal Kicks
 
-Att -- Passes Attempted
+GoalKickAtt -- Passes Attempted
 
-Launch% -- Percentage of Goal Kicks that were Launched (Passes longer than 40 yards)
+GKLaunch% -- Percentage of Goal Kicks that were Launched (Passes longer than 40 yards)
 
-AvgLen -- Average length of goal kicks, in yards
+GKAvgLen -- Average length of goal kicks, in yards
 
 #### Crosses
 
