@@ -282,6 +282,8 @@ Rec -- Passes Received (Number of times a player successfully received a pass)
 Rec% -- Passes Received Percentage (Percentage of time a player successfully received a pass)
 
 #### Summary
+![Summary Screenshot from FBRef Website](/screenshots/Summary.png)
+
 ProgPassRec -- Completed passes that move the ball towards the opponent's goal at least 10 yards from its furthest point in the last six passes, or any completed pass into the penalty area. Excludes passes from the defending 40% of the pitch
 
 Gls -- Goals
