@@ -6,7 +6,7 @@ This project consists of xxx number of steps.
 
 ## Step 1: Data Extraction from fbref (https://fbref.com/en/)
 
-We extracted the data required for our analysis from the FBRef Website, which consists of a breakdown of a match-by-match performance for each player. File used to find this may be found here: https://github.com/hoyishian/fantasypldatascience/blob/main/fbref_extraction.py
+We extracted the data required for our analysis from the FBRef Website, which consists of a breakdown of a match-by-match performance for each player. File used to find this may be found here: https://github.com/hoyishian/fantasypldatascience/blob/main/fbref_scout_extraction.py
 
 There are 2 kind of players in the data we collected: Outfield players and Goalkeepers. 
 
@@ -85,49 +85,50 @@ Outfield players have 4 set of statistics. Screenshots are taken from the websit
 
 Cmp -- Passes Completed
 
-Att -- Passes Attempted
+PassAtt -- Passes Attempted
 
 Cmp% -- Pass Completion Percentage (Minimum 30 minutes played per squad game to qualify as a leader)
 
-TotDist -- Total distance, in yards, that completed passes have traveled in any direction
+PassTotDist -- Total distance, in yards, that completed passes have traveled in any direction
 
-PrgDist -- Progressive Distance (Total distance, in yards, that completed passes have traveled towards the opponent's goal. Note: Passes away from opponent's goal are counted as zero progressive yards.)
+PassPrgDist -- Progressive Distance (Total distance, in yards, that completed passes have traveled towards the opponent's goal. Note: Passes away from opponent's goal are counted as zero progressive yards.)
 
 ##### Short (Passes between 5 and 15 yards)
-Cmp -- Passes Completed
+Cmp.1 -- Passes Completed
 
-Att -- Passes Attempted
+Att.1 -- Passes Attempted
 
-Cmp% -- Pass Completion Percentage
+Cmp%.1 -- Pass Completion Percentage
 
 ##### Medium (Passes between 15 and 30 yards)
-Cmp -- Passes Completed
+Cmp.2 -- Passes Completed
 
-Att -- Passes Attempted
+Att.2 -- Passes Attempted
 
-Cmp% -- Pass Completion Percentage
+Cmp%.2 -- Pass Completion Percentage
 
 ##### Long (Passes longer than 30 yards)
 
-Cmp -- Passes Completed
+Cmp.3 -- Passes Completed
 
-Att -- Passes Attempted
+Att.3 -- Passes Attempted
 
-Cmp% -- Pass Completion Percentage
+Cmp%.3 -- Pass Completion Percentage
 
 ##### Performance
 Ast -- Assists
+
 xA -- xG Assisted (xG which follows a pass that assists a shot)
 
 KP -- Key Passes (Passes that directly lead to a shot (assisted shots))
 
-1/3 -- Passes into Final Third (Completed passes that enter the 1/3 of the pitch closest to the goal, Not including set pieces)
+PassFinThird -- Passes into Final Third (Completed passes that enter the 1/3 of the pitch closest to the goal, Not including set pieces)
 
 PPA -- Passes into Penalty Area (Completed passes into the 18-yard box, Not including set pieces)
 
 CrsPA -- Crosses into Penalty Area (Completed crosses into the 18-yard box, Not including set pieces)
 
-Prog -- Progressive Passes (Completed passes that move the ball towards the opponent's goal at least 10 yards from its furthest point in the last six passes, or any completed pass into the penalty area. Excludes passes from the defending 40% of the pitch)
+PassProg -- Progressive Passes (Completed passes that move the ball towards the opponent's goal at least 10 yards from its furthest point in the last six passes, or any completed pass into the penalty area. Excludes passes from the defending 40% of the pitch)
 
 #### Goal and Shot Creation
 ![GCA Screenshot from FBRef Website](/screenshots/GCA.png)
@@ -136,33 +137,33 @@ Prog -- Progressive Passes (Completed passes that move the ball towards the oppo
 
 SCA -- Shot-Creating Actions (The two offensive actions directly leading to a shot, such as passes, dribbles and drawing fouls. Note: A single player can receive credit for multiple actions and the shot-taker can also receive credit.)
 
-PassLive -- Completed live-ball passes that lead to a shot attempt
+PassLiveShot -- Completed live-ball passes that lead to a shot attempt
 
-PassDead -- Completed dead-ball passes that lead to a shot attempt. (Includes free kicks, corner kicks, kick offs, throw-ins and goal kicks)
+PassDeadShot -- Completed dead-ball passes that lead to a shot attempt. (Includes free kicks, corner kicks, kick offs, throw-ins and goal kicks)
 
-Drib -- Successful dribbles that lead to a shot attempt
+DribShot -- Successful dribbles that lead to a shot attempt
 
-Sh -- Shots that lead to another shot attempt
+ShLSh -- Shots that lead to another shot attempt
 
 Fld -- Fouls drawn that lead to a shot attempt
 
-Def -- Defensive actions that lead to a shot attempt
+DefShot -- Defensive actions that lead to a shot attempt
 
 ##### GCA Types
 
 GCA -- Goal-Creating Actions (The two offensive actions directly leading to a goal, such as passes, dribbles and drawing fouls. Note: A single player can receive credit for multiple actions and the shot-taker can also receive credit.)
 
-PassLive -- Completed live-ball passes that lead to a goal
+PassLiveGoal -- Completed live-ball passes that lead to a goal
 
-PassDead -- Completed dead-ball passes that lead to a goal. (Includes free kicks, corner kicks, kick offs, throw-ins and goal kicks)
+PassDeadGoal -- Completed dead-ball passes that lead to a goal. (Includes free kicks, corner kicks, kick offs, throw-ins and goal kicks)
 
-Drib -- Successful dribbles that lead to a goal
+DribGoal -- Successful dribbles that lead to a goal
 
-Sh -- Shots that lead to another goal-scoring shot
+ShGoal -- Shots that lead to another goal-scoring shot
 
-Fld -- Fouls drawn that lead to a goal
+FldGoal -- Fouls drawn that lead to a goal
 
-Def -- Defensive actions that lead to a goal
+DefGoal -- Defensive actions that lead to a goal
 
 OG -- Actions that led directly to an opponent scoring on their own goal
 
@@ -176,19 +177,19 @@ Tkl -- Number of players tackled
 
 TklW -- Tackles Won (Tackles in which the tackler's team won possession of the ball)
 
-Def 3rd -- Tackles in defensive 1/3
+TacklesDef3rd -- Tackles in defensive 1/3
 
-Mid 3rd -- Tackles in middle 1/3
+TacklesMid3rd -- Tackles in middle 1/3
 
-Att 3rd -- Tackles in attacking 1/3
+TacklesAtt3rd -- Tackles in attacking 1/3
 
 ##### Vs Dribbles
 
-Tkl -- Number of dribblers tackled
+DribTackled -- Number of dribblers tackled
 
-Att -- Dribbles Contested (Number of times dribbled past plus number of tackles)
+DribContest -- Dribbles Contested (Number of times dribbled past plus number of tackles)
 
-Tkl% -- Percentage of dribblers tackled (Dribblers tackled divided by dribblers tackled plus times dribbled past, Minimum .625 dribblers contested per squad game to qualify as a leader)
+DribTackled% -- Percentage of dribblers tackled (Dribblers tackled divided by dribblers tackled plus times dribbled past, Minimum .625 dribblers contested per squad game to qualify as a leader)
 
 Past -- Number of times dribbled past by an opposing player
 
@@ -196,21 +197,21 @@ Past -- Number of times dribbled past by an opposing player
 
 Press -- Pressures (Number of times applying pressure to opposing player who is receiving, carrying or releasing the ball)
 
-Succ -- Successful Pressures (Number of times the squad gained possession withing five seconds of applying pressure)
+SuccPress -- Successful Pressures (Number of times the squad gained possession withing five seconds of applying pressure)
 
-% -- Successful Pressure Percentage (Percentage of time the squad gained possession withing five seconds of applying pressure)
+SuccPress% -- Successful Pressure Percentage (Percentage of time the squad gained possession withing five seconds of applying pressure)
 
-Def 3rd -- Number of times applying pressure to opposing player who is receiving, carrying or releasing the ball, in the defensive 1/3
+PressDef3rd -- Number of times applying pressure to opposing player who is receiving, carrying or releasing the ball, in the defensive 1/3
 
-Mid 3rd -- Number of times applying pressure to opposing player who is receiving, carrying or releasing the ball, in the middle 1/3
+PressMid3rd -- Number of times applying pressure to opposing player who is receiving, carrying or releasing the ball, in the middle 1/3
 
-Att 3rd -- Number of times applying pressure to opposing player who is receiving, carrying or releasing the ball, in the attacking 1/3
+PressAtt3rd -- Number of times applying pressure to opposing player who is receiving, carrying or releasing the ball, in the attacking 1/3
 
 ##### Blocks
 
 Blocks -- Number of times blocking the ball by standing in its path
 
-Sh -- Number of times blocking a shot by standing in its path
+BlockSh -- Number of times blocking a shot by standing in its path
 
 ShSv -- Number of times blocking a shot that was on target, by standing in its path
 
@@ -234,13 +235,13 @@ Touches -- Number of times a player touched the ball. Note: Receiving a pass, th
 
 Def Pen -- Touches in defensive penalty area
 
-Def 3rd -- Touches in defensive 1/3
+TouchDef3rd -- Touches in defensive 1/3
 
-Mid 3rd -- Touches in middle 1/3
+TouchMid3rd -- Touches in middle 1/3
 
-Att 3rd -- Touches in attacking 1/3
+TouchAtt3rd -- Touches in attacking 1/3
 
-Att Pen -- Touches in attacking penalty area
+AttPen -- Touches in attacking penalty area
 
 Live -- Live-ball touches. Does not include corner kicks, free kicks, throw-ins, kick-offs, goal kicks or penalty kicks
 
@@ -263,9 +264,9 @@ TotDist -- Total distance, in yards, a player moved the ball while controlling i
 
 PrgDist -- Progressive Distance (Total distance, in yards, a player moved the ball while controlling it with their feet towards the opponent's goal)
 
-Prog -- Progressive Carries (Carries that move the ball towards the opponent's goal at least 5 yards, or any carry into the penalty area. Excludes carries from the defending 40% of the pitch)
+ProgCarries -- Progressive Carries (Carries that move the ball towards the opponent's goal at least 5 yards, or any carry into the penalty area. Excludes carries from the defending 40% of the pitch)
 
-1/3 -- Carries into Final Third (Carries that enter the 1/3 of the pitch closest to the goal)
+CarriesFinThird -- Carries into Final Third (Carries that enter the 1/3 of the pitch closest to the goal)
 
 CPA -- Carries into Penalty Area (Carries into the 18-yard box)
 
@@ -279,5 +280,27 @@ Targ -- Pass Targets (Number of times a player was the target of an attempted pa
 Rec -- Passes Received (Number of times a player successfully received a pass)
 
 Rec% -- Passes Received Percentage (Percentage of time a player successfully received a pass)
+
+#### Summary
+ProgPassRec -- Completed passes that move the ball towards the opponent's goal at least 10 yards from its furthest point in the last six passes, or any completed pass into the penalty area. Excludes passes from the defending 40% of the pitch
+
+Gls -- Goals
+
+PK -- Penalty Kicks Made
+
+PKatt -- Penalty Kicks Attempted
+
+Sh -- Shots Total (Exclude PK)
+
+SoT -- Shots on target (Exclude PK)
+
+CrdY -- Yellow Cards
+
+CrdR -- Red Cards
+
+xG -- Expected Goals (xG totals include penalty kicks, but do not include penalty shootouts)
+
+npxG -- Non-Penalty Expected Goals
+
 
 ## Step 2:

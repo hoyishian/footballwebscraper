@@ -19,39 +19,15 @@ def extract_goalkeeper_stats(player_link, goalkeeper_file_name):
         df.dropna(subset=["Date"], inplace=True)
         df['Name'] = df['Name'].replace(
                 ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
-        # df = df.rename(columns={"SoTA": "Shots on Target Against"})
-        # df = df.rename(columns={"GA": "Goals Against"})
-        # df = df.rename(columns={"Save%": "Save Percentage"})
-        # df = df.rename(columns={"CS": "Clean Sheets"})
+  
         if "PSxG" not in df.columns:
             df["Post-Shot Expected Goals"] = np.nan
-        # else:
-        #     df = df.rename(columns={"PSxG": "Post-Shot Expected Goals"})
-
-        # df = df.rename(columns={"PKatt": "Penalty Kicks Attempted"})
-        # df = df.rename(columns={"PKA": "Penalty Kicks Allowed"})
-        # df = df.rename(columns={"PKsv": "Penalty Kicks Saved"})
-        # df = df.rename(columns={"PKm": "Penalty Kicks Missed"})
-            
-        # df = df.rename(columns={"Cmp": "Passes Completed (Passes longer than 40 yards)"})
         df = df.rename(columns={"Att": "PassAttemptedLong"})
-        # df = df.rename(columns={"Cmp%": "Pass Completion Percentage (Passes longer than 40 yards)"})
 
         df = df.rename(columns={"Att.1": "PassAtt"})
-        # df = df.rename(columns={"Thr": "Throws Attempted"})
-        # df = df.rename(columns={"Launch%": "Percentage of Passes that were Launched"})
-        # df = df.rename(columns={"AvgLen": "Average length of passes, in yards"})
-
         df = df.rename(columns={"Att.2": "GoalKickAtt"})
         df = df.rename(columns={"Launch%.1": "GKLaunch%"})
         df = df.rename(columns={"AvgLen.1": "GKAvgLen"})
-
-        # df = df.rename(columns={"Opp": "Opponent's attempted crosses into penalty area"})
-        # df = df.rename(columns={"Stp": "Number of crosses into penalty area successfully stopped"})
-        # df = df.rename(columns={"Stp%": "Percentage of crosses into penalty area successfully stopped"})
-
-        # df = df.rename(columns={"#OPA": "Number of defensive actions outside of penalty area"})
-        # df = df.rename(columns={"AvgDist": "Average distance from goal to perform defensive actions"})
         df.drop(
                     df[df["Pos"] == "On matchday squad, but did not play"].index, inplace=True)
         df = df[df.Round != "Round"]
@@ -88,29 +64,11 @@ def extract_player_stats(player_link, player_file_name):
         df.dropna(subset=["Date"], inplace=True)
         df['Name'] = df['Name'].replace(
             ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
-        # df = df.rename(columns={"Cmp": "Total Passes Completed"})
         df = df.rename(columns={"Att": "PassAtt"})
-        # df = df.rename(columns={"Cmp%": "Total Pass Completion Percentage"})
         df = df.rename(
             columns={"TotDist": "PassTotDist"})
         df = df.rename(columns={"PrgDist": "PassPrgDist"})
-        # df = df.rename(columns={"Cmp.1": "Short Passes Completed"})
-        # df = df.rename(columns={"Att.1": "Short Passes Attempted"})
-        # df = df.rename(
-        #     columns={"Cmp%.1": "Short Passes Completion Percentage"})
-        # df = df.rename(columns={"Cmp.2": "Medium Passes Completed"})
-        # df = df.rename(columns={"Att.2": "Medium Passes Attempted"})
-        # df = df.rename(
-        #     columns={"Cmp%.2": "Medium Passes Completion Percentage"})
-        # df = df.rename(columns={"Cmp.3": "Long Passes Completed"})
-        # df = df.rename(columns={"Att.3": "Long Passes Attempted"})
-        # df = df.rename(columns={"Cmp%.3": "Long Passes Completion Percentage"})
-        # df = df.rename(columns={"Ast": "Assists"})
-        # df = df.rename(columns={"xA": "Expected Assist"})
-        # df = df.rename(columns={"KP": "Key Passes"})
         df = df.rename(columns={"1/3": "PassFinThird"})
-        # df = df.rename(columns={"PPA": "Passes into Penalty Area"})
-        # df = df.rename(columns={"CrsPA": "Crosses into Penalty Area"})
         df = df.rename(columns={"Prog": "PassProg"})
         df.fillna(0, inplace=True)
 
@@ -124,7 +82,6 @@ def extract_player_stats(player_link, player_file_name):
             ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
         df_2 = df_2.drop(['Date', 'Name', 'Round', 'Venue', 'Result',
                          'Squad', 'Opponent', 'Start', 'Pos', 'Min'], axis=1)
-        # df_2 = df_2.rename(columns={"SCA": "Shot-Creating Action"})
         df_2 = df_2.rename(
             columns={"PassLive": "PassLiveShot"})
         df_2 = df_2.rename(
@@ -133,11 +90,8 @@ def extract_player_stats(player_link, player_file_name):
             columns={"Drib": "DribShot"})
         df_2 = df_2.rename(
             columns={"Sh": "ShLSh"})
-        # df_2 = df_2.rename(
-        #     columns={"Fld": "Fouls drawn that lead to shot attempt"})
         df_2 = df_2.rename(
             columns={"Def": "DefShot"})
-        # df_2 = df_2.rename(columns={"GCA": "Goal-Creating Action"})
         df_2 = df_2.rename(
             columns={"PassLive.1": "PassLiveGoal"})
         df_2 = df_2.rename(
@@ -148,8 +102,6 @@ def extract_player_stats(player_link, player_file_name):
         df_2 = df_2.rename(columns={"Fld.1": "FldGoal"})
         df_2 = df_2.rename(
             columns={"Def.1": "DefGoal"})
-        # df_2 = df_2.rename(
-        #     columns={"OG": "Actions that lead to opponent scoring own goal"})
         df_2.fillna(0, inplace=True)
 
         new_player_link = player_link.replace("keeper", "defense")
@@ -162,8 +114,6 @@ def extract_player_stats(player_link, player_file_name):
             ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
         df_3 = df_3.drop(['Date', 'Name', 'Round', 'Venue', 'Result',
                          'Squad', 'Opponent', 'Start', 'Pos', 'Min'], axis=1)
-        # df_3 = df_3.rename(columns={"Tkl": "Number of players tackled"})
-        # df_3 = df_3.rename(columns={"TklW": "Tackles Won"})
         df_3 = df_3.rename(
             columns={"Def 3rd": "TacklesDef3rd"})
         df_3 = df_3.rename(
@@ -172,8 +122,6 @@ def extract_player_stats(player_link, player_file_name):
         df_3 = df_3.rename(columns={"Tkl.1": "DribTackled"})
         df_3 = df_3.rename(columns={"Att": "DribContest"})
         df_3 = df_3.rename(columns={"Tkl%": "DribTackled%"})
-        # df_3 = df_3.rename(columns={"Past": "Number of times dribbled past"})
-        # df_3 = df_3.rename(columns={"Press": "Pressures"})
         df_3 = df_3.rename(columns={"Succ": "SuccPress"})
         df_3 = df_3.rename(columns={"%": "SuccPress%"})
         df_3 = df_3.rename(
@@ -182,20 +130,8 @@ def extract_player_stats(player_link, player_file_name):
             columns={"Mid 3rd.1": "PressMid3rd"})
         df_3 = df_3.rename(
             columns={"Att 3rd.1": "PressAtt3rd"})
-        # df_3 = df_3.rename(
-        #     columns={"Blocks": "Number of times blocking the ball by standing in its path"})
         df_3 = df_3.rename(
             columns={"Sh": "BlockSh"})
-        # df_3 = df_3.rename(columns={
-        #                    "ShSv": "Number of times blocking a shot that was on target, by standing in its path"})
-        # df_3 = df_3.rename(
-        #     columns={"Pass": "Number of times blocking a pass by standing in its path"})
-        # df_3 = df_3.rename(columns={"Int": "Interceptions"})
-        # df_3 = df_3.rename(
-        #     columns={"Tkl+Int": "Number of players tackled plus number of interceptions"})
-        # df_3 = df_3.rename(columns={"Clr": "Clearances"})
-        # df_3 = df_3.rename(
-        #     columns={"Err": "Errors leading to an opponent's shot"})
         df_3.fillna(0, inplace=True)
 
         new_player_link = player_link.replace("keeper", "possession")
@@ -208,35 +144,17 @@ def extract_player_stats(player_link, player_file_name):
             ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
         df_4 = df_4.drop(['Date', 'Name', 'Round', 'Venue', 'Result',
                          'Squad', 'Opponent', 'Start', 'Pos', 'Min'], axis=1)
-        # df_4 = df_4.rename(
-        #     columns={"Def Pen": "Touches in Defensive Penalty Area"})
         df_4 = df_4.rename(columns={"Def 3rd": "TouchDef3rd"})
         df_4 = df_4.rename(columns={"Mid 3rd": "TouchMid3rd"})
         df_4 = df_4.rename(columns={"Att 3rd": "TouchAtt3rd"})
         df_4 = df_4.rename(
             columns={"Att Pen": "AttPen"})
-        # df_4 = df_4.rename(columns={"Live": "Live-Ball Touches"})
-        # df_4 = df_4.rename(columns={"Succ": "Dribbles completed successfully"})
-        # df_4 = df_4.rename(columns={"Att": "Dribbles attempted"})
-        # df_4 = df_4.rename(
-        #     columns={"Succ%": "Percentage of Dribbles completed successfully"})
-        # df_4 = df_4.rename(columns={"#Pl": "Number of players dribbled past"})
-        # df_4 = df_4.rename(columns={"Megs": "Nutmegs"})
-        # df_4 = df_4.rename(columns={"TotDist": "Total Distance Carried"})
-        # df_4 = df_4.rename(columns={"PrgDist": "Progressive Distance"})
         df_4 = df_4.rename(columns={"Prog": "ProgCarries"})
         df_4 = df_4.rename(columns={"1/3": "CarriesFinThird"})
-        # df_4 = df_4.rename(columns={"CPA": "Carries into Penalty Area"})
-        # df_4 = df_4.rename(columns={"Mis": "Miscontrols"})
-        # df_4 = df_4.rename(columns={"Dis": "Dispossessed"})
-        # df_4 = df_4.rename(columns={"Targ": "Pass Targets"})
-        # df_4 = df_4.rename(columns={"Rec": "Passes Received"})
-        # df_4 = df_4.rename(columns={"Rec%": "Passes Received Percentage"})
         df_4 = df_4.rename(columns={"Prog.1": "ProgPassRec"})
         df_4.fillna(0, inplace=True)
 
         new_player_link = player_link.replace("keeper", "summary")
-        # print(new_player_link)
         df_5 = pd.read_html(new_player_link, header=1)[0]
         df_5 = df_5.drop(columns=['Match Report'])
         df_5 = df_5.drop(columns=['Comp'], errors = 'ignore')
@@ -277,25 +195,6 @@ def extract_player_stats(player_link, player_file_name):
             ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], name)
         df_5 = df_5.drop(['Date', 'Name', 'Round', 'Venue', 'Result',
                          'Squad', 'Opponent', 'Start', 'Pos', 'Min'], axis=1)
-        # df_5 = df_5.rename(
-        #     columns={"Gls": "Goals"})
-        # df_5 = df_5.rename(
-        #     columns={"PK": "Penalty Kicks Made"})
-        # df_5 = df_5.rename(
-        #     columns={"PKatt": "Penalty Kicks Attempted"})
-        # df_5 = df_5.rename(
-        #     columns={"Sh": "Total Shots attempted"})
-        # df_5 = df_5.rename(
-        #     columns={"SoT": "Shots on Target"})
-        # df_5 = df_5.rename(
-        #     columns={"CrdY": "Yellow Cards"})
-        # df_5 = df_5.rename(
-        #     columns={"CrdR": "Red Cards"})
-        # df_5 = df_5.rename(
-        #     columns={"xG": "Expected Goals"})
-        # df_5 = df_5.rename(
-        #     columns={"npxG": "Non-Penalty Expected Goals"})
-        # print(df_5.columns)
         df_5.fillna(0, inplace=True)
             
         concatenated = pd.concat([df, df_2, df_3, df_4, df_5], axis=1)
