@@ -70,7 +70,32 @@ Enter League Here (EPL, Ligue 1, Bundesliga, Serie A, La Liga). Press Enter when
 
 ## Examples of Data
 
-To see examples of how the data scraped from FBRef will look like, you can refer to the playerstats_(league) and goalkeeperstats_(league) file (For scraping player statistics) and similar_player_(league) file for (For scrapign similar player).
+To see examples of how the data scraped from FBRef will look like, you can refer to the playerstats_(league) and goalkeeperstats_(league) file (For scraping player statistics) and similar_player_(league) file for (For scraping similar player).
+
+### EPL Data
+[Outfield Player Statistics](https://github.com/hoyishian/footballdatascience/blob/main/playerstats_epl.csv)
+[Goalkeeper Statistics](https://github.com/hoyishian/footballdatascience/blob/main/goalkeeperstats_epl.csv)
+[Similar Players](https://github.com/hoyishian/footballdatascience/blob/main/similar_player_epl.csv)
+
+### Ligue 1 Data
+[Outfield Player Statistics](https://github.com/hoyishian/footballdatascience/blob/main/playerstats_ligue1.csv)
+[Goalkeeper Statistics](https://github.com/hoyishian/footballdatascience/blob/main/goalkeeperstats_ligue1.csv)
+[Similar Players](https://github.com/hoyishian/footballdatascience/blob/main/similar_player_ligue1.csv)
+
+### Bundesliga Data
+[Outfield Player Statistics](https://github.com/hoyishian/footballdatascience/blob/main/playerstats_bundesliga.csv)
+[Goalkeeper Statistics](https://github.com/hoyishian/footballdatascience/blob/main/goalkeeperstats_bundesliga.csv)
+[Similar Players](https://github.com/hoyishian/footballdatascience/blob/main/similar_player_bundesliga.csv)
+
+### Serie A Data
+[Outfield Player Statistics](https://github.com/hoyishian/footballdatascience/blob/main/playerstats_seriea.csv)
+[Goalkeeper Statistics](https://github.com/hoyishian/footballdatascience/blob/main/goalkeeperstats_seriea.csv)
+[Similar Players](https://github.com/hoyishian/footballdatascience/blob/main/similar_player_seriea.csv)
+
+### La Liga Data
+[Outfield Player Statistics](https://github.com/hoyishian/footballdatascience/blob/main/playerstats_laliga.csv)
+[Goalkeeper Statistics](https://github.com/hoyishian/footballdatascience/blob/main/goalkeeperstats_laliga.csv)
+[Similar Players](https://github.com/hoyishian/footballdatascience/blob/main/similar_player_laliga.csv)
 
 ## Appendix
 
