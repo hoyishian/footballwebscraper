@@ -17,7 +17,7 @@ Goalkeeper players only have 1 set of statistics that is made up of 7 groups of 
 
 ### Outfield Players
 
-Outfield players have 4 set of statistics. They are explained in the Appendix section of this ReadMe Document.
+Outfield players have 4 set of statistics. They are explained in the Appendix section of this [Readme Document](#appendix).
 
 
 ## Step 2:
