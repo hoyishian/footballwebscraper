@@ -79,22 +79,30 @@ To see examples of how the data scraped from FBRef will look like, you can refer
 
 ### Ligue 1 Data
 [Outfield Player Statistics](https://github.com/hoyishian/footballdatascience/blob/main/playerstats_ligue1.csv)
+
 [Goalkeeper Statistics](https://github.com/hoyishian/footballdatascience/blob/main/goalkeeperstats_ligue1.csv)
+
 [Similar Players](https://github.com/hoyishian/footballdatascience/blob/main/similar_player_ligue1.csv)
 
 ### Bundesliga Data
 [Outfield Player Statistics](https://github.com/hoyishian/footballdatascience/blob/main/playerstats_bundesliga.csv)
+
 [Goalkeeper Statistics](https://github.com/hoyishian/footballdatascience/blob/main/goalkeeperstats_bundesliga.csv)
+
 [Similar Players](https://github.com/hoyishian/footballdatascience/blob/main/similar_player_bundesliga.csv)
 
 ### Serie A Data
 [Outfield Player Statistics](https://github.com/hoyishian/footballdatascience/blob/main/playerstats_seriea.csv)
+
 [Goalkeeper Statistics](https://github.com/hoyishian/footballdatascience/blob/main/goalkeeperstats_seriea.csv)
+
 [Similar Players](https://github.com/hoyishian/footballdatascience/blob/main/similar_player_seriea.csv)
 
 ### La Liga Data
 [Outfield Player Statistics](https://github.com/hoyishian/footballdatascience/blob/main/playerstats_laliga.csv)
+
 [Goalkeeper Statistics](https://github.com/hoyishian/footballdatascience/blob/main/goalkeeperstats_laliga.csv)
+
 [Similar Players](https://github.com/hoyishian/footballdatascience/blob/main/similar_player_laliga.csv)
 
 ## Appendix
