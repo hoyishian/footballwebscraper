@@ -15,6 +15,18 @@ Goalkeeper players only have 1 set of statistics that is made up of 7 groups of 
 
 ![Goalkeeping Screenshot from FBRef Website](/screenshots/Goalkeeping.png)
 
+### Outfield Players
+
+Outfield players have 4 set of statistics. They are explained in the Appendix section of this ReadMe Document.
+
+
+## Step 2:
+
+
+## Appendix
+
+### Goalkeeper Statistics
+
 #### Performance
 SoTA -- Shots on Target Against
 
@@ -74,9 +86,7 @@ Stp% -- Percentage of crosses into penalty area which were successfully stopped 
 
 AvgDist -- Average distance from goal to perform defensive actions
 
-### Outfield Players
-
-Outfield players have 4 set of statistics. Screenshots are taken from the website:
+### Outfield Player Statistics
 
 #### Passing
 ![Passing Screenshot from FBRef Website](/screenshots/Passing.png)
@@ -303,6 +313,3 @@ CrdR -- Red Cards
 xG -- Expected Goals (xG totals include penalty kicks, but do not include penalty shootouts)
 
 npxG -- Non-Penalty Expected Goals
-
-
-## Step 2:
