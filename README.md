@@ -74,7 +74,9 @@ To see examples of how the data scraped from FBRef will look like, you can refer
 
 ### EPL Data
 [Outfield Player Statistics](https://github.com/hoyishian/footballdatascience/blob/main/playerstats_epl.csv)
+
 [Goalkeeper Statistics](https://github.com/hoyishian/footballdatascience/blob/main/goalkeeperstats_epl.csv)
+
 [Similar Players](https://github.com/hoyishian/footballdatascience/blob/main/similar_player_epl.csv)
 
 ### Ligue 1 Data
