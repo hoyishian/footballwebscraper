@@ -2,9 +2,7 @@
 
 This project aims to obtain the data available about a player's performance in their respective domestic leagues (e.g. English Premier League) and visualize their performance data in comparison to other players. We have broken up the analysis into 2 types of players in order to ensure a useful form of comparison.
 
-This project consists of xxx number of steps.
-
-## Step 1: Data Extraction from fbref (https://fbref.com/en/)
+## Explaining the Data from fbref (https://fbref.com/en/)
 
 We extracted the data required for our analysis from the FBRef Website, which consists of a breakdown of a match-by-match performance for each player. File used to find this may be found here: https://github.com/hoyishian/fantasypldatascience/blob/main/fbref_scout_extraction.py
 
@@ -20,8 +18,59 @@ Goalkeeper players only have 1 set of statistics that is made up of 7 groups of 
 Outfield players have 4 set of statistics. They are explained in the Appendix section of this [Readme Document](#appendix).
 
 
-## Step 2:
+## Running the Python File
 
+### Step 1: Navigate to folder containing fbref_scout_extraction.py
+
+### Step 2: Decide on type of web-scraping action to run
+
+There are 2 types of web scraping that can be done:
+
+#### Player Statistics by league
+
+Extract all statistics for all domestic league games for players in a given league
+
+#### Similar Players
+
+Extract the top 10 most similar players for every player in a given domestic league. The top 10 most similar players may not be from the same domestic league that has been selected.
+
+### Step 3a: For obtaining Player Statistics
+
+1) Run the following command
+
+```
+python fbref_scout_extraction.py
+```
+
+2) You will then be given the following prompt:
+
+```
+Enter League Here (EPL, Ligue 1, Bundesliga, Serie A, La Liga). Press Enter when ready:
+```
+
+3) Enter the league of interest and press enter. It will take approximately 20 to 30 minutes to completely scrape all data for players in a given domestic league.
+
+### Step 3b: For obtaining similar players
+
+1) Ensure to comment out the [following line](https://github.com/hoyishian/footballdatascience/blob/672f92fce8d9013525553910736da6a0e03fe78d/fbref_scout_extraction.py#L558) and uncomment out the [next line](https://github.com/hoyishian/footballdatascience/blob/672f92fce8d9013525553910736da6a0e03fe78d/fbref_scout_extraction.py#L559)
+
+2) Run the following command
+
+```
+python fbref_scout_extraction.py
+```
+
+3) You will then be given the following prompt:
+
+```
+Enter League Here (EPL, Ligue 1, Bundesliga, Serie A, La Liga). Press Enter when ready:
+```
+
+4) Enter the league of interest and press enter. It will take approximately 20 to 30 minutes to completely scrape all data for players in a given domestic league.
+
+## Examples of Data
+
+To see examples of how the data scraped from FBRef will look like, you can refer to the playerstats_(league) and goalkeeperstats_(league) file (For scraping player statistics) and similar_player_(league) file for (For scrapign similar player).
 
 ## Appendix
 
