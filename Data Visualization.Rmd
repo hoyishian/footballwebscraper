@@ -38,7 +38,7 @@ A point that lies on the line represents a player who scores the same number of 
 ```{r}
 epl_player_summary = epl_player %>%
                         group_by(Name) %>%
-                        summarise(TotalMinutesPlayed = sum(Min), TotalExpectedGoals = sum(`Expected Goals`), TotalGoals =sum(Goals), PenaltyGoals = sum(`Penalty Kicks Made`), TotalAssists= sum(Assists), TotalExpectedAssists = sum(`Expected Assist`), TotalnPxG = sum(`Non-Penalty Expected Goals`))
+                        summarise(TotalMinutesPlayed = sum(Min), TotalExpectedGoals = sum(xG), TotalGoals =sum(Gls), PenaltyGoals = sum(PK), TotalAssists= sum(Ast), TotalExpectedAssists = sum(xA), TotalnPxG = sum(npxG))
 epl_player_summary = epl_player_summary %>% filter(TotalMinutesPlayed >= 900)
 epl_player_summary["PerformanceGoalScored"] = epl_player_summary["TotalGoals"] - epl_player_summary["TotalExpectedGoals"]
 epl_player_summary["GoalsPer90"] = epl_player_summary["TotalGoals"]*(90/epl_player_summary["TotalMinutesPlayed"])
@@ -73,7 +73,7 @@ ggplot(data = epl_player_summary, aes(xAssistsPer90, AssistsPer90, label = Name)
 ```{r}
 bundesliga_player_summary = bundesliga_player %>%
                         group_by(Name) %>%
-                        summarise(TotalMinutesPlayed = sum(Min), TotalExpectedGoals = sum(`Expected Goals`), TotalGoals =sum(Goals), PenaltyGoals = sum(`Penalty Kicks Made`), TotalAssists= sum(Assists), TotalExpectedAssists = sum(`Expected Assist`), TotalnPxG = sum(`Non-Penalty Expected Goals`))
+                        summarise(TotalMinutesPlayed = sum(Min), TotalExpectedGoals = sum(xG), TotalGoals =sum(Gls), PenaltyGoals = sum(PK), TotalAssists= sum(Ast), TotalExpectedAssists = sum(xA), TotalnPxG = sum(npxG))
 bundesliga_player_summary = bundesliga_player_summary %>% filter(TotalMinutesPlayed >= 900)
 bundesliga_player_summary["PerformanceGoalScored"] = bundesliga_player_summary["TotalGoals"] - bundesliga_player_summary["TotalExpectedGoals"]
 bundesliga_player_summary["GoalsPer90"] = bundesliga_player_summary["TotalGoals"]*(90/bundesliga_player_summary["TotalMinutesPlayed"])
@@ -111,7 +111,7 @@ ggplot(data = bundesliga_player_summary, aes(xAssistsPer90, AssistsPer90, label 
 ```{r}
 ligue1_player_summary = ligue1_player %>%
                         group_by(Name) %>%
-                        summarise(TotalMinutesPlayed = sum(Min), TotalExpectedGoals = sum(`Expected Goals`), TotalGoals =sum(Goals), PenaltyGoals = sum(`Penalty Kicks Made`), TotalAssists= sum(Assists), TotalExpectedAssists = sum(`Expected Assist`), TotalnPxG = sum(`Non-Penalty Expected Goals`))
+                        summarise(TotalMinutesPlayed = sum(Min), TotalExpectedGoals = sum(xG), TotalGoals =sum(Gls), PenaltyGoals = sum(PK), TotalAssists= sum(Ast), TotalExpectedAssists = sum(xA), TotalnPxG = sum(npxG))
 ligue1_player_summary = ligue1_player_summary %>% filter(TotalMinutesPlayed >= 900)
 ligue1_player_summary["PerformanceGoalScored"] = ligue1_player_summary["TotalGoals"] - ligue1_player_summary["TotalExpectedGoals"]
 ligue1_player_summary["GoalsPer90"] = ligue1_player_summary["TotalGoals"]*(90/ligue1_player_summary["TotalMinutesPlayed"])
@@ -148,7 +148,7 @@ ggplot(data = ligue1_player_summary, aes(xAssistsPer90, AssistsPer90, label = Na
 ```{r}
 seriea_player_summary = seriea_player %>%
                         group_by(Name) %>%
-                        summarise(TotalMinutesPlayed = sum(Min), TotalExpectedGoals = sum(`Expected Goals`), TotalGoals =sum(Goals), PenaltyGoals = sum(`Penalty Kicks Made`), TotalAssists= sum(Assists), TotalExpectedAssists = sum(`Expected Assist`), TotalnPxG = sum(`Non-Penalty Expected Goals`))
+                        summarise(TotalMinutesPlayed = sum(Min), TotalExpectedGoals = sum(xG), TotalGoals =sum(Gls), PenaltyGoals = sum(PK), TotalAssists= sum(Ast), TotalExpectedAssists = sum(xA), TotalnPxG = sum(npxG))
 seriea_player_summary = seriea_player_summary %>% filter(TotalMinutesPlayed >= 900)
 seriea_player_summary["PerformanceGoalScored"] = seriea_player_summary["TotalGoals"] - seriea_player_summary["TotalExpectedGoals"]
 seriea_player_summary["GoalsPer90"] = seriea_player_summary["TotalGoals"]*(90/seriea_player_summary["TotalMinutesPlayed"])
@@ -186,7 +186,7 @@ ggplot(data = seriea_player_summary, aes(xAssistsPer90, AssistsPer90, label = Na
 ```{r}
 laliga_player_summary = laliga_player %>%
                         group_by(Name) %>%
-                        summarise(TotalMinutesPlayed = sum(Min), TotalExpectedGoals = sum(`Expected Goals`), TotalGoals =sum(Goals), PenaltyGoals = sum(`Penalty Kicks Made`), TotalAssists= sum(Assists), TotalExpectedAssists = sum(`Expected Assist`), TotalnPxG = sum(`Non-Penalty Expected Goals`))
+                        summarise(TotalMinutesPlayed = sum(Min), TotalExpectedGoals = sum(xG), TotalGoals =sum(Gls), PenaltyGoals = sum(PK), TotalAssists= sum(Ast), TotalExpectedAssists = sum(xA), TotalnPxG = sum(npxG))
 laliga_player_summary = laliga_player_summary %>% filter(TotalMinutesPlayed >= 900)
 laliga_player_summary["PerformanceGoalScored"] = laliga_player_summary["TotalGoals"] - laliga_player_summary["TotalExpectedGoals"]
 laliga_player_summary["GoalsPer90"] = laliga_player_summary["TotalGoals"]*(90/laliga_player_summary["TotalMinutesPlayed"])
