@@ -48,8 +48,9 @@ def extract_goalkeeper_stats(player_link, goalkeeper_file_name):
             f.close()
         except:
             df.to_csv(goalkeeper_file_name, index=False)
-    except:
-        print("Invalid", player_link)
+    except Exception:
+        print(Exception)
+        print("Invalid Goalkeeper", player_link)
         return
 
 
@@ -217,7 +218,8 @@ def extract_player_stats(player_link, player_file_name):
             f.close()
         except:
             concatenated.to_csv(player_file_name, index=False)
-    except:
+    except Exception as e:
+        print(e)
         print("Invalid Outfield Player", player_link)
         return
 
@@ -227,8 +229,8 @@ def extractName(player_link):
     html_page = res.content
 
     soup = BeautifulSoup(html_page, 'html.parser')
-    name = soup.find("h1", {"itemprop": "name"})
-    # print(name)
+    # name = soup.find("h1", {"itemprop": "name"})
+    name = soup.find("h1")
     return name.find("span").text
 
 EPL_dict = {
@@ -246,10 +248,10 @@ EPL_dict = {
     "Wolves":"https://fbref.com/en/squads/8cec06e1/Wolverhampton-Wanderers-Stats",
     "Brighton":"https://fbref.com/en/squads/d07537b9/Brighton-and-Hove-Albion-Stats",
     "Arsenal":"https://fbref.com/en/squads/18bb7c10/Arsenal-Stats",
-    "West Bromwich":"https://fbref.com/en/squads/60c6b05f/West-Bromwich-Albion-Stats",
+    "Brentford":"https://fbref.com/en/squads/cd051869/Brentford-Stats",
     "Burnley": "https://fbref.com/en/squads/943e8050/Burnley-Stats",
-    "Sheffield-United": "https://fbref.com/en/squads/1df6b87e/Sheffield-United-Stats",
-    "Fulham":"https://fbref.com/en/squads/fd962109/Fulham-Stats",
+    "Norwich": "https://fbref.com/en/squads/1c781004/Norwich-City-Stats",
+    "Watford":"https://fbref.com/en/squads/2abfe087/Watford-Stats",
     "Newcastle":"https://fbref.com/en/squads/b2b47a98/Newcastle-United-Stats",
     "Aston Villa":"https://fbref.com/en/squads/8602292d/Aston-Villa-Stats"
 }
@@ -261,10 +263,8 @@ Bundesliga_dict = {
     "Freiburg" : "https://fbref.com/en/squads/a486e511/Freiburg-Stats",
     "Monchengladbach": "https://fbref.com/en/squads/32f3ee20/Monchengladbach-Stats",
     "Union Berlin": "https://fbref.com/en/squads/7a41008f/Union-Berlin-Stats",
-    "Ausburg" : "https://fbref.com/en/squads/0cdc4311/Augsburg-Stats",
-    "Werder Bremen": "https://fbref.com/en/squads/62add3bf/Werder-Bremen-Stats",
+    "Greuther Furth": "https://fbref.com/en/squads/12192a4c/Greuther-Furth-Stats",
     "RB Leipzig": "https://fbref.com/en/squads/acbb6a5b/RB-Leipzig-Stats",
-    "Schalke": "https://fbref.com/en/squads/c539e393/Schalke-04-Stats",
     "Hertha BSC": "https://fbref.com/en/squads/2818f8bc/Hertha-BSC-Stats",
     "Wolfsburg":"https://fbref.com/en/squads/4eaa11d7/Wolfsburg-Stats",
     "Hoffenheim":"https://fbref.com/en/squads/033ea6b8/Hoffenheim-Stats",
@@ -272,7 +272,9 @@ Bundesliga_dict = {
     "Koln":"https://fbref.com/en/squads/bc357bf7/Koln-Stats",
     "Dortmund": "https://fbref.com/en/squads/add600ae/Dortmund-Stats",
     "Stuttgart": "https://fbref.com/en/squads/598bc722/Stuttgart-Stats",
-    "Eintracht Frankfurt": "https://fbref.com/en/squads/f0ac8ee6/Eintracht-Frankfurt-Stats"
+    "Eintracht Frankfurt": "https://fbref.com/en/squads/f0ac8ee6/Eintracht-Frankfurt-Stats",
+    "Bochum" : "https://fbref.com/en/squads/b42c6323/Bochum-Stats",
+    "Augsburg":"https://fbref.com/en/squads/0cdc4311/Augsburg-Stats"
 }
 
 Ligue1_dict = {
@@ -287,15 +289,15 @@ Ligue1_dict = {
     "Lille":"https://fbref.com/en/squads/cb188c0c/Lille-Stats",
     "Bordeaux":"https://fbref.com/en/squads/123f3efe/Bordeaux-Stats",
     "Lens": "https://fbref.com/en/squads/fd4e0f7d/Lens-Stats",
-    "Dijon": "https://fbref.com/en/squads/8dfb7350/Dijon-Stats",
-    "Nimes": "https://fbref.com/en/squads/1cbf5f9e/Nimes-Stats",
     "Strasbourg": "https://fbref.com/en/squads/c0d3eab4/Strasbourg-Stats",
     "Angers": "https://fbref.com/en/squads/69236f98/Angers-Stats",
     "Saint Etienne": "https://fbref.com/en/squads/d298ef2c/Saint-Etienne-Stats",
     "Metz": "https://fbref.com/en/squads/f83960ae/Metz-Stats",
     "Lyon:": "https://fbref.com/en/squads/d53c0b06/Lyon-Stats",
     "Rennes": "https://fbref.com/en/squads/b3072e00/Rennes-Stats",
-    "Reims": "https://fbref.com/en/squads/7fdd64e0/Reims-Stats"
+    "Reims": "https://fbref.com/en/squads/7fdd64e0/Reims-Stats",
+    "Clermont Foot": "https://fbref.com/en/squads/d9676424/Clermont-Foot-Stats",
+    "Troyes": "https://fbref.com/en/squads/54195385/Troyes-Stats"
 }
 
 SerieA_dict = {
@@ -306,16 +308,16 @@ SerieA_dict = {
     "Sassuolo":"https://fbref.com/en/squads/e2befd26/Sassuolo-Stats",
     "Napoli":"https://fbref.com/en/squads/d48ad4ff/Napoli-Stats",
     "Atalanta":"https://fbref.com/en/squads/922493f3/Atalanta-Stats",
-    "Parma":"https://fbref.com/en/squads/eab4234c/Parma-Stats",
+    "Empoli":"https://fbref.com/en/squads/a3d88bd8/Empoli-Stats",
     "Hellas Verona":"https://fbref.com/en/squads/0e72edf2/Hellas-Verona-Stats",
     "Sampdoria":"https://fbref.com/en/squads/8ff9e3b3/Sampdoria-Stats",
     "Juventus":"https://fbref.com/en/squads/e0652b02/Juventus-Stats",
     "Lazio":"https://fbref.com/en/squads/7213da33/Lazio-Stats",
     "Genoa":"https://fbref.com/en/squads/658bf2de/Genoa-Stats",
     "Roma":"https://fbref.com/en/squads/cf74a709/Roma-Stats",
-    "Benevento":"https://fbref.com/en/squads/4fcb34fd/Benevento-Stats",
+    "Venezia":"https://fbref.com/en/squads/af5d5982/Venezia-Stats",
     "Fiorentina":"https://fbref.com/en/squads/421387cf/Fiorentina-Stats",
-    "Crotone":"https://fbref.com/en/squads/3074d7b1/Crotone-Stats",
+    "Salernitana":"https://fbref.com/en/squads/c5577084/Salernitana-Stats",
     "Torino":"https://fbref.com/en/squads/105360fe/Torino-Stats",
     "Internazionale":"https://fbref.com/en/squads/d609edc0/Internazionale-Stats",
     "Bologna":"https://fbref.com/en/squads/1d8099f8/Bologna-Stats"
@@ -324,12 +326,12 @@ SerieA_dict = {
 LaLiga_dict = {
     "Sevilla":"https://fbref.com/en/squads/ad2be733/Sevilla-Stats",
     "Real Betis":"https://fbref.com/en/squads/fc536746/Real-Betis-Stats",
-    "Huesca":"https://fbref.com/en/squads/c6c493e6/Huesca-Stats",
+    "Rayo Vallecano":"https://fbref.com/en/squads/98e8af82/Rayo-Vallecano-Stats",
     "Granada":"https://fbref.com/en/squads/a0435291/Granada-Stats",
-    "Valladolid":"https://fbref.com/en/squads/17859612/Valladolid-Stats",
-    "Real-Sociedad":"https://fbref.com/en/squads/e31d1cd9/Real-Sociedad-Stats",
+    "Mallorca":"https://fbref.com/en/squads/2aa12281/Mallorca-Stats",
+    "Real Sociedad":"https://fbref.com/en/squads/e31d1cd9/Real-Sociedad-Stats",
     "Osasuna":"https://fbref.com/en/squads/03c57e2b/Osasuna-Stats",
-    "Eibar":"https://fbref.com/en/squads/bea5c710/Eibar-Stats",
+    "Espanyol":"https://fbref.com/en/squads/a8661628/Espanyol-Stats",
     "Atletico Madrid":"https://fbref.com/en/squads/db3b9613/Atletico-Madrid-Stats",
     "Celta Vigo":"https://fbref.com/en/squads/f25da7fb/Celta-Vigo-Stats",
     "Real Madrid":"https://fbref.com/en/squads/53a2f082/Real-Madrid-Stats",
@@ -346,8 +348,8 @@ LaLiga_dict = {
 
 url_dict = {"EPL": "9/Premier-League-Stats", "Ligue 1": "13/Ligue-1-Stats",
                 "Bundesliga": "20/Bundesliga-Stats", "Serie A": "11/Serie-A-Stats", "La Liga": "12/La-Liga-Stats"}
-league_dict = {"EPL": "s10728", "Ligue 1": "s10732",
-                "Bundesliga": "s10737", "Serie A": "s10730", "La Liga": "s10731"}
+league_dict = {"EPL": "s11160", "Ligue 1": "s11183",
+                "Bundesliga": "s11193", "Serie A": "s11222", "La Liga": "s11174"}
 player_file_dict = {"EPL": "playerstats_epl.csv", "Ligue 1": "playerstats_ligue1.csv",
                         "Bundesliga": "playerstats_bundesliga.csv", "Serie A": "playerstats_seriea.csv", "La Liga": "playerstats_laliga.csv"}
 similar_player_file_dict = {"EPL": "similar_player_epl.csv", "Ligue 1": "similar_player_ligue1.csv",
@@ -428,10 +430,10 @@ def scrapeStats():
     # player_final_array = list(set(player_final_array))
     # for i in player_final_array:
     #     print(i)
-
+    # print(player_final_array)
     for link in player_final_array:
         temp_link = link.replace("summary", "keeper")
-        temp_link = temp_link.replace("2020-2021", league_code_value)
+        temp_link = temp_link.replace("2021-2022", league_code_value)
         final_link.append(temp_link)
 
     final_link = list(set(final_link))
