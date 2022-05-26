@@ -1,9 +1,11 @@
 import pandas as pd
 import numpy as np
 import requests
+from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
 import re
 import sys
+import time
 
 def extract_goalkeeper_stats(player_link, goalkeeper_file_name):
     name = extractName(player_link)
@@ -73,6 +75,7 @@ def extract_player_stats(player_link, player_file_name):
         df = df.rename(columns={"Prog": "PassProg"})
         df.fillna(0, inplace=True)
 
+        time.sleep(2)
         new_player_link = player_link.replace("keeper", "gca")
         df_2 = pd.read_html(new_player_link, header=1)[0]
         df_2 = df_2.drop(columns=['Match Report'])
@@ -105,6 +108,7 @@ def extract_player_stats(player_link, player_file_name):
             columns={"Def.1": "DefGoal"})
         df_2.fillna(0, inplace=True)
 
+        time.sleep(1)
         new_player_link = player_link.replace("keeper", "defense")
         df_3 = pd.read_html(new_player_link, header=1)[0]
         df_3 = df_3.drop(columns=['Match Report'])
@@ -135,6 +139,7 @@ def extract_player_stats(player_link, player_file_name):
             columns={"Sh": "BlockSh"})
         df_3.fillna(0, inplace=True)
 
+        time.sleep(3)
         new_player_link = player_link.replace("keeper", "possession")
         df_4 = pd.read_html(new_player_link, header=1)[0]
         df_4 = df_4.drop(columns=['Match Report'])
@@ -155,6 +160,7 @@ def extract_player_stats(player_link, player_file_name):
         df_4 = df_4.rename(columns={"Prog.1": "ProgPassRec"})
         df_4.fillna(0, inplace=True)
 
+        time.sleep(2)
         new_player_link = player_link.replace("keeper", "summary")
         df_5 = pd.read_html(new_player_link, header=1)[0]
         df_5 = df_5.drop(columns=['Match Report'])
@@ -225,9 +231,10 @@ def extract_player_stats(player_link, player_file_name):
 
 
 def extractName(player_link):
-    res = requests.get(player_link)
-    html_page = res.content
-
+    # res = requests.get(player_link)
+    # html_page = res.content
+    res = Request(player_link, headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36'})
+    html_page = urlopen(res).read()
     soup = BeautifulSoup(html_page, 'html.parser')
     # name = soup.find("h1", {"itemprop": "name"})
     name = soup.find("h1")
@@ -412,8 +419,10 @@ def scrapeStats():
     text_contains_summary = "summary"
 
     for team_url in final_team_array:
-        res = requests.get(team_url)
-        team_html_page = res.content
+        # res = requests.get(team_url)
+        # team_html_page = res.content
+        res = Request(team_url, headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36'})
+        team_html_page = urlopen(res).read()
 
         soup_team = BeautifulSoup(team_html_page, 'html.parser')
 
@@ -444,8 +453,11 @@ def scrapeStats():
     # If not GK, call extract_player_stats
     for player in final_link:
 
-        res_player = requests.get(player)
-        html_page_player = res_player.content
+        # res_player = requests.get(player)
+        # html_page_player = res_player.content
+        
+        res = Request(player, headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36'})
+        html_page_player = urlopen(res).read()
 
         new_soup = BeautifulSoup(html_page_player, 'html.parser')
 
@@ -459,6 +471,7 @@ def scrapeStats():
         else:
             # print(player)
             extract_goalkeeper_stats(player, goalkeeper_file_name)
+        time.sleep(10)
 
 def scrapeSimilarPlayers():
     league = input(
@@ -511,8 +524,11 @@ def scrapeSimilarPlayers():
     text_contains_matchlogs = "matchlogs"
 
     for team_url in final_team_array:
-        res = requests.get(team_url)
-        team_html_page = res.content
+        # res = requests.get(team_url)
+        # team_html_page = res.content
+
+        res = Request(team_url, headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36'})
+        team_html_page = urlopen(res).read()
 
         soup_team = BeautifulSoup(team_html_page, 'html.parser')
 
@@ -531,8 +547,11 @@ def scrapeSimilarPlayers():
         
         name_player = extractName(player)
         print(name_player)
-        res_player = requests.get(player)
-        html_page_player = res_player.content
+        # res_player = requests.get(player)
+        # html_page_player = res_player.content
+
+        res = Request(player, headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36'})
+        html_page_player = urlopen(res).read()
         new_soup = BeautifulSoup(html_page_player, 'html.parser')
         for id in list_of_id:
             list_of_similar_players = []
