@@ -34,6 +34,12 @@ Extract all statistics for all domestic league games for players in a given leag
 
 Extract the top 10 most similar players for every player in a given domestic league. The top 10 most similar players may not be from the same domestic league that has been selected.
 
+### Polite scraping and rate limits
+
+The scraper now waits between requests and retries when the server responds with a
+rate-limit or temporary error. You can tune the delays by editing the
+`REQUEST_DELAY` and `PLAYER_DELAY` values near the top of `fbref_scout_extraction.py`.
+
 ### Step 3a: For obtaining Player Statistics
 
 1) Run the following command
