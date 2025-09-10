@@ -1,17 +1,52 @@
 import pandas as pd
 import numpy as np
 import requests
-from urllib.request import Request, urlopen
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 from bs4 import BeautifulSoup
 import re
 import sys
 import time
+import random
+
+session = requests.Session()
+retry_strategy = Retry(
+    total=5,
+    backoff_factor=1,
+    status_forcelist=[429, 500, 502, 503, 504],
+    allowed_methods=["GET"]
+)
+adapter = HTTPAdapter(max_retries=retry_strategy)
+session.mount("http://", adapter)
+session.mount("https://", adapter)
+session.headers.update(
+    {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                      "AppleWebKit/537.36 (KHTML, like Gecko) "
+                      "Chrome/101.0.4951.64 Safari/537.36"
+    }
+)
+
+REQUEST_DELAY = (1, 3)
+PLAYER_DELAY = (5, 10)
+
+
+def fetch_html(url):
+    response = session.get(url)
+    response.raise_for_status()
+    time.sleep(random.uniform(*REQUEST_DELAY))
+    return response.text
+
+
+def read_table(url, header=1):
+    return pd.read_html(fetch_html(url), header=header)[0]
+
 
 def extract_goalkeeper_stats(player_link, goalkeeper_file_name):
     name = extractName(player_link)
-    
+
     try:
-        df = pd.read_html(player_link, header=1)[0]
+        df = read_table(player_link)
         if (len(df.columns) < 36):
             print("Invalid length of columns", player_link)
             return
@@ -60,7 +95,7 @@ def extract_player_stats(player_link, player_file_name):
     name = extractName(player_link)
     new_player_link = player_link.replace("keeper", "passing")
     try:
-        df = pd.read_html(new_player_link, header=1)[0]
+        df = read_table(new_player_link)
         df = df.drop(columns=['Match Report'])
         df = df.drop(columns=['Comp'], errors = 'ignore')
         df = df.rename(columns={"Day": "Name"})
@@ -75,9 +110,8 @@ def extract_player_stats(player_link, player_file_name):
         df = df.rename(columns={"Prog": "PassProg"})
         df.fillna(0, inplace=True)
 
-        time.sleep(2)
         new_player_link = player_link.replace("keeper", "gca")
-        df_2 = pd.read_html(new_player_link, header=1)[0]
+        df_2 = read_table(new_player_link)
         df_2 = df_2.drop(columns=['Match Report'])
         df_2 = df_2.drop(columns=['Comp'], errors = 'ignore')
         df_2 = df_2.rename(columns={"Day": "Name"})
@@ -108,9 +142,8 @@ def extract_player_stats(player_link, player_file_name):
             columns={"Def.1": "DefGoal"})
         df_2.fillna(0, inplace=True)
 
-        time.sleep(1)
         new_player_link = player_link.replace("keeper", "defense")
-        df_3 = pd.read_html(new_player_link, header=1)[0]
+        df_3 = read_table(new_player_link)
         df_3 = df_3.drop(columns=['Match Report'])
         df_3 = df_3.drop(columns=['Comp'], errors = 'ignore')
         df_3 = df_3.rename(columns={"Day": "Name"})
@@ -139,9 +172,8 @@ def extract_player_stats(player_link, player_file_name):
             columns={"Sh": "BlockSh"})
         df_3.fillna(0, inplace=True)
 
-        time.sleep(3)
         new_player_link = player_link.replace("keeper", "possession")
-        df_4 = pd.read_html(new_player_link, header=1)[0]
+        df_4 = read_table(new_player_link)
         df_4 = df_4.drop(columns=['Match Report'])
         df_4 = df_4.drop(columns=['Comp'], errors = 'ignore')
         df_4 = df_4.rename(columns={"Day": "Name"})
@@ -160,9 +192,8 @@ def extract_player_stats(player_link, player_file_name):
         df_4 = df_4.rename(columns={"Prog.1": "ProgPassRec"})
         df_4.fillna(0, inplace=True)
 
-        time.sleep(2)
         new_player_link = player_link.replace("keeper", "summary")
-        df_5 = pd.read_html(new_player_link, header=1)[0]
+        df_5 = read_table(new_player_link)
         df_5 = df_5.drop(columns=['Match Report'])
         df_5 = df_5.drop(columns=['Comp'], errors = 'ignore')
         df_5 = df_5.drop(columns=['Ast'], errors = 'ignore')
@@ -231,12 +262,8 @@ def extract_player_stats(player_link, player_file_name):
 
 
 def extractName(player_link):
-    # res = requests.get(player_link)
-    # html_page = res.content
-    res = Request(player_link, headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36'})
-    html_page = urlopen(res).read()
+    html_page = fetch_html(player_link)
     soup = BeautifulSoup(html_page, 'html.parser')
-    # name = soup.find("h1", {"itemprop": "name"})
     name = soup.find("h1")
     return name.find("span").text
 
@@ -419,11 +446,7 @@ def scrapeStats():
     text_contains_summary = "summary"
 
     for team_url in final_team_array:
-        # res = requests.get(team_url)
-        # team_html_page = res.content
-        res = Request(team_url, headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36'})
-        team_html_page = urlopen(res).read()
-
+        team_html_page = fetch_html(team_url)
         soup_team = BeautifulSoup(team_html_page, 'html.parser')
 
         text = soup_team.find_all("a", href=True)
@@ -452,13 +475,7 @@ def scrapeStats():
     # If GK, call extract_goalkeeper_stats
     # If not GK, call extract_player_stats
     for player in final_link:
-
-        # res_player = requests.get(player)
-        # html_page_player = res_player.content
-        
-        res = Request(player, headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36'})
-        html_page_player = urlopen(res).read()
-
+        html_page_player = fetch_html(player)
         new_soup = BeautifulSoup(html_page_player, 'html.parser')
 
         searched_word = "GK"
@@ -469,9 +486,8 @@ def scrapeStats():
         if(len(new_result) == 0):
             extract_player_stats(player, player_file_name)
         else:
-            # print(player)
             extract_goalkeeper_stats(player, goalkeeper_file_name)
-        time.sleep(10)
+        time.sleep(random.uniform(*PLAYER_DELAY))
 
 def scrapeSimilarPlayers():
     league = input(
@@ -524,12 +540,7 @@ def scrapeSimilarPlayers():
     text_contains_matchlogs = "matchlogs"
 
     for team_url in final_team_array:
-        # res = requests.get(team_url)
-        # team_html_page = res.content
-
-        res = Request(team_url, headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36'})
-        team_html_page = urlopen(res).read()
-
+        team_html_page = fetch_html(team_url)
         soup_team = BeautifulSoup(team_html_page, 'html.parser')
 
         text = soup_team.find_all("a", href=True)
@@ -544,14 +555,9 @@ def scrapeSimilarPlayers():
     player_final_array.sort()
     player_final_array.remove("https://fbref.com/en/players/")
     for player in player_final_array:
-        
         name_player = extractName(player)
         print(name_player)
-        # res_player = requests.get(player)
-        # html_page_player = res_player.content
-
-        res = Request(player, headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36'})
-        html_page_player = urlopen(res).read()
+        html_page_player = fetch_html(player)
         new_soup = BeautifulSoup(html_page_player, 'html.parser')
         for id in list_of_id:
             list_of_similar_players = []
@@ -575,6 +581,7 @@ def scrapeSimilarPlayers():
                     f.close()
                 except:
                     final_data.to_csv(player_file_name, index=False)
+        time.sleep(random.uniform(*PLAYER_DELAY))
 
 scrapeStats()
 # scrapeSimilarPlayers()
